@@ -1,4 +1,5 @@
 import logging
+import random
 from typing import Dict, List, Tuple
 
 import click
@@ -152,6 +153,61 @@ def visualize_dataset(dataset1: List[Dict], dataset2: List[Dict], group_names):
         }
     )
 
+def generate_captions(args: Dict, dataset1: List[Dict], dataset2: List[Dict]) -> List[str]:
+    captioner_args = args["captioner"]
+    captioner_args["seed"] = args["seed"]
+    captioner_args["captioner"] = args["captioner"]
+    
+    captioner = eval(captioner_args["method"])(captioner_args)
+    _, sampled_dataset1, sampled_dataset2 = captioner.get_captions(dataset1, dataset2)
+    return sampled_dataset1, sampled_dataset2
+
+def prepare_knowledge_bank(args: Dict, dataset1: List[Dict], dataset2: List[Dict], group_names:List[str]):
+    captioner_args = args["captioner"]
+    filename = captioner_args["knowledge_bank_filepath"]
+    a = group_names[0]
+    b = group_names[1]
+    if not os.path.exists(filename):
+        with open(filename, 'w') as file:
+            json.dump({}, file, indent=4)
+
+    with open(filename, 'r') as file:
+        data = json.load(file)
+    
+    data[a] = [item['caption'].replace("\n", " ").strip() for item in dataset1]
+    data[b] = [item['caption'].replace("\n", " ").strip() for item in dataset2]
+
+    with open(filename, 'w') as file:
+        json.dump(data, file, indent=4)
+    logging.info(f"Saved {len(data[a])} captions for {a}")
+    logging.info(f"Saved {len(data[b])} captions for {b}")
+
+def prepare_agg_knowledge_bank(args: Dict):
+    captioner_args = args["captioner"]
+    knowledge_bank_filepath = captioner_args["knowledge_bank_filepath"]
+    hypo_data = {}
+    with open(knowledge_bank_filepath, 'r') as file:
+        hypo_data = json.load(file)
+
+    knowledge_bank = []
+    for k, v in hypo_data.items():
+        knowledge_bank.extend(v)
+    random.shuffle(knowledge_bank)
+
+    agg_knowledge_bank_filepath = captioner_args["agg_knowledge_bank_filepath"]
+    with open(agg_knowledge_bank_filepath, 'w') as file:
+        json.dump(knowledge_bank, file, indent=4)
+
+def create_knowledge_bank(args: Dict, dataset1: List[Dict], dataset2: List[Dict], group_names):
+    captioner_args = args["captioner"]
+    agg_knowledge_bank_filepath = captioner_args["agg_knowledge_bank_filepath"]
+    if os.path.exists(agg_knowledge_bank_filepath):
+        logging.info("Knowledge bank already exists...")
+        return
+    captioned_dataset1, captioned_dataset2 = generate_captions(args, dataset1, dataset2)
+    prepare_knowledge_bank(args, captioned_dataset1, captioned_dataset2, group_names)
+    prepare_agg_knowledge_bank(args)
+
 @click.command()
 @click.option("--config", help="config file")
 def main(config):
@@ -159,6 +215,8 @@ def main(config):
     args = load_config(config)
     logging.info("Loading data...")
     dataset1, dataset2, group_names = load_data(args)
+    logging.info("Creating knowledge bank...")
+    create_knowledge_bank(args, dataset1, dataset2, group_names)
     visualize_dataset(dataset1, dataset2, group_names)
     logging.info("Proposing & Ranking differences...")
     differences_A, classname_A, differences_B, classname_B = compute_differences(args, dataset1, dataset2)
