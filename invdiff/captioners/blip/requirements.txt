@@ -1,0 +1,5 @@
+salesforce-lavis==1.0.2
+numpy==1.26.4
+lmdb==1.7.5
+openai==0.28.0
+flask==3.1.2
