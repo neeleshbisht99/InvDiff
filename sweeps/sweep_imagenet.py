@@ -56,7 +56,10 @@ data:
   group1: "{group_name}"
   group2: "imagenet"
 """
-        cfg_file = f"configs/sweep_imagenetr/{group_name}-imagenet.yaml"
+        cfg_dir = f"configs/sweep_imagenetr"
+        if not os.path.exists(cfg_dir):
+            os.makedirs(cfg_dir)
+        cfg_file = f"{cfg_dir}/{group_name}-imagenet.yaml"
         with open(cfg_file, "w") as f:
             f.write(cfg)
         print(f"python main.py --config {cfg_file}")

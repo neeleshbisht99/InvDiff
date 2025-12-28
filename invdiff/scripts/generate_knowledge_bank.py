@@ -73,7 +73,8 @@ def generate_captions(args: Dict, datasetA: List[Dict], datasetB: List[Dict]) ->
     return sampled_dataset1, sampled_dataset2
 
 def prepare_knowledge_bank(args: Dict, datasetA: List[Dict], datasetB: List[Dict], group_names:List[str]):
-    filename = args["knowledge_bank_from_blip_captions_file"]
+    captioner_args = args["captioner"]
+    filename = captioner_args["knowledge_bank_filepath"]
     a = group_names[0]
     b = group_names[1]
     if not os.path.exists(filename):
@@ -91,21 +92,21 @@ def prepare_knowledge_bank(args: Dict, datasetA: List[Dict], datasetB: List[Dict
     logging.info(f"Saved {len(data[a])} captions for {a}")
     logging.info(f"Saved {len(data[b])} captions for {b}")
 
-def prepare_agg_knowledge_bank():
-    filename = 'knowledge_bank_from_blip_captions.json'
+def prepare_agg_knowledge_bank(args: Dict):
+    captioner_args = args["captioner"]
+    knowledge_bank_filepath = captioner_args["knowledge_bank_filepath"]
     hypo_data = {}
-    with open(filename, 'r') as file:
+    with open(knowledge_bank_filepath, 'r') as file:
         hypo_data = json.load(file)
 
     knowledge_bank = []
     random.seed(0)
     for k, v in hypo_data.items():
         knowledge_bank.extend(v)
-
     random.shuffle(knowledge_bank)
 
-    filename = 'agg_knowledge_bank_from_blip_captions.json'
-    with open(filename, 'w') as file:
+    agg_knowledge_bank_filepath = captioner_args["agg_knowledge_bank_filepath"]
+    with open(agg_knowledge_bank_filepath, 'w') as file:
         json.dump(knowledge_bank, file, indent=4)
 
 

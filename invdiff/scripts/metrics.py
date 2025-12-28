@@ -1,14 +1,16 @@
 import pandas as pd
 
-root = "/shared/scratch/0/home/v_neelesh_bisht/projects/InvDiff/utils/"
+root = "/shared/scratch/0/home/v_neelesh_bisht/projects/InvDiff/data/datasets/pairedimagesets/output/PairedImageSets_v3-run4/"
 
 easy_df = pd.read_csv(root + 'easy_runs.csv')
 medium_df = pd.read_csv(root + 'medium_runs.csv')
 hard_df = pd.read_csv(root + 'hard_runs.csv')
 
-print("Metrics")
-print("#### Anti-CCA (Image & Text(BLIP-2[smaller-variant] + CLIP) Evaluator(GPT-4))")
-print("#Group A / Class 0")
+f = open(root+"output.txt", 'w')
+
+print("Metrics", file=f)
+print("#### Anti-CCA (Image & Text(BLIP-2[smaller-variant] + CLIP) Evaluator(GPT-4))", file=f)
+print("#Group A / Class 0", file=f)
 arr0 = [
     ["Dataset ", "acc@1 ", "acc@5 "],
     ["Easy    ", f"{round(easy_df['Group A/acc@1'].mean(), 2)}   ", f"{round(easy_df['Group A/acc@5'].mean(), 2)}  "],
@@ -18,11 +20,11 @@ arr0 = [
 
 for row in arr0:
     str = "".join(row)
-    print(str)
+    print(str, file=f)
 
-print("\n")
-print("### Anti-CCA (Image & Text(BLIP-2[smaller-variant] + CLIP) Evaluator(GPT-4))")
-print("#Group B / Class 1")
+print("\n", file=f)
+print("### Anti-CCA (Image & Text(BLIP-2[smaller-variant] + CLIP) Evaluator(GPT-4))", file=f)
+print("#Group B / Class 1", file=f)
 arr1 = [
     ["Dataset ", "acc@1 ", "acc@5 "],
     ["Easy    ", f"{round(easy_df['Group B/acc@1'].mean(), 2)}   ", f"{round(easy_df['Group B/acc@5'].mean(), 2)}  "],
@@ -32,4 +34,4 @@ arr1 = [
 
 for row in arr1:
     str = "".join(row)
-    print(str)
+    print(str, file=f)
