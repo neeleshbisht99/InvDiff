@@ -1,6 +1,7 @@
 import logging
 import random
 from typing import Dict, List, Tuple
+from pathlib import Path
 
 import click
 import pandas as pd
@@ -164,10 +165,12 @@ def generate_captions(args: Dict, dataset1: List[Dict], dataset2: List[Dict]) ->
 
 def prepare_knowledge_bank(args: Dict, dataset1: List[Dict], dataset2: List[Dict], group_names:List[str]):
     captioner_args = args["captioner"]
-    filename = captioner_args["knowledge_bank_filepath"]
+    filepath = captioner_args["knowledge_bank_filepath"]
+    filename = Path(filepath)
     a = group_names[0]
     b = group_names[1]
     if not os.path.exists(filename):
+        filename.parent.mkdir(parents=True, exist_ok=True)
         with open(filename, 'w') as file:
             json.dump({}, file, indent=4)
 

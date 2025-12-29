@@ -16,8 +16,8 @@ captioner:
   num_rounds: 3
   num_samples: 20
   prompt: "Describe this image in detail." # prompt to use
-  knowledge_bank_filepath: "data/knowledge_banks/blip/imagenet_captions.json"
-  agg_knowledge_bank_filepath: "data/knowledge_banks/blip/agg_imagenet_captions.json"
+  knowledge_bank_filepath: "data/knowledge_banks/blip/pairedimagesets_captions.json"
+  agg_knowledge_bank_filepath: "data/knowledge_banks/blip/agg_pairedimagesets_captions.json"
 
 evaluator:
   method: Evaluator # how to evaluate hypotheses
@@ -27,6 +27,6 @@ evaluator:
 inv_diff:
   method: InvDiff
   clip_model: ViT-bigG-14
-  knowledge_bank_filepath: "data/knowledge_banks/blip/agg_imagenet_captions.json"
+  knowledge_bank_filepath: "data/knowledge_banks/blip/agg_pairedimagesets_captions.json"
 
 
