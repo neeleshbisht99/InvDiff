@@ -78,8 +78,11 @@ data:
   group1: "{group_name}"
   group2: "base"
 """
+        cfg_dir = f"configs/sweep_imagenetstar"
+        if not os.path.exists(cfg_dir):
+            os.makedirs(cfg_dir)
         cfg_file = (
-            f"configs/sweep_imagenetstar/{group_name.replace(' ', '_')}-base.yaml"
+            f"{cfg_dir}/{group_name.replace(' ', '_')}-base.yaml"
         )
         with open(cfg_file, "w") as f:
             f.write(cfg)

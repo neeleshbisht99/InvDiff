@@ -12,6 +12,7 @@ import os
 
 import wandb
 from invdiff.evaluators.base_evaluator import Evaluator
+from invdiff.captioners.base_captioner import Captioner
 from invdiff.invdiff import InvDiff
 
 def load_config(config: str) -> Dict:
@@ -156,10 +157,9 @@ def visualize_dataset(dataset1: List[Dict], dataset2: List[Dict], group_names):
 def generate_captions(args: Dict, dataset1: List[Dict], dataset2: List[Dict]) -> List[str]:
     captioner_args = args["captioner"]
     captioner_args["seed"] = args["seed"]
-    captioner_args["captioner"] = args["captioner"]
     
     captioner = eval(captioner_args["method"])(captioner_args)
-    _, sampled_dataset1, sampled_dataset2 = captioner.get_captions(dataset1, dataset2)
+    sampled_dataset1, sampled_dataset2 = captioner.generate_captions(dataset1, dataset2)
     return sampled_dataset1, sampled_dataset2
 
 def prepare_knowledge_bank(args: Dict, dataset1: List[Dict], dataset2: List[Dict], group_names:List[str]):
@@ -185,12 +185,12 @@ def prepare_knowledge_bank(args: Dict, dataset1: List[Dict], dataset2: List[Dict
 def prepare_agg_knowledge_bank(args: Dict):
     captioner_args = args["captioner"]
     knowledge_bank_filepath = captioner_args["knowledge_bank_filepath"]
-    hypo_data = {}
+    data = {}
     with open(knowledge_bank_filepath, 'r') as file:
-        hypo_data = json.load(file)
+        data = json.load(file)
 
     knowledge_bank = []
-    for k, v in hypo_data.items():
+    for k, v in data.items():
         knowledge_bank.extend(v)
     random.shuffle(knowledge_bank)
 
@@ -200,10 +200,15 @@ def prepare_agg_knowledge_bank(args: Dict):
 
 def create_knowledge_bank(args: Dict, dataset1: List[Dict], dataset2: List[Dict], group_names):
     captioner_args = args["captioner"]
-    agg_knowledge_bank_filepath = captioner_args["agg_knowledge_bank_filepath"]
-    if os.path.exists(agg_knowledge_bank_filepath):
-        logging.info("Knowledge bank already exists...")
-        return
+    knowledge_bank_filepath = captioner_args["knowledge_bank_filepath"]
+    a = group_names[0]
+    b = group_names[1]
+    if os.path.exists(knowledge_bank_filepath):
+        with open(knowledge_bank_filepath, 'r') as file:
+            data = json.load(file)
+            if a in data and b in data:
+                logging.info("Knowledge bank already exists...")
+                return
     captioned_dataset1, captioned_dataset2 = generate_captions(args, dataset1, dataset2)
     prepare_knowledge_bank(args, captioned_dataset1, captioned_dataset2, group_names)
     prepare_agg_knowledge_bank(args)

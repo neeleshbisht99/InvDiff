@@ -158,3 +158,8 @@ data/datasets/pairedimagesets/VisDiffBench
 
 blip-venv/
 cache/
+
+configs/sweep_imagenetstar/
+configs/sweep_imagenetr/
+configs/sweep_imagenetstar-v3-run1/
+configs/sweep_imagenetr-v3-run1/
