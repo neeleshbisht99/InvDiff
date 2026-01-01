@@ -85,14 +85,14 @@ class InvDiff:
             th -= 0.05
         
         # Calculate average similarity for each description
-        avg_similarities = np.zeros(len(universal_texts))
-        for i in range(len(universal_texts)):
-            if description_counts[i] > 0:
-                avg_similarities[i] = description_similarities[i] / description_counts[i]
+        # avg_similarities = np.zeros(len(universal_texts))
+        # for i in range(len(universal_texts)):
+        #     if description_counts[i] > 0:
+        #         avg_similarities[i] = description_similarities[i] / description_counts[i]
         
-        # Combine frequency and average similarity for ranking
+        # Combine frequency and average similarity for ranking (description_counts * avg_similarities, which is nothing but description_similarities)
         # Higher frequency + higher average similarity = better
-        combined_scores = description_counts * avg_similarities
+        combined_scores = description_similarities
         
         top_indices = np.argsort(combined_scores)[-top_k:][::-1]
         filtered_texts_str = [universal_texts[i] for i in top_indices]
