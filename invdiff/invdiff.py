@@ -1,10 +1,9 @@
 #%%#
-"""Anti-CCA Implementation"""
+"""InvDiff core algorithm implementation"""
 """ Import Dependencies """
 import numpy as np
 import json
 from typing import Dict
-import logging
 
 from sklearn.cross_decomposition import CCA
 from sklearn.preprocessing import StandardScaler
@@ -51,7 +50,6 @@ class InvDiff:
         """
         N_img = images_std.shape[0]
         N_txt = texts_std.shape[0]
-        # idx = rng.integers(0, N_txt, size=N_img)
         lt = [i%N_txt for i in range(N_img)]
         Xs = images_std
         Ys = texts_std[lt]
@@ -84,35 +82,20 @@ class InvDiff:
                 break;
             th -= 0.05
         
-        # Calculate average similarity for each description
-        # avg_similarities = np.zeros(len(universal_texts))
-        # for i in range(len(universal_texts)):
-        #     if description_counts[i] > 0:
-        #         avg_similarities[i] = description_similarities[i] / description_counts[i]
-        
         # Combine frequency and average similarity for ranking (description_counts * avg_similarities, which is nothing but description_similarities)
         # Higher frequency + higher average similarity = better
         combined_scores = description_similarities
         
         top_indices = np.argsort(combined_scores)[-top_k:][::-1]
-        filtered_texts_str = [universal_texts[i] for i in top_indices]
         filtered_texts = [{"text": universal_texts[i], "score": combined_scores[i]} for i in top_indices]
         filtered_embeddings = universal_embeddings[top_indices]
-        
-        # print(f"Enhanced frequency filtering: {len(filtered_texts)} descriptions")
-        # print(f"Description frequencies: {[int(description_counts[i]) for i in top_indices]}")
-        # print(f"Top descriptions: {filtered_texts}")
-        # logging.info(f"Enhanced frequency filtering {len(filtered_texts)}: {', '.join(filtered_texts_str)} ")
         return filtered_texts, filtered_embeddings, combined_scores
 
 
-    """Anti-CCA Approach"""
-    def anti_cca_analysis(self, images_std, texts_std, text_descriptions, text_embeddings_raw,
+    """Inverse CCA Approach"""
+    def inverse_cca_analysis(self, images_std, texts_std, text_descriptions, text_embeddings_raw,
                         scaler_text, n_components=10, seed=0):
-        """
-        Proper implementation of Anti-CCA with correct pairing
-        """
-        # 1) Pair rows properly
+        # 1) Create Image-text pairs
         Xs, Ys = self.make_pairs(images_std, texts_std, rng=np.random.default_rng(seed))
 
         # 2) Choose a safe number of components
@@ -126,7 +109,7 @@ class InvDiff:
 
         # 4) Per-component correlations
         cors = np.array([np.corrcoef(Xc[:, i], Yc[:, i])[0, 1] for i in range(max_nc)])
-        order = np.argsort(np.abs(cors))  # Anti-CCA: smallest |corr| first
+        order = np.argsort(np.abs(cors))  # Inverse-CCA: smallest |corr| first
 
         # 5) Take least-correlated text directions, map to the same class texts
         Y_dirs_std = cca.y_rotations_[:, order]
@@ -183,8 +166,6 @@ class InvDiff:
         class0_txts_score_mp = {obj['text']:obj['score'] for obj in class0_txts_objs}
         class0_sim_scores = [obj['score'] for obj in class0_txts_objs]
 
-        # print("class0_txts", class0_txts)
-
         class1_txts_objs, class1_txt_embeds, _ = self.enhanced_frequency_filtering(
             class1_img_embeds, universal_texts, universal_text_embeddings, top_k=20, similarity_threshold=0.75
         )
@@ -208,8 +189,7 @@ class InvDiff:
 
         alpha = 0.3
         # Analyze both mismatch cases
-        # print(f"Analyzing {cls1_name} Images vs {cls0_name} Text...")
-        cls0_vs_cls1, _ = self.anti_cca_analysis(
+        cls0_vs_cls1, _ = self.inverse_cca_analysis(
             class1_images_std, class0_texts_std, 
             class0_txts, class0_txt_embeds,
             scaler_txt_cls0, seed=seed
@@ -226,8 +206,7 @@ class InvDiff:
             obj['inv_corr_score'] = anti_corr
             obj['inv_diff_score'] = alpha*class0_txt_sim_score_norm + ((1-alpha)*anti_corr)
 
-        # print(f"Analyzing {cls0_name} Images vs {cls1_name} Text...")
-        cls1_vs_cls0, _ = self.anti_cca_analysis(
+        cls1_vs_cls0, _ = self.inverse_cca_analysis(
             class0_images_std, class1_texts_std,
             class1_txts, class1_txt_embeds,
             scaler_txt_cls1, seed=seed
@@ -245,9 +224,7 @@ class InvDiff:
             obj['inv_diff_score'] = alpha*class1_txt_sim_score_norm + ((1-alpha)*anti_corr)
 
         # Sort by absolute correlation (lowest first)
-        # print(f"\nFeatures from {cls0_name} texts that are distinctive to {cls0_name} (not seen in {cls1_name} images):")
         cls0_vs_cls1.sort(key=lambda x: x['inv_diff_score'], reverse=True)
-        # print(f"\nFeatures from {cls1_name} texts that are distinctive to {cls1_name} (not seen in {cls0_name} images):")
         cls1_vs_cls0.sort(key=lambda x: x['inv_diff_score'], reverse=True)
 
         final_keys = ['text', 'sim_score', 'inv_corr_score', 'inv_diff_score']
@@ -257,13 +234,5 @@ class InvDiff:
         cls1_diffs = [{
             key: obj.get(key) for key in final_keys
         } for obj in cls1_vs_cls0]
-        # cls0_diffs = self.dedup(cls0_vs_cls1) # distinctive for cls0
-        # cls1_diffs = self.dedup(cls1_vs_cls0) # distinctive for cls1
-
-        # print(f"\nFeatures from {cls0_name} texts that are distinctive to {cls0_name} (not seen in {cls1_name} images):")
-        # for i, obj in enumerate(cls0_diffs):
-        #     print(f"Rank {i}: {obj['text']}, {obj['inv_diff_score']}")
-
-
 
         return cls0_diffs, cls0_name, cls1_diffs, cls1_name

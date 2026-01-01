@@ -9,7 +9,7 @@ hard_df = pd.read_csv(root + 'hard_runs.csv')
 f = open(root+"output.txt", 'w')
 
 print("Metrics", file=f)
-print("#### Anti-CCA (Image & Text(BLIP-2[smaller-variant] + CLIP) Evaluator(GPT-4))", file=f)
+print("#### InvDiff (Image & Text(BLIP-2[smaller-variant] + CLIP) Evaluator(GPT-4))", file=f)
 print("#Group A / Class 0", file=f)
 arr0 = [
     ["Dataset ", "acc@1 ", "acc@5 "],
@@ -23,7 +23,7 @@ for row in arr0:
     print(str, file=f)
 
 print("\n", file=f)
-print("### Anti-CCA (Image & Text(BLIP-2[smaller-variant] + CLIP) Evaluator(GPT-4))", file=f)
+print("### InvDiff (Image & Text(BLIP-2[smaller-variant] + CLIP) Evaluator(GPT-4))", file=f)
 print("#Group B / Class 1", file=f)
 arr1 = [
     ["Dataset ", "acc@1 ", "acc@5 "],

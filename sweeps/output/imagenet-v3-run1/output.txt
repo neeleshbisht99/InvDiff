@@ -1,5 +1,5 @@
 Metrics
-#### Anti-CCA (Image & Text(BLIP-2[smaller-variant] + CLIP) Evaluator(GPT-4))
+#### InvDiff (Image & Text(BLIP-2[smaller-variant] + CLIP) Evaluator(GPT-4))
 #Group A / Class 0
 Dataset acc@1 acc@5 
 ImageNet-R    0.57   0.79  

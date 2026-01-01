@@ -1,5 +1,5 @@
 Metrics
-#### Anti-CCA (Image & Text(BLIP-2[smaller-variant] + CLIP) Evaluator(GPT-4))
+#### InvDiff (Image & Text(BLIP-2[smaller-variant] + CLIP) Evaluator(GPT-4))
 #Group A / Class 0
 Dataset acc@1 acc@5 
 Easy    0.95   0.98  
@@ -7,7 +7,7 @@ Medium  0.71   0.82
 Hard    0.6   0.76  
 
 
-### Anti-CCA (Image & Text(BLIP-2[smaller-variant] + CLIP) Evaluator(GPT-4))
+### InvDiff (Image & Text(BLIP-2[smaller-variant] + CLIP) Evaluator(GPT-4))
 #Group B / Class 1
 Dataset acc@1 acc@5 
 Easy    0.96   0.99  
