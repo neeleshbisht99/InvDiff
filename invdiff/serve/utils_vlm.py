@@ -12,7 +12,7 @@ import lmdb
 import requests
 import openai
 
-from invdiff.serve.global_vars import BLIP_FEATURE_URL, BLIP_URL, LLAVA_URL, VLM_CACHE_FILE
+from invdiff.serve.global_vars import BLIP_FEATURE_URL, BLIP_URL, GIT_URL, LLAVA_URL, VLM_CACHE_FILE
 from invdiff.serve.utils_general import get_from_cache, save_to_cache
 
 if not os.path.exists(VLM_CACHE_FILE):
@@ -57,12 +57,13 @@ def get_vlm_output(image: str, prompt: str, model: str) -> str:
         logging.debug(f"VLM Cache Hit")
         return cached_value
 
-    if model in ["blip", "llava"]:
+    if model in ["blip", "llava", "git"]:
         files = {"image": open(image, "rb").read()}
         text_data = {"text": prompt}
         url = {
             "blip": BLIP_URL,
             "llava": LLAVA_URL,
+            "git": GIT_URL
         }[model]
 
         try:
@@ -115,6 +116,14 @@ def vqa(image: str, question: str, model: str) -> str:
 def test_get_vlm_output():
     image = "data/datasets/pairedimagesets/teaser.png"
     model = "blip"
+
+    caption = captioning(image, model)
+    print(f"{caption=}")
+    question = "Is there a table in the image?"
+    answer = vqa(image, question, model)
+    print(f"{answer=}")
+
+    model = "git"
 
     caption = captioning(image, model)
     print(f"{caption=}")

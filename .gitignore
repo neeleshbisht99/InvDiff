@@ -151,6 +151,8 @@ configs/sweep_visdiffbench_purity1.0_seed0-v3-run3/
 configs/sweep_visdiffbench_purity1.0_seed0-v3-run4/
 configs/sweep_visdiffbench_purity1.0_seed0-v3-run5/
 configs/sweep_visdiffbench_purity1.0_seed0-v3-run6/
+configs/sweep_visdiffbench_purity1.0_seed0-v3-run7/
+configs/sweep_visdiffbench_purity1.0_seed0-v3-git-run1/
 configs/sweep_imagenetr/
 
 */cache/
@@ -170,3 +172,4 @@ cache-v3-run2to4/
 cache-v3-run5/
 cache-v3-run6/
 cache-v3-run7/
+cache-v3-git-run1/
