@@ -8,6 +8,7 @@ BLIP_URL = "http://localhost:8082"
 LLAVA_URL = "http://localhost:8084"
 BLIP_FEATURE_URL = "http://localhost:8086"
 GIT_URL = "http://localhost:8092"
+KOSMOS_URL = "http://localhost:8094"
 VLM_CACHE_FILE = "cache/cache_vlm"
 
 # CLIP API

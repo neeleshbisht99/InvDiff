@@ -1,0 +1,15 @@
+Metrics
+#### InvDiff (Image & Text(BLIP-2[smaller-variant] + CLIP) Evaluator(GPT-4))
+#Group A / Class 0
+Dataset acc@1 acc@5 
+Easy    0.9   0.95  
+Medium  0.59   0.71  
+Hard    0.52   0.67  
+
+
+### InvDiff (Image & Text(BLIP-2[smaller-variant] + CLIP) Evaluator(GPT-4))
+#Group B / Class 1
+Dataset acc@1 acc@5 
+Easy    0.9   0.95  
+Medium  0.46   0.68  
+Hard    0.53   0.66  

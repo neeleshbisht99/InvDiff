@@ -12,12 +12,12 @@ data:
 
 captioner:
   method: Captioner
-  model: git # model used in method
+  model: kosmos # model used in method
   num_rounds: 3
   num_samples: 20
-  prompt: "Describe this image in detail." # prompt to use
-  knowledge_bank_filepath: "data/knowledge_banks/git/pairedimagesets_captions.json"
-  agg_knowledge_bank_filepath: "data/knowledge_banks/git/agg_pairedimagesets_captions.json"
+  prompt: "Describe this image in one short sentence." # prompt to use
+  knowledge_bank_filepath: "data/knowledge_banks/kosmos/pairedimagesets_captions.json"
+  agg_knowledge_bank_filepath: "data/knowledge_banks/kosmos/agg_pairedimagesets_captions.json"
 
 evaluator:
   method: Evaluator # how to evaluate hypotheses
@@ -27,4 +27,4 @@ evaluator:
 inv_diff:
   method: InvDiff
   clip_model: ViT-bigG-14
-  knowledge_bank_filepath: "data/knowledge_banks/git/agg_pairedimagesets_captions.json"
+  knowledge_bank_filepath: "data/knowledge_banks/kosmos/agg_pairedimagesets_captions.json"

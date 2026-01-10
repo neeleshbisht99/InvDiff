@@ -12,7 +12,7 @@ import lmdb
 import requests
 import openai
 
-from invdiff.serve.global_vars import BLIP_FEATURE_URL, BLIP_URL, GIT_URL, LLAVA_URL, VLM_CACHE_FILE
+from invdiff.serve.global_vars import BLIP_FEATURE_URL, BLIP_URL, GIT_URL, KOSMOS_URL, LLAVA_URL, VLM_CACHE_FILE
 from invdiff.serve.utils_general import get_from_cache, save_to_cache
 
 if not os.path.exists(VLM_CACHE_FILE):
@@ -57,13 +57,14 @@ def get_vlm_output(image: str, prompt: str, model: str) -> str:
         logging.debug(f"VLM Cache Hit")
         return cached_value
 
-    if model in ["blip", "llava", "git"]:
+    if model in ["blip", "llava", "git", "kosmos"]:
         files = {"image": open(image, "rb").read()}
         text_data = {"text": prompt}
         url = {
             "blip": BLIP_URL,
             "llava": LLAVA_URL,
-            "git": GIT_URL
+            "git": GIT_URL,
+            "kosmos": KOSMOS_URL
         }[model]
 
         try:
@@ -104,7 +105,8 @@ def get_vlm_output(image: str, prompt: str, model: str) -> str:
 
 
 def captioning(image: str, model: str) -> str:
-    caption = get_vlm_output(image, "Describe this image in detail.", model)
+    prompt = "Describe this image in one short sentence." if model == 'kosmos' else "Describe this image in detail."
+    caption = get_vlm_output(image, prompt, model)
     return caption
 
 
@@ -124,6 +126,14 @@ def test_get_vlm_output():
     print(f"{answer=}")
 
     model = "git"
+
+    caption = captioning(image, model)
+    print(f"{caption=}")
+    question = "Is there a table in the image?"
+    answer = vqa(image, question, model)
+    print(f"{answer=}")
+
+    model = "kosmos"
 
     caption = captioning(image, model)
     print(f"{caption=}")
