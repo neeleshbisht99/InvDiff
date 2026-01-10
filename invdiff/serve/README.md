@@ -21,7 +21,7 @@
 
 ### For BLIP-2
 
-1. Create virtual environment and install deps from [blip-requirements.txt](/InvDiff/invdiff/captioners/blip/requirements.txt)
+1. Create & activate virtual environment and install deps from [blip-requirements.txt](/InvDiff/invdiff/captioners/blip/requirements.txt)
 2. (Optional) Configure global variables in `global_vars.py`
 3. Run `python invdiff/serve/vlm_server_blip.py`. It takes a while to load the VLM, especially the first time to download the VLM. (Note: concurrency is disabled as it surprisingly leads to worse GPU utilization)
 4. Run `python -m invdiff.serve.utils_vlm` to test BLIP.
@@ -32,3 +32,11 @@
 1. Update `base.yaml`: replace `blip` with `git` everywhere in the file.
 2. Run `python invdiff/serve/vlm_server_git.py`.
 3. Run `python -m invdiff.serve.utils_vlm` to test GIT.
+
+### For KOSMOS-2
+
+1. Create & activate virtual environment and install deps from [kosmos-requirements.txt](/InvDiff/invdiff/captioners/kosmos/requirements.txt)
+2. Update `base.yaml`: replace `blip` with `kosmos` everywhere in the file.
+3. Change `captioner.prompt` to `Describe this image in one short sentence.`
+4. Run `python invdiff/serve/vlm_server_kosmos.py`.
+5. Run `python -m invdiff.serve.utils_vlm` to test KOSMOS.
