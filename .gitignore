@@ -154,6 +154,7 @@ configs/sweep_visdiffbench_purity1.0_seed0-v3-run6/
 configs/sweep_visdiffbench_purity1.0_seed0-v3-run7/
 configs/sweep_visdiffbench_purity1.0_seed0-v3-git-run1/
 configs/sweep_visdiffbench_purity1.0_seed0-v3-kosmos-run1/
+configs/sweep_visdiffbench_purity1.0_seed0-v3-linear-kcca-run1/
 configs/sweep_imagenetr/
 
 */cache/
@@ -175,5 +176,6 @@ cache-v3-run6/
 cache-v3-run7/
 cache-v3-git-run1/
 cache-v3-kosmos-run1/
+cache-v3-linear-kcca-run1/
 
 kosmos-venv/
