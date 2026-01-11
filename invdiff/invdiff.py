@@ -5,12 +5,10 @@ import numpy as np
 import json
 from typing import Dict
 
-from sklearn.cross_decomposition import CCA
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics.pairwise import cosine_similarity
 
 from invdiff.serve.utils_clip import get_embeddings
-
+from invdiff.inverse_cca import InverseCCA
 
 #%%#
 class InvDiff:
@@ -34,26 +32,6 @@ class InvDiff:
             uniq_diffs.append({'text':obj['text'], 'correlation':obj['correlation']})
         return uniq_diffs
 
-
-    def unstandardize_direction(self, dir_std, scaler_text):
-        """
-        Convert direction from standardized space back to raw space
-        It rescales a CCA text direction back to the same space as the raw text embeddings, so you can compute cosine similarity against candidate text phrases fairly.
-        """
-        return dir_std / (scaler_text.scale_ + 1e-12)
-
-    """ Make pairs helper functions""" 
-    def make_pairs(self, images_std, texts_std, rng=np.random.default_rng(0)):
-        """
-        Pair images with texts by random assignment
-        Creates paired samples for CCA by giving every image a randomly assigned text description row, so that the math works out.
-        """
-        N_img = images_std.shape[0]
-        N_txt = texts_std.shape[0]
-        lt = [i%N_txt for i in range(N_img)]
-        Xs = images_std
-        Ys = texts_std[lt]
-        return Xs, Ys
 
     # considers both the frequency and similarity score in calculation
     def enhanced_frequency_filtering(self, class_img_embeds, universal_texts, universal_embeddings, top_k=10, similarity_threshold=0.50, min_threshold=0.25):
@@ -91,50 +69,6 @@ class InvDiff:
         filtered_embeddings = universal_embeddings[top_indices]
         return filtered_texts, filtered_embeddings, combined_scores
 
-
-    """Inverse CCA Approach"""
-    def inverse_cca_analysis(self, images_std, texts_std, text_descriptions, text_embeddings_raw,
-                        scaler_text, n_components=10, seed=0):
-        # 1) Create Image-text pairs
-        Xs, Ys = self.make_pairs(images_std, texts_std, rng=np.random.default_rng(seed))
-
-        # 2) Choose a safe number of components
-        max_nc = min(n_components, Xs.shape[1], Ys.shape[1], Xs.shape[0]-1, Ys.shape[0]-1)
-        if max_nc < 1:
-            return [], np.array([])
-
-        # 3) Fit CCA
-        cca = CCA(n_components=max_nc, scale=False)
-        Xc, Yc = cca.fit_transform(Xs, Ys)
-
-        # 4) Per-component correlations
-        cors = np.array([np.corrcoef(Xc[:, i], Yc[:, i])[0, 1] for i in range(max_nc)])
-        order = np.argsort(np.abs(cors))  # Inverse-CCA: smallest |corr| first
-
-        # 5) Take least-correlated text directions, map to the same class texts
-        Y_dirs_std = cca.y_rotations_[:, order]
-        results = []
-        
-        for rank_k in range(min(20, Y_dirs_std.shape[1])):
-            dir_std = Y_dirs_std[:, rank_k]
-            # Map direction back to raw text space
-            dir_raw = self.unstandardize_direction(dir_std, scaler_text)
-            dir_raw = dir_raw / (np.linalg.norm(dir_raw) + 1e-12)
-
-            # Find closest text description from the same class used in CCA
-            # Use the raw text embeddings that were standardized for this class
-            sims = cosine_similarity([dir_raw], text_embeddings_raw)[0]
-            j = np.argmax(sims)
-            comp_idx = order[rank_k]
-
-            results.append({
-                "component": comp_idx,
-                "correlation": cors[comp_idx],
-                "text": text_descriptions[j],
-                "similarity": sims[j]
-            })
-        
-        return results, cors
 
     def get_differences(self, class0_dataset, class1_dataset, seed):
         #extract images and text
@@ -188,8 +122,10 @@ class InvDiff:
         class1_texts_std = scaler_txt_cls1.fit_transform(class1_txt_embeds)
 
         alpha = 0.3
+        inverse_cca_args = self.args["inverse_cca"]
+        inverse_cca = InverseCCA(inverse_cca_args)
         # Analyze both mismatch cases
-        cls0_vs_cls1, _ = self.inverse_cca_analysis(
+        cls0_vs_cls1, _ = inverse_cca.inverse_cca_analysis(
             class1_images_std, class0_texts_std, 
             class0_txts, class0_txt_embeds,
             scaler_txt_cls0, seed=seed
@@ -206,7 +142,7 @@ class InvDiff:
             obj['inv_corr_score'] = anti_corr
             obj['inv_diff_score'] = alpha*class0_txt_sim_score_norm + ((1-alpha)*anti_corr)
 
-        cls1_vs_cls0, _ = self.inverse_cca_analysis(
+        cls1_vs_cls0, _ = inverse_cca.inverse_cca_analysis(
             class0_images_std, class1_texts_std,
             class1_txts, class1_txt_embeds,
             scaler_txt_cls1, seed=seed

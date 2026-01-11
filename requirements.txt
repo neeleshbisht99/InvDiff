@@ -18,3 +18,4 @@ wandb==0.22.3
 Flask==3.1.2
 lmdb==1.7.5
 openai==0.28.0
+mvlearn==0.5.0
