@@ -155,7 +155,8 @@ configs/sweep_visdiffbench_purity1.0_seed0-v3-run7/
 configs/sweep_visdiffbench_purity1.0_seed0-v3-git-run1/
 configs/sweep_visdiffbench_purity1.0_seed0-v3-kosmos-run1/
 configs/sweep_visdiffbench_purity1.0_seed0-v3-linear-kcca-run1/
-configs/sweep_visdiffbench_purity1.0_seed0-v3-poly-kcca-run1
+configs/sweep_visdiffbench_purity1.0_seed0-v3-poly-kcca-run1/
+configs/sweep_visdiffbench_purity1.0_seed0-v3-gaussian-kcca-run1/
 configs/sweep_imagenetr/
 
 */cache/

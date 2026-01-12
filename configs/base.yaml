@@ -30,4 +30,4 @@ inv_diff:
   knowledge_bank_filepath: "data/knowledge_banks/blip/agg_pairedimagesets_captions.json"
   inverse_cca:
     type: "kcca"
-    ktype: "poly"
+    ktype: "gaussian"
