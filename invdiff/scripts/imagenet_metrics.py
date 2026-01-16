@@ -1,6 +1,6 @@
 import pandas as pd
 
-root = "/shared/scratch/0/home/v_neelesh_bisht/projects/InvDiff/data/datasets/pairedimagesets/output/imagenet/"
+root = "/shared/scratch/0/home/v_neelesh_bisht/projects/InvDiff/sweeps/output/imagenet-v3-gaussia-kcca-run1/"
 
 imagenetr = pd.read_csv(root + 'imagenetr.csv')
 imagenet_star = pd.read_csv(root + 'imagenetstar.csv')

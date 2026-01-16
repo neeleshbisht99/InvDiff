@@ -1,6 +1,6 @@
 import pandas as pd
 
-root = "/shared/scratch/0/home/v_neelesh_bisht/projects/InvDiff/sweeps/output/PairedImageSets_v3-kosmos-run1/"
+root = "/shared/scratch/0/home/v_neelesh_bisht/projects/InvDiff/sweeps/output/PairedImageSets_v3-gaussian-kcca-run1/"
 
 easy_df = pd.read_csv(root + 'easy_runs.csv')
 medium_df = pd.read_csv(root + 'medium_runs.csv')
