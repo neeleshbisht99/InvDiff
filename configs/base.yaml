@@ -29,5 +29,5 @@ inv_diff:
   clip_model: ViT-bigG-14
   knowledge_bank_filepath: "data/knowledge_banks/blip/agg_pairedimagesets_captions.json"
   inverse_cca:
-    type: "kcca"
+    type: "cca"
     ktype: "gaussian"
