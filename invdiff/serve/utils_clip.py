@@ -27,15 +27,30 @@ def get_embeddings(inputs: List[str], model: str, modality: str) -> np.ndarray:
 
     uncached_inputs = [inp for inp in inputs if inp not in input_to_embeddings]
 
+    BATCH_SIZE = 1024  # tune: 256/512/1024 depending on server
+    TIMEOUT = 120
+
     if len(uncached_inputs) > 0:
         try:
-            response = requests.post(
-                CLIP_URL, data={modality: json.dumps(uncached_inputs)}
-            ).json()
-            for inp, embedding in zip(uncached_inputs, response["embeddings"]):
-                input_to_embeddings[inp] = embedding
-                key = json.dumps([inp, model])
-                save_to_cache(key, json.dumps(embedding), clip_cache)
+            for start in range(0, len(uncached_inputs), BATCH_SIZE):
+                batch = uncached_inputs[start : start + BATCH_SIZE]
+
+                response = requests.post(
+                    CLIP_URL,
+                    data={modality: json.dumps(batch), "model": model},  # include model (important)
+                    timeout=TIMEOUT,
+                ).json()
+
+                embs = response.get("embeddings", None)
+                if embs is None or len(embs) != len(batch):
+                    raise RuntimeError(
+                        f"Bad CLIP response: got {None if embs is None else len(embs)} embeddings for batch size {len(batch)}"
+                    )
+
+                for inp, embedding in zip(batch, embs):
+                    input_to_embeddings[inp] = embedding
+                    key = json.dumps([inp, model])
+                    save_to_cache(key, json.dumps(embedding), clip_cache)
         except Exception as e:
             logging.error(f"CLIP Error: {e}")
             for inp in uncached_inputs:
