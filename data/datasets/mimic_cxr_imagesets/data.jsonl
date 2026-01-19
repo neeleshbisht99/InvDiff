@@ -1,0 +1,11 @@
+{"set1": "Clear lungs with no acute abnormality", "set2": "Diffuse bilateral lung opacities"}
+{"set1": "Clear lungs with no acute abnormality", "set2": "Air in the pleural space with absent lung markings"}
+{"set1": "Diffuse bilateral lung opacities", "set2": "Localized lung opacity"}
+{"set1": "Localized lung opacity", "set2": "Air in the pleural space with absent lung markings"}
+{"set1": "Clear lungs with no acute abnormality", "set2": "Medical tubes or implanted devices present"}
+{"set1": "Clear lungs with no acute abnormality", "set2": "Post-surgical changes of the chest"}
+{"set1": "Enlarged cardiac silhouette and Large heart", "set2": "Clear lungs with no acute abnormality"}
+{"set1": "Diffuse bilateral lung opacities", "set2": "Hyperinflated lungs with increased lung volume"}
+{"set1": "Reduced lung volume due to atelectasis", "set2": "Localized lung opacity"}
+{"set1": "Chest wall or rib abnormality", "set2": "Clear lungs with no acute abnormality"}
+{"set1": "Elevation of hemidiaphragm", "set2": "Clear lungs with no acute abnormality"}

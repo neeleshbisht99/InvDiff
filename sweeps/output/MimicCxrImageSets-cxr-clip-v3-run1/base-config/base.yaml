@@ -1,0 +1,33 @@
+project: InvDiff
+wandb: true # whether to log to wandb
+seed: 0 # random seed
+
+data:
+  root: ./data/datasets/mimic_cxr_imagesets
+  name: Data # name of dataset
+  group1: "A" # name of group 1
+  group2: "B" # name of group 2
+  purity: 1.0 # how much of each concept is in each group (1.0 means perfect seperation, 0.5 means perfect mix)
+  subset: False # if you want to use a subset of the dataset, set this to name of the desired subset value
+
+captioner:
+  method: Captioner
+  model: blip # model used in method
+  num_rounds: 3
+  num_samples: 20
+  prompt: "Describe this image in detail." # prompt to use
+  knowledge_bank_filepath: "data/knowledge_banks/blip/mimic_cxr_imagesets_captions.json"
+  agg_knowledge_bank_filepath: "data/knowledge_banks/blip/agg_mimic_cxr_imagesets_captions.json"
+
+evaluator:
+  method: Evaluator # how to evaluate hypotheses
+  model: gpt-4 # model used in method
+  n_hypotheses: 5 # number of hypotheses to evaluate
+
+inv_diff:
+  method: InvDiff
+  clip_model: ViT-bigG-14
+  knowledge_bank_filepath: "data/knowledge_banks/blip/agg_mimic_cxr_imagesets_captions.json"
+  inverse_cca:
+    type: "cca"
+    ktype: "gaussian"

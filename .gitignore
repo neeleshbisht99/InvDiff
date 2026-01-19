@@ -161,12 +161,13 @@ configs/sweep_imagenetr/
 configs/sweep_imagenetr-v3-gaussian-kcca-run1/
 configs/sweep_imagenetstar-v3-gaussian-kcca-run1/
 configs/sweep_visdiffbench_purity1.0_seed0-v3-clip-mid-layer-exp-run1/
+configs/sweep_mimic_cxr_purity1.0_seed0-v3-run1/
 
 */cache/
 
 data/datasets/pairedimagesets/output
 data/datasets/pairedimagesets/VisDiffBench
-
+data/datasets/mimic_cxr_imagesets/images
 blip-venv/
 cache/
 
@@ -186,5 +187,6 @@ cache-v3-poly-kcca-run1/
 cache-v3-gaussian-kcca-run1
 cache-v3-gaussian-kcca-imagenet-run1/
 cache-v3-clip-mid-layer-exp-run1/
+cache-v3-mimic_cxr-run1/
 
 kosmos-venv/
