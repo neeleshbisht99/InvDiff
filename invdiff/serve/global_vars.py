@@ -12,5 +12,5 @@ KOSMOS_URL = "http://localhost:8094"
 VLM_CACHE_FILE = "cache/cache_vlm"
 
 # CLIP API
-CLIP_URL = "http://localhost:8090"
+CLIP_URL = "http://localhost:8099"
 CLIP_CACHE_FILE = "cache/cache_clip"

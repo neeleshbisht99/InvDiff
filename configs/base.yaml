@@ -3,7 +3,7 @@ wandb: true # whether to log to wandb
 seed: 0 # random seed
 
 data:
-  root: ./data/datasets/pairedimagesets
+  root: ./data/datasets/mimic_cxr_imagesets
   name: Data # name of dataset
   group1: "A" # name of group 1
   group2: "B" # name of group 2
@@ -16,8 +16,8 @@ captioner:
   num_rounds: 3
   num_samples: 20
   prompt: "Describe this image in detail." # prompt to use
-  knowledge_bank_filepath: "data/knowledge_banks/blip/pairedimagesets_captions.json"
-  agg_knowledge_bank_filepath: "data/knowledge_banks/blip/agg_pairedimagesets_captions.json"
+  knowledge_bank_filepath: "data/knowledge_banks/blip/mimic_cxr_imagesets_captions.json"
+  agg_knowledge_bank_filepath: "data/knowledge_banks/blip/agg_mimic_cxr_imagesets_captions.json"
 
 evaluator:
   method: Evaluator # how to evaluate hypotheses
@@ -27,7 +27,7 @@ evaluator:
 inv_diff:
   method: InvDiff
   clip_model: ViT-bigG-14
-  knowledge_bank_filepath: "data/knowledge_banks/blip/agg_pairedimagesets_captions.json"
+  knowledge_bank_filepath: "data/knowledge_banks/blip/agg_mimic_cxr_imagesets_captions.json"
   inverse_cca:
     type: "cca"
     ktype: "gaussian"
