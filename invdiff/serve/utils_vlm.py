@@ -105,7 +105,7 @@ def get_vlm_output(image: str, prompt: str, model: str) -> str:
 
 
 def captioning(image: str, model: str) -> str:
-    prompt = "Describe this image in one short sentence." if model == 'kosmos' else "Describe this image in detail."
+    prompt = "Describe this image in one short sentence." if model == 'kosmos' else "Describe the chest X-ray image in detail."
     caption = get_vlm_output(image, prompt, model)
     return caption
 

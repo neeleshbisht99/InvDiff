@@ -2,7 +2,7 @@ import logging
 import random
 from typing import Dict, List, Tuple
 from pathlib import Path
-
+import re
 import click
 import pandas as pd
 from PIL import Image
@@ -163,6 +163,15 @@ def generate_captions(args: Dict, dataset1: List[Dict], dataset2: List[Dict]) ->
     sampled_dataset1, sampled_dataset2 = captioner.generate_captions(dataset1, dataset2)
     return sampled_dataset1, sampled_dataset2
 
+
+def extract_findings_section(caption: str) -> str:
+    if not caption: return ""
+    m = re.search(r'findings\s*:\s*(.*?)\s*impression\s*:', caption, flags=re.IGNORECASE | re.DOTALL)
+    if m: return m.group(1).strip()
+    m = re.search(r'findings\s*:\s*(.*)$', caption, flags=re.IGNORECASE | re.DOTALL)
+    if m: return m.group(1).strip()
+    return caption
+
 def prepare_knowledge_bank(args: Dict, dataset1: List[Dict], dataset2: List[Dict], group_names:List[str]):
     captioner_args = args["captioner"]
     filepath = captioner_args["knowledge_bank_filepath"]
@@ -177,8 +186,21 @@ def prepare_knowledge_bank(args: Dict, dataset1: List[Dict], dataset2: List[Dict
     with open(filename, 'r') as file:
         data = json.load(file)
     
-    data[a] = [item['caption'].replace("\n", " ").strip() for item in dataset1]
-    data[b] = [item['caption'].replace("\n", " ").strip() for item in dataset2]
+    
+    data[a] = data.get(a, [])
+    for item in dataset1:
+        caption = item['caption'].replace("\n", " ").strip().lower()
+        caption = extract_findings_section(caption)
+        data[a].append(caption)
+    
+    data[b] = data.get(b, [])
+    for item in dataset2:
+        caption = item['caption'].replace("\n", " ").strip().lower()
+        caption = extract_findings_section(caption)
+        data[b].append(caption)
+
+    data[a] = list(set(data[a]))
+    data[b] = list(set(data[b]))
 
     with open(filename, 'w') as file:
         json.dump(data, file, indent=4)
@@ -204,7 +226,10 @@ def prepare_agg_knowledge_bank(args: Dict):
 def create_knowledge_bank(args: Dict, dataset1: List[Dict], dataset2: List[Dict], group_names):
     captioner_args = args["captioner"]
     knowledge_bank_filepath = captioner_args["knowledge_bank_filepath"]
-    agg_knowledge_bank_filepath = captioner_args["agg_knowledge_bank_filepath"]
+    # agg_knowledge_bank_filepath = captioner_args["agg_knowledge_bank_filepath"]
+    # if os.path.exists(agg_knowledge_bank_filepath) and os.path.getsize(agg_knowledge_bank_filepath) > 0:
+    #     logging.info("Knowledge bank already exists...")
+    #     return
     a = group_names[0]
     b = group_names[1]
     if os.path.exists(knowledge_bank_filepath):
