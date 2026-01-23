@@ -204,7 +204,6 @@ def prepare_agg_knowledge_bank(args: Dict):
 def create_knowledge_bank(args: Dict, dataset1: List[Dict], dataset2: List[Dict], group_names):
     captioner_args = args["captioner"]
     knowledge_bank_filepath = captioner_args["knowledge_bank_filepath"]
-    agg_knowledge_bank_filepath = captioner_args["agg_knowledge_bank_filepath"]
     a = group_names[0]
     b = group_names[1]
     if os.path.exists(knowledge_bank_filepath):
