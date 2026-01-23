@@ -205,9 +205,6 @@ def create_knowledge_bank(args: Dict, dataset1: List[Dict], dataset2: List[Dict]
     captioner_args = args["captioner"]
     knowledge_bank_filepath = captioner_args["knowledge_bank_filepath"]
     agg_knowledge_bank_filepath = captioner_args["agg_knowledge_bank_filepath"]
-    if os.path.exists(agg_knowledge_bank_filepath) and os.path.getsize(agg_knowledge_bank_filepath) > 0:
-        logging.info("Knowledge bank already exists...")
-        return
     a = group_names[0]
     b = group_names[1]
     if os.path.exists(knowledge_bank_filepath):

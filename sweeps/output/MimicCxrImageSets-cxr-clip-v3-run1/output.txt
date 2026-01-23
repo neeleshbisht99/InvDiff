@@ -1,9 +1,9 @@
 Metrics
 #### CCDiff (Image & Text(CLIP) Evaluator(GPT-4))
-## Group A / Class 0
-Dataset              acc@1 acc@5 
-MimicCxrImageSets    0.64   0.82 
+#Group A / Class 0
+Dataset acc@1 acc@5 
+MimicCxrImageSets    0.82   0.86  
 
-## Group B / Class 1
-Dataset              acc@1 acc@5 
-MimicCxrImageSets    0.41   0.64   
+#Group B / Class 1
+Dataset acc@1 acc@5 
+MimicCxrImageSets    0.68   0.73  

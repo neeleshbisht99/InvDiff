@@ -15,7 +15,7 @@ captioner:
   model: blip # model used in method
   num_rounds: 3
   num_samples: 20
-  prompt: "Describe this image in detail." # prompt to use
+  prompt: "Describe the chest X-ray image in detail." # prompt to use
   knowledge_bank_filepath: "data/knowledge_banks/blip/mimic_cxr_imagesets_captions.json"
   agg_knowledge_bank_filepath: "data/knowledge_banks/blip/agg_mimic_cxr_imagesets_captions.json"
 
