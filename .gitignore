@@ -167,6 +167,7 @@ configs/sweep_mimic_cxr_purity1.0_seed0-v3-run2/
 configs/sweep_visdiffbench_purity1.0_seed0-v3-blip2-flan-t5-xxl-run1/
 configs/sweep_mimic_cxr_purity1.0_seed0-v3-run3/
 configs/sweep_mimic_cxr_purity1.0_seed0-v3-run4/
+configs/sweep_mimic_cxr_purity1.0_seed0-v3-run5/
 */cache/
 
 data/datasets/pairedimagesets/output
@@ -197,4 +198,5 @@ cache-v3-mimic_cxr-run2/
 cache-v3-blip2-flan-t5-xxl/
 cache-v3-mimic_cxr-run3/
 cache-v3-mimic_cxr-run4/
+cache-v3-mimic_cxr-run5/
 kosmos-venv/

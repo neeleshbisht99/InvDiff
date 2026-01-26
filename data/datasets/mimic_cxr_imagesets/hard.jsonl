@@ -1,10 +1,10 @@
-{"set1": "Lower-lobe-predominant lung abnormality", "set2": "Localized lung opacity"}
-{"set1": "Lower-lobe-predominant lung abnormality", "set2": "Upper-lobe-predominant lung abnormality"}
-{"set1": "Localized lung opacity", "set2": "Reduced lung volume due to atelectasis"}
-{"set1": "Reduced lung volume due to atelectasis", "set2": "Elevation of hemidiaphragm"}
-{"set1": "Diffuse bilateral lung opacities", "set2": "Lower-lobe-predominant lung abnormality"}
-{"set1": "Interstitial lung disease with reticular pattern", "set2": "Diffuse bilateral lung opacities"}
-{"set1": "Upper-lobe-predominant lung abnormality", "set2": "Apical pleural thickening or scarring"}
-{"set1": "Clear lungs with no acute abnormality", "set2": "Costophrenic angle abnormality without large effusion"}
-{"set1": "Localized lung opacity", "set2": "Pulmonary nodules or lung mass"}
-{"set1": "Localized lung opacity", "set2": "Focal lucency or cavitary lung lesion"}
+{"set2": "Lower-lobe-predominant lung abnormality", "set1": "Localized lung opacity"}
+{"set2": "Lower-lobe-predominant lung abnormality", "set1": "Upper-lobe-predominant lung abnormality"}
+{"set2": "Localized lung opacity", "set1": "Reduced lung volume due to atelectasis"}
+{"set2": "Reduced lung volume due to atelectasis", "set1": "Elevation of hemidiaphragm"}
+{"set2": "Diffuse bilateral lung opacities", "set1": "Lower-lobe-predominant lung abnormality"}
+{"set2": "Interstitial lung disease with reticular pattern", "set1": "Diffuse bilateral lung opacities"}
+{"set2": "Upper-lobe-predominant lung abnormality", "set1": "Apical pleural thickening or scarring"}
+{"set2": "Clear lungs with no acute abnormality", "set1": "Costophrenic angle abnormality without large effusion"}
+{"set2": "Localized lung opacity", "set1": "Pulmonary nodules or lung mass"}
+{"set2": "Localized lung opacity", "set1": "Focal lucency or cavitary lung lesion"}
