@@ -1,5 +1,5 @@
 Metrics
-#### InvDiff (Image & Text(GIT[smaller-variant] + CLIP) Evaluator(GPT-4))
+#### InvDiff (Image & Text(GIT + CLIP) Evaluator(GPT-4))
 #Group A / Class 0
 Dataset acc@1 acc@5 
 Easy    0.87   0.96  

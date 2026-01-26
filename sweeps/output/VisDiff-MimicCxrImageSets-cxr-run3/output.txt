@@ -1,0 +1,6 @@
+Metrics
+#### VisDiff
+Dataset acc@1 acc@5 
+Easy    0.45   0.85  
+Medium  0.55   0.85  
+Hard    0.45   0.6  
