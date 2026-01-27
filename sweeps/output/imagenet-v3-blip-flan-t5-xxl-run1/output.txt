@@ -1,0 +1,11 @@
+Metrics
+#### InvDiff (Image & Text(BLIP-2[smaller-variant] + CLIP) Evaluator(GPT-4))
+#Group A / Class 0
+Dataset acc@1 acc@5 
+ImageNet-R    0.57   0.86  
+ImageNet-*    0.46   0.63  
+
+#Group B / Class 1
+Dataset acc@1 acc@5 
+ImageNet-R    0.0   0.0  
+ImageNet-*    0.07   0.11  
