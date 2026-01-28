@@ -1,5 +1,6 @@
 import logging
 import random
+import time
 from typing import Dict, List, Tuple
 from pathlib import Path
 
@@ -219,6 +220,7 @@ def create_knowledge_bank(args: Dict, dataset1: List[Dict], dataset2: List[Dict]
 @click.command()
 @click.option("--config", help="config file")
 def main(config):
+    start_time = time.time()
     logging.info("Loading config...")
     args = load_config(config)
     logging.info("Loading data...")
@@ -228,6 +230,13 @@ def main(config):
     visualize_dataset(dataset1, dataset2, group_names)
     logging.info("Proposing & Ranking differences...")
     differences_A, classname_A, differences_B, classname_B = compute_differences(args, dataset1, dataset2)
+    elapsed = time.time() - start_time
+    if args["wandb"]:
+        wandb.log({
+            "time/propose_rank_seconds": elapsed,
+            "time/propose_rank_minutes": elapsed / 60.0
+        })
+    logging.info(f"Time till evaluation: {elapsed:.2f}s")
     logging.info("Evaluating differences...")
     metrics_A, metrics_B = evaluate(args, differences_A, classname_A, differences_B, classname_B)
     logging.info("Evaluation Completed!")

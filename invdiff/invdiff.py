@@ -36,38 +36,28 @@ class InvDiff:
     # considers both the frequency and similarity score in calculation
     def enhanced_frequency_filtering(self, class_img_embeds, universal_texts, universal_embeddings, top_k=10, similarity_threshold=0.50, min_threshold=0.25):
         """
-        Enhanced frequency filtering with similarity threshold
+        For each text embedding, compute its similarity to *all* class images,
+        take the average similarity, then select top-k texts by that average.
         """
-        class_images_norm = class_img_embeds / np.linalg.norm(class_img_embeds, axis=1, keepdims=True)
-        text_embeddings_norm = universal_embeddings / np.linalg.norm(universal_embeddings, axis=1, keepdims=True)
-        
-        description_counts = None
-        description_similarities = None
-        th = similarity_threshold
-        while 1:
-            description_counts = np.zeros(len(universal_texts))
-            description_similarities = np.zeros(len(universal_texts))
-            for i in range(len(class_img_embeds)):
-                similarities = np.dot(class_images_norm[i], text_embeddings_norm.T)
-                
-                # Count descriptions above threshold (not just top-k)
-                above_threshold = similarities > th
-                description_counts[above_threshold] += 1
-                description_similarities[above_threshold] += similarities[above_threshold]
-            
-            num_cands = (description_counts > 0).sum()
-            if num_cands >= top_k or th <=min_threshold:
-                break;
-            th -= 0.05
-        
-        # Combine frequency and average similarity for ranking (description_counts * avg_similarities, which is nothing but description_similarities)
-        # Higher frequency + higher average similarity = better
-        combined_scores = description_similarities
-        
-        top_indices = np.argsort(combined_scores)[-top_k:][::-1]
-        filtered_texts = [{"text": universal_texts[i], "score": combined_scores[i]} for i in top_indices]
+
+        # Normalize (cosine similarity via dot product)
+        class_images_norm = class_img_embeds / (np.linalg.norm(class_img_embeds, axis=1, keepdims=True) + 1e-8)
+        text_embeddings_norm = universal_embeddings / (np.linalg.norm(universal_embeddings, axis=1, keepdims=True) + 1e-8)
+
+        # Similarity matrix: (num_images, num_texts)
+        sim_matrix = class_images_norm @ text_embeddings_norm.T
+
+        # Average similarity per text: (num_texts,)
+        avg_sims = sim_matrix.mean(axis=0)
+
+        # Pick top-k by average similarity
+        k = min(top_k, len(universal_texts))
+        top_indices = np.argsort(avg_sims)[-k:][::-1]
+
+        filtered_texts = [{"text": universal_texts[i], "score": float(avg_sims[i])} for i in top_indices]
         filtered_embeddings = universal_embeddings[top_indices]
-        return filtered_texts, filtered_embeddings, combined_scores
+
+        return filtered_texts, filtered_embeddings
 
 
     def get_differences(self, class0_dataset, class1_dataset, seed):
@@ -93,14 +83,14 @@ class InvDiff:
         )
 
         """Filter vocabulary for each class"""
-        class0_txts_objs, class0_txt_embeds, _ = self.enhanced_frequency_filtering(
+        class0_txts_objs, class0_txt_embeds = self.enhanced_frequency_filtering(
             class0_img_embeds, universal_texts, universal_text_embeddings, top_k=20, similarity_threshold=0.75
         )
         class0_txts = [obj['text'] for obj in class0_txts_objs]
         class0_txts_score_mp = {obj['text']:obj['score'] for obj in class0_txts_objs}
         class0_sim_scores = [obj['score'] for obj in class0_txts_objs]
 
-        class1_txts_objs, class1_txt_embeds, _ = self.enhanced_frequency_filtering(
+        class1_txts_objs, class1_txt_embeds = self.enhanced_frequency_filtering(
             class1_img_embeds, universal_texts, universal_text_embeddings, top_k=20, similarity_threshold=0.75
         )
         class1_txts = [obj['text'] for obj in class1_txts_objs]
