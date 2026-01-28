@@ -203,3 +203,6 @@ cache-v3-mimic_cxr-run4/
 cache-v3-mimic_cxr-run5/
 cache-imagenet-v3-blip-flan-t5-xxl-run1/
 kosmos-venv/
+
+data/datasets/metashift1/
+data/datasets/metashift/
