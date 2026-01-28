@@ -1,0 +1,9 @@
+Metashift Metrics
+#### CCDiff (Image & Text(CLIP) Evaluator(GPT-4))
+#Group A / Class 0
+Dataset acc@1 acc@5 
+MimicCxrImageSets    0.32   0.45  
+
+#Group B / Class 1
+Dataset acc@1 acc@5 
+MimicCxrImageSets    0.26   0.43  

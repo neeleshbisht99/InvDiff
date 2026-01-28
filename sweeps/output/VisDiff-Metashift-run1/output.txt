@@ -1,0 +1,4 @@
+Metrics
+#### VisDiff (Image & Text(BLIP-2 + GPT-4) Evaluator(GPT-4))
+Dataset acc@1 acc@5 
+Metashift    0.26   0.48  

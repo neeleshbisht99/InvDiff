@@ -13,7 +13,7 @@ def main(purity: float, seed: int):
     root = "data/datasets/metashift"
     data = [json.loads(line) for line in open(f"{root}/pairedsets.jsonl")]
 
-    for idx in range(0, 11):
+    for idx in range(0, len(data)):
         item = data[idx]
         cfg = f"""
 project: MetaShift
