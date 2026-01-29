@@ -220,16 +220,31 @@ def create_knowledge_bank(args: Dict, dataset1: List[Dict], dataset2: List[Dict]
 @click.command()
 @click.option("--config", help="config file")
 def main(config):
+    total_start_time = time.time()
     start_time = time.time()
     logging.info("Loading config...")
     args = load_config(config)
     logging.info("Loading data...")
     dataset1, dataset2, group_names = load_data(args)
+    elapsed = time.time() - start_time
+    if args["wandb"]:
+        wandb.log({
+            "time/load_config_data_rank_seconds": elapsed,
+            "time/load_config_data_rank_minutes": elapsed / 60.0
+        })
+    start_time = time.time()
     captioned_dataset1, captioned_dataset2 = generate_captions(args, dataset1, dataset2)
+    elapsed = time.time() - start_time
+    if args["wandb"]:
+        wandb.log({
+            "time/generate_captions_data_rank_seconds": elapsed,
+            "time/generate_captions_data_rank_minutes": elapsed / 60.0
+        })
     # logging.info("Creating knowledge bank...")
     # create_knowledge_bank(args, dataset1, dataset2, group_names)
     # if args["wandb"]:
     #     visualize_dataset(dataset1, dataset2, group_names)
+    start_time = time.time()
     logging.info("Proposing & Ranking differences...")
     differences_A, classname_A, differences_B, classname_B = compute_differences(args, dataset1, dataset2)
     elapsed = time.time() - start_time
@@ -237,6 +252,12 @@ def main(config):
         wandb.log({
             "time/propose_rank_seconds": elapsed,
             "time/propose_rank_minutes": elapsed / 60.0
+        })
+    total_elapsed = time.time() - total_start_time
+    if args["wandb"]:
+        wandb.log({
+            "time/total_rank_seconds": total_elapsed,
+            "time/total_rank_minutes": total_elapsed / 60.0
         })
     logging.info(f"Time till evaluation: {elapsed:.2f}s")
     logging.info("Evaluating differences...")

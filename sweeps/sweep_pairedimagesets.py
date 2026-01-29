@@ -15,9 +15,9 @@ def main(purity: float, seed: int):
     medium = [json.loads(line) for line in open(f"{root}/medium.jsonl")]
     hard = [json.loads(line) for line in open(f"{root}/hard.jsonl")]
     data = (
-        random.sample(easy, 10) +
-        random.sample(medium, 10) +
-        random.sample(hard, 10)
+        random.sample(easy, 3) +
+        random.sample(medium, 3) +
+        random.sample(hard, 4)
     )
     
     for idx in range(0, len(data)):
