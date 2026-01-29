@@ -72,26 +72,38 @@ class InvDiff:
         class1_img_embeds = get_embeddings(
             class1_imgs, self.args["clip_model"], "image"
         )
-        knowledge_bank_filepath = self.args["knowledge_bank_filepath"]
+        # knowledge_bank_filepath = self.args["knowledge_bank_filepath"]
         # Load universal vocabulary
-        with open(knowledge_bank_filepath, 'r') as f:
-            universal_data = json.load(f)
-        universal_texts = list(set(universal_data))
+        # with open(knowledge_bank_filepath, 'r') as f:
+        #     universal_data = json.load(f)
+        # universal_texts = list(set(universal_data))
 
-        universal_text_embeddings = get_embeddings(
-            universal_texts, self.args["clip_model"], "text"
+        # universal_text_embeddings = get_embeddings(
+        #     universal_texts, self.args["clip_model"], "text"
+        # )
+
+        class0_captions = [item['caption'] for item in class0_dataset]
+        class0_captions = list(set(class0_captions))
+        class0_captions_text_embeddings = get_embeddings(
+            class0_captions, self.args["clip_model"], "text"
+        )
+
+        class1_captions = [item['caption'] for item in class1_dataset]
+        class1_captions = list(set(class1_captions))
+        class1_captions_text_embeddings = get_embeddings(
+            class1_captions, self.args["clip_model"], "text"
         )
 
         """Filter vocabulary for each class"""
         class0_txts_objs, class0_txt_embeds = self.enhanced_frequency_filtering(
-            class0_img_embeds, universal_texts, universal_text_embeddings, top_k=20, similarity_threshold=0.75
+            class0_img_embeds, class0_captions, class0_captions_text_embeddings, top_k=20, similarity_threshold=0.75
         )
         class0_txts = [obj['text'] for obj in class0_txts_objs]
         class0_txts_score_mp = {obj['text']:obj['score'] for obj in class0_txts_objs}
         class0_sim_scores = [obj['score'] for obj in class0_txts_objs]
 
         class1_txts_objs, class1_txt_embeds = self.enhanced_frequency_filtering(
-            class1_img_embeds, universal_texts, universal_text_embeddings, top_k=20, similarity_threshold=0.75
+            class1_img_embeds, class1_captions, class1_captions_text_embeddings, top_k=20, similarity_threshold=0.75
         )
         class1_txts = [obj['text'] for obj in class1_txts_objs]
         class1_txts_score_mp = {obj['text']:obj['score'] for obj in class1_txts_objs}

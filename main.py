@@ -225,9 +225,11 @@ def main(config):
     args = load_config(config)
     logging.info("Loading data...")
     dataset1, dataset2, group_names = load_data(args)
-    logging.info("Creating knowledge bank...")
-    create_knowledge_bank(args, dataset1, dataset2, group_names)
-    visualize_dataset(dataset1, dataset2, group_names)
+    captioned_dataset1, captioned_dataset2 = generate_captions(args, dataset1, dataset2)
+    # logging.info("Creating knowledge bank...")
+    # create_knowledge_bank(args, dataset1, dataset2, group_names)
+    if args["wandb"]:
+        visualize_dataset(dataset1, dataset2, group_names)
     logging.info("Proposing & Ranking differences...")
     differences_A, classname_A, differences_B, classname_B = compute_differences(args, dataset1, dataset2)
     elapsed = time.time() - start_time
