@@ -14,9 +14,13 @@ def main(purity: float, seed: int):
     easy = [json.loads(line) for line in open(f"{root}/easy.jsonl")]
     medium = [json.loads(line) for line in open(f"{root}/medium.jsonl")]
     hard = [json.loads(line) for line in open(f"{root}/hard.jsonl")]
-    data = easy + medium + hard
-
-    for idx in range(0, 150):
+    data = (
+        random.sample(easy, 10) +
+        random.sample(medium, 10) +
+        random.sample(hard, 10)
+    )
+    
+    for idx in range(0, len(data)):
         item = data[idx]
         cfg = f"""
 project: PairedImageSets
