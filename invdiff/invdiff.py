@@ -82,13 +82,19 @@ class InvDiff:
         #     universal_texts, self.args["clip_model"], "text"
         # )
 
-        class0_captions = [item['caption'] for item in class0_dataset]
+        class0_captions = []
+        for item in class0_dataset:
+            if "caption" in item:
+                class0_captions.append(item["caption"])
         class0_captions = list(set(class0_captions))
         class0_captions_text_embeddings = get_embeddings(
             class0_captions, self.args["clip_model"], "text"
         )
 
-        class1_captions = [item['caption'] for item in class1_dataset]
+        class1_captions = []
+        for item in class1_dataset:
+            if "caption" in item:
+                class1_captions.append(item["caption"])
         class1_captions = list(set(class1_captions))
         class1_captions_text_embeddings = get_embeddings(
             class1_captions, self.args["clip_model"], "text"
