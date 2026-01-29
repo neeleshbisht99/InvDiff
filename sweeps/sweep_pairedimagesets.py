@@ -23,7 +23,7 @@ def main(purity: float, seed: int):
     for idx in range(0, len(data)):
         item = data[idx]
         cfg = f"""
-project: PairedImageSets
+project: CCDiff-PairedImageSets
 seed: {seed}  # random seed
 
 data:
