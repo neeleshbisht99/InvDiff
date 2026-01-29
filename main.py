@@ -75,12 +75,12 @@ def compute_differences(
     inv_diff = eval(inv_diff_args["method"])(inv_diff_args)
 
     differences_A, classname_A, differences_B, classname_B = inv_diff.get_differences(dataset1, dataset2, seed)
-    if args["wandb"]:
-        table_A = wandb.Table(dataframe=pd.DataFrame(differences_A))
-        wandb.log({f"Scored Differences ({classname_A} > {classname_B})": table_A})
+    # if args["wandb"]:
+    #     table_A = wandb.Table(dataframe=pd.DataFrame(differences_A))
+    #     wandb.log({f"Scored Differences ({classname_A} > {classname_B})": table_A})
 
-        table_B = wandb.Table(dataframe=pd.DataFrame(differences_B))
-        wandb.log({f"Scored Differences ({classname_B} > {classname_A})": table_B})
+    #     table_B = wandb.Table(dataframe=pd.DataFrame(differences_B))
+    #     wandb.log({f"Scored Differences ({classname_B} > {classname_A})": table_B})
 
     differences_A = [diff["text"] for diff in differences_A]
     differences_B = [diff["text"] for diff in differences_B]
@@ -136,25 +136,25 @@ def evaluate(args: Dict, differences_A: List[str], classname_A: str, differences
     return metrics_A, metrics_B
 
 
-def visualize_dataset(dataset1: List[Dict], dataset2: List[Dict], group_names):
-    images_a = [
-            wandb.Image(
-                Image.open(item["path"]).convert("RGB").resize((224, 224))
-            )
-            for item in dataset1
-        ]
-    images_b = [
-            wandb.Image(
-                Image.open(item["path"]).convert("RGB").resize((224, 224))
-            )
-            for item in dataset2
-        ]
-    wandb.log(
-        {
-            f"group A images ({group_names[0]})": images_a,
-            f"group B images ({group_names[1]})": images_b
-        }
-    )
+# def visualize_dataset(dataset1: List[Dict], dataset2: List[Dict], group_names):
+#     images_a = [
+#             wandb.Image(
+#                 Image.open(item["path"]).convert("RGB").resize((224, 224))
+#             )
+#             for item in dataset1
+#         ]
+#     images_b = [
+#             wandb.Image(
+#                 Image.open(item["path"]).convert("RGB").resize((224, 224))
+#             )
+#             for item in dataset2
+#         ]
+#     wandb.log(
+#         {
+#             f"group A images ({group_names[0]})": images_a,
+#             f"group B images ({group_names[1]})": images_b
+#         }
+#     )
 
 def generate_captions(args: Dict, dataset1: List[Dict], dataset2: List[Dict]) -> List[str]:
     captioner_args = args["captioner"]
@@ -228,8 +228,8 @@ def main(config):
     captioned_dataset1, captioned_dataset2 = generate_captions(args, dataset1, dataset2)
     # logging.info("Creating knowledge bank...")
     # create_knowledge_bank(args, dataset1, dataset2, group_names)
-    if args["wandb"]:
-        visualize_dataset(dataset1, dataset2, group_names)
+    # if args["wandb"]:
+    #     visualize_dataset(dataset1, dataset2, group_names)
     logging.info("Proposing & Ranking differences...")
     differences_A, classname_A, differences_B, classname_B = compute_differences(args, dataset1, dataset2)
     elapsed = time.time() - start_time
