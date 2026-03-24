@@ -4,6 +4,7 @@
 import numpy as np
 import json
 from typing import Dict
+import time
 
 from sklearn.preprocessing import StandardScaler
 
@@ -65,6 +66,7 @@ class InvDiff:
         class0_imgs, cls0_name = self.pre_process(class0_dataset)
         class1_imgs, cls1_name = self.pre_process(class1_dataset)
 
+        start_time = time.time()
         #extract embeddings
         class0_img_embeds = get_embeddings(
             class0_imgs, self.args["clip_model"], "image"
@@ -72,6 +74,7 @@ class InvDiff:
         class1_img_embeds = get_embeddings(
             class1_imgs, self.args["clip_model"], "image"
         )
+        elapsed_time_extract_clip_img_embeds = time.time() - start_time
         # knowledge_bank_filepath = self.args["knowledge_bank_filepath"]
         # Load universal vocabulary
         # with open(knowledge_bank_filepath, 'r') as f:
@@ -81,7 +84,7 @@ class InvDiff:
         # universal_text_embeddings = get_embeddings(
         #     universal_texts, self.args["clip_model"], "text"
         # )
-
+        start_time = time.time()
         class0_captions = []
         for item in class0_dataset:
             if "caption" in item:
@@ -99,22 +102,30 @@ class InvDiff:
         class1_captions_text_embeddings = get_embeddings(
             class1_captions, self.args["clip_model"], "text"
         )
+        elapsed_time_extract_clip_txt_embeds = time.time() - start_time
 
         """Filter vocabulary for each class"""
+        start_time_vocab_filtering = time.time()
+        start_time = time.time()
         class0_txts_objs, class0_txt_embeds = self.enhanced_frequency_filtering(
             class0_img_embeds, class0_captions, class0_captions_text_embeddings, top_k=20, similarity_threshold=0.75
         )
         class0_txts = [obj['text'] for obj in class0_txts_objs]
         class0_txts_score_mp = {obj['text']:obj['score'] for obj in class0_txts_objs}
         class0_sim_scores = [obj['score'] for obj in class0_txts_objs]
+        elapsed_time_extract_vocab_filtering_cls0 = time.time() - start_time
 
+        start_time = time.time()
         class1_txts_objs, class1_txt_embeds = self.enhanced_frequency_filtering(
             class1_img_embeds, class1_captions, class1_captions_text_embeddings, top_k=20, similarity_threshold=0.75
         )
         class1_txts = [obj['text'] for obj in class1_txts_objs]
         class1_txts_score_mp = {obj['text']:obj['score'] for obj in class1_txts_objs}
         class1_sim_scores = [obj['score'] for obj in class1_txts_objs]
+        elapsed_time_extract_vocab_filtering_cls1 = time.time() - start_time
+        elapsed_time_extract_vocab_filtering = time.time() - start_time_vocab_filtering
 
+        start_time = time.time()
         scaler_img_cls0 = StandardScaler()
         scaler_img_cls1 = StandardScaler()
 
@@ -128,10 +139,13 @@ class InvDiff:
         # Standardize text embeddings
         class0_texts_std = scaler_txt_cls0.fit_transform(class0_txt_embeds)
         class1_texts_std = scaler_txt_cls1.fit_transform(class1_txt_embeds)
+        
+        elapsed_time_standardization = time.time() - start_time
 
         alpha = 0.3
         inverse_cca_args = self.args["inverse_cca"]
         inverse_cca = InverseCCA(inverse_cca_args)
+        start_time = time.time()
         # Analyze both mismatch cases
         cls0_vs_cls1, _ = inverse_cca.inverse_cca_analysis(
             class1_images_std, class0_texts_std, 
@@ -150,6 +164,9 @@ class InvDiff:
             obj['inv_corr_score'] = anti_corr
             obj['inv_diff_score'] = alpha*class0_txt_sim_score_norm + ((1-alpha)*anti_corr)
 
+        elapsed_time_inverse_cca_cls0 = time.time() - start_time
+
+        start_time = time.time()
         cls1_vs_cls0, _ = inverse_cca.inverse_cca_analysis(
             class0_images_std, class1_texts_std,
             class1_txts, class1_txt_embeds,
@@ -167,6 +184,8 @@ class InvDiff:
             obj['inv_corr_score'] = anti_corr
             obj['inv_diff_score'] = alpha*class1_txt_sim_score_norm + ((1-alpha)*anti_corr)
 
+        elapsed_time_inverse_cca_cls1 = time.time() - start_time
+
         # Sort by absolute correlation (lowest first)
         cls0_vs_cls1.sort(key=lambda x: x['inv_diff_score'], reverse=True)
         cls1_vs_cls0.sort(key=lambda x: x['inv_diff_score'], reverse=True)
@@ -179,4 +198,14 @@ class InvDiff:
             key: obj.get(key) for key in final_keys
         } for obj in cls1_vs_cls0]
 
-        return cls0_diffs, cls0_name, cls1_diffs, cls1_name
+        exec_time_logs = {
+            'elapsed_time_extract_clip_img_embeds': elapsed_time_extract_clip_img_embeds
+            'elapsed_time_extract_clip_txt_embeds': elapsed_time_extract_clip_txt_embeds
+            'elapsed_time_extract_vocab_filtering_cls0': elapsed_time_extract_vocab_filtering_cls0,
+            'elapsed_time_extract_vocab_filtering_cls1': elapsed_time_extract_vocab_filtering_cls1,
+            'elapsed_time_extract_vocab_filtering': elapsed_time_extract_vocab_filtering,
+            'elapsed_time_standardization': elapsed_time_standardization,
+            'elapsed_time_inverse_cca_cls0': elapsed_time_inverse_cca_cls0,
+            'elapsed_time_inverse_cca_cls1': elapsed_time_inverse_cca_cls1
+        }
+        return cls0_diffs, cls0_name, cls1_diffs, cls1_name, exec_time_logs

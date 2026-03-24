@@ -74,7 +74,7 @@ def compute_differences(
     seed = args["seed"]
     inv_diff = eval(inv_diff_args["method"])(inv_diff_args)
 
-    differences_A, classname_A, differences_B, classname_B = inv_diff.get_differences(dataset1, dataset2, seed)
+    differences_A, classname_A, differences_B, classname_B, exec_time_logs = inv_diff.get_differences(dataset1, dataset2, seed)
     # if args["wandb"]:
     #     table_A = wandb.Table(dataframe=pd.DataFrame(differences_A))
     #     wandb.log({f"Scored Differences ({classname_A} > {classname_B})": table_A})
@@ -84,7 +84,7 @@ def compute_differences(
 
     differences_A = [diff["text"] for diff in differences_A]
     differences_B = [diff["text"] for diff in differences_B]
-    return differences_A, classname_A, differences_B, classname_B
+    return differences_A, classname_A, differences_B, classname_B, exec_time_logs
 
 
 def evaluate(args: Dict, differences_A: List[str], classname_A: str, differences_B: List[str], classname_B: str) -> Dict:
@@ -246,13 +246,18 @@ def main(config):
     #     visualize_dataset(dataset1, dataset2, group_names)
     start_time = time.time()
     logging.info("Proposing & Ranking differences...")
-    differences_A, classname_A, differences_B, classname_B = compute_differences(args, dataset1, dataset2)
+    differences_A, classname_A, differences_B, classname_B, exec_time_logs = compute_differences(args, dataset1, dataset2)
     elapsed = time.time() - start_time
     if args["wandb"]:
         wandb.log({
             "time/propose_rank_seconds": elapsed,
             "time/propose_rank_minutes": elapsed / 60.0
         })
+        for k, v in exec_time_logs.items():
+            wandb.log({
+                f"time/propose_rank_{k}_seconds": v,
+                f"time/propose_rank_{k}_minutes": v / 60.0
+            })
     total_elapsed = time.time() - total_start_time
     if args["wandb"]:
         wandb.log({
