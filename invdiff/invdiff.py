@@ -199,8 +199,8 @@ class InvDiff:
         } for obj in cls1_vs_cls0]
 
         exec_time_logs = {
-            'elapsed_time_extract_clip_img_embeds': elapsed_time_extract_clip_img_embeds
-            'elapsed_time_extract_clip_txt_embeds': elapsed_time_extract_clip_txt_embeds
+            'elapsed_time_extract_clip_img_embeds': elapsed_time_extract_clip_img_embeds,
+            'elapsed_time_extract_clip_txt_embeds': elapsed_time_extract_clip_txt_embeds,
             'elapsed_time_extract_vocab_filtering_cls0': elapsed_time_extract_vocab_filtering_cls0,
             'elapsed_time_extract_vocab_filtering_cls1': elapsed_time_extract_vocab_filtering_cls1,
             'elapsed_time_extract_vocab_filtering': elapsed_time_extract_vocab_filtering,
