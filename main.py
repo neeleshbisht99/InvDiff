@@ -102,6 +102,7 @@ def evaluate(args: Dict, differences_A: List[str], classname_A: str, differences
         metrics_A: Evaluation metrics for group A differences
         metrics_B: Evaluation metrics for group B differences
     """
+    analysis_type = args.get("analysis", "full")
     evaluator_args = args["evaluator"]
     evaluator = eval(evaluator_args["method"])(evaluator_args)
     metrics_A, eval_A = evaluator.evaluate(
@@ -109,11 +110,15 @@ def evaluate(args: Dict, differences_A: List[str], classname_A: str, differences
         classname_A,
         classname_B
     )
-    metrics_B, eval_B = evaluator.evaluate(
-        differences_B,
-        classname_B,
-        classname_A
-    )
+
+    metrics_B = None
+    eval_B = None
+    if analysis_type == "full":
+        metrics_B, eval_B = evaluator.evaluate(
+            differences_B,
+            classname_B,
+            classname_A
+        )
 
     if args["wandb"] and evaluator_args["method"] != "NullEvaluator":
         wandb.log({
@@ -122,16 +127,18 @@ def evaluate(args: Dict, differences_A: List[str], classname_A: str, differences
             "Group A/acc@5": metrics_A["acc@5"],
             "Group A/acc@N": metrics_A["acc@N"],
         })
-        wandb.log({
-            # Row 2 (Group B)
-            "Group B/acc@1": metrics_B["acc@1"],
-            "Group B/acc@5": metrics_B["acc@5"],
-            "Group B/acc@N": metrics_B["acc@N"],
-        })
+        if metrics_B:
+            wandb.log({
+                # Row 2 (Group B)
+                "Group B/acc@1": metrics_B["acc@1"],
+                "Group B/acc@5": metrics_B["acc@5"],
+                "Group B/acc@N": metrics_B["acc@N"],
+            })
         table_A = wandb.Table(dataframe=pd.DataFrame(eval_A))
-        table_B = wandb.Table(dataframe=pd.DataFrame(eval_B))
         wandb.log({f"Evaluated Differences ({classname_A} > {classname_B})": table_A})
-        wandb.log({f"Evaluated Differences ({classname_B} > {classname_A})": table_B})
+        if eval_B:
+            table_B = wandb.Table(dataframe=pd.DataFrame(eval_B))
+            wandb.log({f"Evaluated Differences ({classname_B} > {classname_A})": table_B})
 
     return metrics_A, metrics_B
 

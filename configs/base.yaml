@@ -1,6 +1,7 @@
 project: InvDiff
 wandb: true # whether to log to wandb
 seed: 0 # random seed
+analysis: &anys partial # full / partial - to find diff for either or both classes
 
 data:
   root: ./data/datasets/pairedimagesets
@@ -18,6 +19,7 @@ captioner:
   prompt: "Describe this image in detail." # prompt to use
   knowledge_bank_filepath: "data/knowledge_banks/blip/pairedimagesets_captions.json"
   agg_knowledge_bank_filepath: "data/knowledge_banks/blip/agg_pairedimagesets_captions.json"
+  analysis: *anys
 
 evaluator:
   method: Evaluator # how to evaluate hypotheses
@@ -28,6 +30,7 @@ inv_diff:
   method: InvDiff
   clip_model: ViT-bigG-14
   knowledge_bank_filepath: "data/knowledge_banks/blip/agg_pairedimagesets_captions.json"
+  analysis: *anys
   inverse_cca:
     type: "cca"
     ktype: "gaussian"
