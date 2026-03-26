@@ -380,3 +380,5 @@ cache-VisDiff-MimicCxrImageSets-run6/
 data/mimic_cxr_imagesets
 
 data/datasets/metashift
+
+data/examples
