@@ -120,25 +120,25 @@ def evaluate(args: Dict, differences_A: List[str], classname_A: str, differences
             classname_A
         )
 
-    # if args["wandb"] and evaluator_args["method"] != "NullEvaluator":
-    #     wandb.log({
-    #         # Row 1 (Group A)
-    #         "Group A/acc@1": metrics_A["acc@1"],
-    #         "Group A/acc@5": metrics_A["acc@5"],
-    #         "Group A/acc@N": metrics_A["acc@N"],
-    #     })
-    #     if metrics_B:
-    #         wandb.log({
-    #             # Row 2 (Group B)
-    #             "Group B/acc@1": metrics_B["acc@1"],
-    #             "Group B/acc@5": metrics_B["acc@5"],
-    #             "Group B/acc@N": metrics_B["acc@N"],
-    #         })
-    #     table_A = wandb.Table(dataframe=pd.DataFrame(eval_A))
-    #     wandb.log({f"Evaluated Differences ({classname_A} > {classname_B})": table_A})
-    #     if eval_B:
-    #         table_B = wandb.Table(dataframe=pd.DataFrame(eval_B))
-    #         wandb.log({f"Evaluated Differences ({classname_B} > {classname_A})": table_B})
+    if args["wandb"] and evaluator_args["method"] != "NullEvaluator":
+        wandb.log({
+            # Row 1 (Group A)
+            "Group A/acc@1": metrics_A["acc@1"],
+            "Group A/acc@5": metrics_A["acc@5"],
+            "Group A/acc@N": metrics_A["acc@N"],
+        })
+        # if metrics_B:
+        #     wandb.log({
+        #         # Row 2 (Group B)
+        #         "Group B/acc@1": metrics_B["acc@1"],
+        #         "Group B/acc@5": metrics_B["acc@5"],
+        #         "Group B/acc@N": metrics_B["acc@N"],
+        #     })
+        # table_A = wandb.Table(dataframe=pd.DataFrame(eval_A))
+        # wandb.log({f"Evaluated Differences ({classname_A} > {classname_B})": table_A})
+        # if eval_B:
+        #     table_B = wandb.Table(dataframe=pd.DataFrame(eval_B))
+        #     wandb.log({f"Evaluated Differences ({classname_B} > {classname_A})": table_B})
 
     return metrics_A, metrics_B
 
