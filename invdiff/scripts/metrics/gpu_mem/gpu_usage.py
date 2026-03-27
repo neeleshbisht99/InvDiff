@@ -45,3 +45,6 @@ df = pd.DataFrame(records)
 print(df.to_string())
 df.to_csv("wandb_system_metrics.csv", index=False)
 print("Saved to wandb_system_metrics.csv")
+
+
+# python3 invdiff/scripts/metrics/gpu_mem/gpu_usage.py
