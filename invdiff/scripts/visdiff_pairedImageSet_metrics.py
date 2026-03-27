@@ -31,4 +31,13 @@ for row in arr0:
 print("\n", file=f)
 print(f"#Avg. Runtime {round(df['Runtime'].mean(), 2)}", file=f)
 
+print("\n", file=f)
+print(f"#Avg. LLM Usage in total tokens {round(df['llm_usage/total_tokens'].mean(), 2)}", file=f)
+
+print("\n", file=f)
+print(f"#Avg. LLM Usage in prompt tokens {round(df['llm_usage/prompt_tokens'].mean(), 2)}", file=f)
+
+print("\n", file=f)
+print(f"#Avg. LLM Usage in completion tokens {round(df['llm_usage/completion_tokens'].mean(), 2)}", file=f)
+
 # python3 invdiff/scripts/visdiff_pairedImageSet_metrics.py

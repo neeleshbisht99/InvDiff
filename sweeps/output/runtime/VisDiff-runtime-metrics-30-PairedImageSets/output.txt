@@ -1,0 +1,14 @@
+Metrics
+#### VisDiff
+
+
+#Avg. Runtime: 108.2
+
+
+#Avg. LLM Usage in total tokens: 3369.53
+
+
+#Avg. LLM Usage in prompt tokens: 3114.1
+
+
+#Avg. LLM Usage in completion tokens: 255.43
