@@ -120,25 +120,25 @@ def evaluate(args: Dict, differences_A: List[str], classname_A: str, differences
             classname_A
         )
 
-    if args["wandb"] and evaluator_args["method"] != "NullEvaluator":
-        wandb.log({
-            # Row 1 (Group A)
-            "Group A/acc@1": metrics_A["acc@1"],
-            "Group A/acc@5": metrics_A["acc@5"],
-            "Group A/acc@N": metrics_A["acc@N"],
-        })
-        if metrics_B:
-            wandb.log({
-                # Row 2 (Group B)
-                "Group B/acc@1": metrics_B["acc@1"],
-                "Group B/acc@5": metrics_B["acc@5"],
-                "Group B/acc@N": metrics_B["acc@N"],
-            })
-        table_A = wandb.Table(dataframe=pd.DataFrame(eval_A))
-        wandb.log({f"Evaluated Differences ({classname_A} > {classname_B})": table_A})
-        if eval_B:
-            table_B = wandb.Table(dataframe=pd.DataFrame(eval_B))
-            wandb.log({f"Evaluated Differences ({classname_B} > {classname_A})": table_B})
+    # if args["wandb"] and evaluator_args["method"] != "NullEvaluator":
+    #     wandb.log({
+    #         # Row 1 (Group A)
+    #         "Group A/acc@1": metrics_A["acc@1"],
+    #         "Group A/acc@5": metrics_A["acc@5"],
+    #         "Group A/acc@N": metrics_A["acc@N"],
+    #     })
+    #     if metrics_B:
+    #         wandb.log({
+    #             # Row 2 (Group B)
+    #             "Group B/acc@1": metrics_B["acc@1"],
+    #             "Group B/acc@5": metrics_B["acc@5"],
+    #             "Group B/acc@N": metrics_B["acc@N"],
+    #         })
+    #     table_A = wandb.Table(dataframe=pd.DataFrame(eval_A))
+    #     wandb.log({f"Evaluated Differences ({classname_A} > {classname_B})": table_A})
+    #     if eval_B:
+    #         table_B = wandb.Table(dataframe=pd.DataFrame(eval_B))
+    #         wandb.log({f"Evaluated Differences ({classname_B} > {classname_A})": table_B})
 
     return metrics_A, metrics_B
 
@@ -228,48 +228,40 @@ def create_knowledge_bank(args: Dict, dataset1: List[Dict], dataset2: List[Dict]
 @click.option("--config", help="config file")
 def main(config):
     total_start_time = time.time()
-    start_time = time.time()
+    load_config_and_data_start_time = time.time()
     logging.info("Loading config...")
     args = load_config(config)
     logging.info("Loading data...")
     dataset1, dataset2, group_names = load_data(args)
-    elapsed = time.time() - start_time
-    if args["wandb"]:
-        wandb.log({
-            "time/load_config_data_rank_seconds": elapsed,
-            "time/load_config_data_rank_minutes": elapsed / 60.0
-        })
-    start_time = time.time()
+    load_config_and_data_elapsed = time.time() - load_config_and_data_start_time
+
+    generate_captions_start_time = time.time()
     captioned_dataset1, captioned_dataset2 = generate_captions(args, dataset1, dataset2)
-    elapsed = time.time() - start_time
-    if args["wandb"]:
-        wandb.log({
-            "time/generate_captions_data_rank_seconds": elapsed,
-            "time/generate_captions_data_rank_minutes": elapsed / 60.0
-        })
+    generate_captions_elapsed = time.time() - generate_captions_start_time
     # logging.info("Creating knowledge bank...")
     # create_knowledge_bank(args, dataset1, dataset2, group_names)
     # if args["wandb"]:
     #     visualize_dataset(dataset1, dataset2, group_names)
-    start_time = time.time()
+    propose_rank_start_time = time.time()
     logging.info("Proposing & Ranking differences...")
     differences_A, classname_A, differences_B, classname_B, exec_time_logs = compute_differences(args, dataset1, dataset2)
-    elapsed = time.time() - start_time
-    if args["wandb"]:
-        wandb.log({
-            "time/propose_rank_seconds": elapsed,
-            "time/propose_rank_minutes": elapsed / 60.0
-        })
-        for k, v in exec_time_logs.items():
-            wandb.log({
-                f"time/propose_rank_{k}_seconds": v,
-                f"time/propose_rank_{k}_minutes": v / 60.0
-            })
+    propose_rank_elapsed = time.time() - propose_rank_start_time
     total_elapsed = time.time() - total_start_time
     if args["wandb"]:
+        exec_time_logs_dict = {}
+        for k, v in exec_time_logs.items():
+            exec_time_logs_dict[f"time/propose_rank_{k}_seconds"] = v
+            exec_time_logs_dict[f"time/propose_rank_{k}_minutes"] = v / 60.0
         wandb.log({
-            "time/total_rank_seconds": total_elapsed,
-            "time/total_rank_minutes": total_elapsed / 60.0
+            "time/total_runtime_seconds": total_elapsed,
+            "time/total_runtime_minutes": total_elapsed / 60.0,
+            "time/load_config_and_data_seconds": load_config_and_data_elapsed,
+            "time/load_config_and_data_minutes": load_config_and_data_elapsed / 60.0,
+            "time/generate_captions_seconds": generate_captions_elapsed,
+            "time/generate_captions_minutes": generate_captions_elapsed / 60.0,
+            "time/total_propose_rank_seconds": propose_rank_elapsed,
+            "time/total_propose_rank_minutes": propose_rank_elapsed / 60.0,
+            **exec_time_logs_dict
         })
     logging.info(f"Time till evaluation: {elapsed:.2f}s")
     logging.info("Evaluating differences...")

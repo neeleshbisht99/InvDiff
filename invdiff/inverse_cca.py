@@ -205,7 +205,7 @@ class InverseCCA:
                         scaler_text, n_components=10, seed=0):
         type = self.args.get("type", "cca")
         if type == "cca":
-            return self.inverse_cca(images_std, texts_std,  text_descriptions, text_embeddings_raw, scaler_text, n_components, seed)
+            return self.inverse_cca_gpu(images_std, texts_std,  text_descriptions, text_embeddings_raw, scaler_text, n_components, seed)
         elif type == "kcca":
             return self.inverse_kcca(images_std, texts_std,  text_descriptions, n_components, seed) 
 
