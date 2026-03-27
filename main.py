@@ -263,7 +263,6 @@ def main(config):
             "time/total_propose_rank_minutes": propose_rank_elapsed / 60.0,
             **exec_time_logs_dict
         })
-    logging.info(f"Time till evaluation: {elapsed:.2f}s")
     logging.info("Evaluating differences...")
     metrics_A, metrics_B = evaluate(args, differences_A, classname_A, differences_B, classname_B)
     logging.info("Evaluation Completed!")
