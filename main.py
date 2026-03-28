@@ -144,7 +144,7 @@ def evaluate(args: Dict, differences_A: List[str], classname_A: str, differences
     return metrics_A, metrics_B
 
 
-def visualize_dataset(dataset1: List[Dict], dataset2: List[Dict], group_names):
+def visualize_dataset(args: Dict, dataset1: List[Dict], dataset2: List[Dict], group_names):
     if not args["wandb"]:
         return
     images_a = [
@@ -238,7 +238,7 @@ def main(config):
     captioned_dataset1, captioned_dataset2 = generate_captions(args, dataset1, dataset2)
     # logging.info("Creating knowledge bank...")
     # create_knowledge_bank(args, dataset1, dataset2, group_names)
-    visualize_dataset(dataset1, dataset2, group_names)
+    visualize_dataset(args, dataset1, dataset2, group_names)
     logging.info("Proposing & Ranking differences...")
     differences_A, classname_A, differences_B, classname_B = compute_differences(args, dataset1, dataset2)
     elapsed = time.time() - start_time
