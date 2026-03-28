@@ -19,7 +19,7 @@ def main(purity: float, seed: int):
     for idx in range(0, 150):
         item = data[idx]
         cfg = f"""
-project: CCDiff-Metashift-PairedImageSets
+project: PairedImageSets
 seed: {seed}  # random seed
 
 data:
