@@ -147,17 +147,21 @@ def evaluate(args: Dict, differences_A: List[str], classname_A: str, differences
 def visualize_dataset(args: Dict, dataset1: List[Dict], dataset2: List[Dict], group_names):
     if not args["wandb"]:
         return
+    max_images = 20
+    sample1 = random.sample(dataset1, min(max_images, len(dataset1)))
+    sample2 = random.sample(dataset2, min(max_images, len(dataset2)))
+
     images_a = [
             wandb.Image(
                 Image.open(item["path"]).convert("RGB").resize((224, 224))
             )
-            for item in dataset1
+            for item in sample1
         ]
     images_b = [
             wandb.Image(
                 Image.open(item["path"]).convert("RGB").resize((224, 224))
             )
-            for item in dataset2
+            for item in sample2
         ]
     wandb.log(
         {
