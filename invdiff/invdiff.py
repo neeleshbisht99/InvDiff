@@ -125,7 +125,7 @@ class InvDiff:
         scaler_txt_cls1 = StandardScaler()
 
         # Standardize image embeddings
-        class0_images_std = scaler_img_cls0.fit_transform(class0_img_embeds)
+        class0_images_std = scaler_img_cls0.fit_transform(class0_img_embeds) if self.analysis_type == "full" else None
         class1_images_std = scaler_img_cls1.fit_transform(class1_img_embeds)
 
         # Standardize text embeddings

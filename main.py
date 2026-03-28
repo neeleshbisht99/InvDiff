@@ -71,6 +71,7 @@ def compute_differences(
         classname_B: Name of dataset/class B
     """
     inv_diff_args = args["inv_diff"]
+    analysis_type = args.get("analysis", "full")
     seed = args["seed"]
     inv_diff = eval(inv_diff_args["method"])(inv_diff_args)
 
@@ -79,8 +80,9 @@ def compute_differences(
         table_A = wandb.Table(dataframe=pd.DataFrame(differences_A))
         wandb.log({f"Scored Differences ({classname_A} > {classname_B})": table_A})
 
-        table_B = wandb.Table(dataframe=pd.DataFrame(differences_B))
-        wandb.log({f"Scored Differences ({classname_B} > {classname_A})": table_B})
+        if analysis_type == "full":
+            table_B = wandb.Table(dataframe=pd.DataFrame(differences_B))
+            wandb.log({f"Scored Differences ({classname_B} > {classname_A})": table_B})
 
     differences_A = [diff["text"] for diff in differences_A]
     differences_B = [diff["text"] for diff in differences_B]
