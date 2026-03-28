@@ -103,17 +103,21 @@ def evaluate(args: Dict, differences_A: List[str], classname_A: str, differences
         metrics_B: Evaluation metrics for group B differences
     """
     evaluator_args = args["evaluator"]
+    analysis_type = args.get("analysis", "full")
     evaluator = eval(evaluator_args["method"])(evaluator_args)
     metrics_A, eval_A = evaluator.evaluate(
         differences_A,
         classname_A,
         classname_B
     )
-    metrics_B, eval_B = evaluator.evaluate(
-        differences_B,
-        classname_B,
-        classname_A
-    )
+    metrics_B = None
+    eval_B = None
+    if analysis_type == "full":
+        metrics_B, eval_B = evaluator.evaluate(
+            differences_B,
+            classname_B,
+            classname_A
+        )
 
     if args["wandb"] and evaluator_args["method"] != "NullEvaluator":
         wandb.log({
@@ -122,21 +126,25 @@ def evaluate(args: Dict, differences_A: List[str], classname_A: str, differences
             "Group A/acc@5": metrics_A["acc@5"],
             "Group A/acc@N": metrics_A["acc@N"],
         })
-        wandb.log({
-            # Row 2 (Group B)
-            "Group B/acc@1": metrics_B["acc@1"],
-            "Group B/acc@5": metrics_B["acc@5"],
-            "Group B/acc@N": metrics_B["acc@N"],
-        })
+        if metrics_B:
+            wandb.log({
+                # Row 2 (Group B)
+                "Group B/acc@1": metrics_B["acc@1"],
+                "Group B/acc@5": metrics_B["acc@5"],
+                "Group B/acc@N": metrics_B["acc@N"],
+            })
         table_A = wandb.Table(dataframe=pd.DataFrame(eval_A))
-        table_B = wandb.Table(dataframe=pd.DataFrame(eval_B))
         wandb.log({f"Evaluated Differences ({classname_A} > {classname_B})": table_A})
-        wandb.log({f"Evaluated Differences ({classname_B} > {classname_A})": table_B})
+        if eval_B:
+            table_B = wandb.Table(dataframe=pd.DataFrame(eval_B))
+            wandb.log({f"Evaluated Differences ({classname_B} > {classname_A})": table_B})
 
     return metrics_A, metrics_B
 
 
 def visualize_dataset(dataset1: List[Dict], dataset2: List[Dict], group_names):
+    if not args["wandb"]:
+        return
     images_a = [
             wandb.Image(
                 Image.open(item["path"]).convert("RGB").resize((224, 224))
@@ -225,8 +233,9 @@ def main(config):
     args = load_config(config)
     logging.info("Loading data...")
     dataset1, dataset2, group_names = load_data(args)
-    logging.info("Creating knowledge bank...")
-    create_knowledge_bank(args, dataset1, dataset2, group_names)
+    captioned_dataset1, captioned_dataset2 = generate_captions(args, dataset1, dataset2)
+    # logging.info("Creating knowledge bank...")
+    # create_knowledge_bank(args, dataset1, dataset2, group_names)
     visualize_dataset(dataset1, dataset2, group_names)
     logging.info("Proposing & Ranking differences...")
     differences_A, classname_A, differences_B, classname_B = compute_differences(args, dataset1, dataset2)
@@ -236,7 +245,6 @@ def main(config):
             "time/propose_rank_seconds": elapsed,
             "time/propose_rank_minutes": elapsed / 60.0
         })
-    logging.info(f"Time till evaluation: {elapsed:.2f}s")
     logging.info("Evaluating differences...")
     metrics_A, metrics_B = evaluate(args, differences_A, classname_A, differences_B, classname_B)
     logging.info("Evaluation Completed!")

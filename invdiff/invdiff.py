@@ -14,6 +14,7 @@ from invdiff.inverse_cca import InverseCCA
 class InvDiff:
     def __init__(self, args: Dict):
         self.args = args
+        self.analysis_type = self.args.get("analysis", "full")
     
     def pre_process(self, dataset):
         imgs = []
@@ -72,27 +73,47 @@ class InvDiff:
         class1_img_embeds = get_embeddings(
             class1_imgs, self.args["clip_model"], "image"
         )
-        knowledge_bank_filepath = self.args["knowledge_bank_filepath"]
+        # knowledge_bank_filepath = self.args["knowledge_bank_filepath"]
         # Load universal vocabulary
-        with open(knowledge_bank_filepath, 'r') as f:
-            universal_data = json.load(f)
-        universal_texts = list(set(universal_data))
+        # with open(knowledge_bank_filepath, 'r') as f:
+        #     universal_data = json.load(f)
+        # universal_texts = list(set(universal_data))
 
-        universal_text_embeddings = get_embeddings(
-            universal_texts, self.args["clip_model"], "text"
+        # universal_text_embeddings = get_embeddings(
+        #     universal_texts, self.args["clip_model"], "text"
+        # )
+
+        class0_captions = []
+        for item in class0_dataset:
+            if "caption" in item:
+                class0_captions.append(item["caption"])
+        class0_captions = list(set(class0_captions))
+        class0_captions_text_embeddings = get_embeddings(
+            class0_captions, self.args["clip_model"], "text"
+        )
+        
+        class1_captions = []
+        for item in class1_dataset:
+            if "caption" in item:
+                class1_captions.append(item["caption"])
+        class1_captions = list(set(class1_captions))
+        class1_captions_text_embeddings = get_embeddings(
+            class1_captions, self.args["clip_model"], "text"
         )
 
         """Filter vocabulary for each class"""
         class0_txts_objs, class0_txt_embeds = self.enhanced_frequency_filtering(
-            class0_img_embeds, universal_texts, universal_text_embeddings, top_k=20, similarity_threshold=0.75
+            class0_img_embeds, class0_captions, class0_captions_text_embeddings, top_k=20, similarity_threshold=0.75
         )
         class0_txts = [obj['text'] for obj in class0_txts_objs]
         class0_txts_score_mp = {obj['text']:obj['score'] for obj in class0_txts_objs}
         class0_sim_scores = [obj['score'] for obj in class0_txts_objs]
 
-        class1_txts_objs, class1_txt_embeds = self.enhanced_frequency_filtering(
-            class1_img_embeds, universal_texts, universal_text_embeddings, top_k=20, similarity_threshold=0.75
-        )
+        class1_txts_objs, class1_txt_embeds = [], []
+        if self.analysis_type == "full":
+            class1_txts_objs, class1_txt_embeds = self.enhanced_frequency_filtering(
+                class1_img_embeds, class1_captions, class1_captions_text_embeddings, top_k=20, similarity_threshold=0.75
+            )
         class1_txts = [obj['text'] for obj in class1_txts_objs]
         class1_txts_score_mp = {obj['text']:obj['score'] for obj in class1_txts_objs}
         class1_sim_scores = [obj['score'] for obj in class1_txts_objs]
@@ -109,7 +130,7 @@ class InvDiff:
 
         # Standardize text embeddings
         class0_texts_std = scaler_txt_cls0.fit_transform(class0_txt_embeds)
-        class1_texts_std = scaler_txt_cls1.fit_transform(class1_txt_embeds)
+        class1_texts_std = scaler_txt_cls1.fit_transform(class1_txt_embeds) if self.analysis_type == "full" else None
 
         alpha = 0.3
         inverse_cca_args = self.args["inverse_cca"]
@@ -132,22 +153,24 @@ class InvDiff:
             obj['inv_corr_score'] = anti_corr
             obj['inv_diff_score'] = alpha*class0_txt_sim_score_norm + ((1-alpha)*anti_corr)
 
-        cls1_vs_cls0, _ = inverse_cca.inverse_cca_analysis(
-            class0_images_std, class1_texts_std,
-            class1_txts, class1_txt_embeds,
-            scaler_txt_cls1, seed=seed
-        )
+        cls1_vs_cls0 = []
+        if self.analysis_type == "full":
+            cls1_vs_cls0, _ = inverse_cca.inverse_cca_analysis(
+                class0_images_std, class1_texts_std,
+                class1_txts, class1_txt_embeds,
+                scaler_txt_cls1, seed=seed
+            )
 
-        cls1_min_sim_score = min(class1_sim_scores)
-        cls1_max_sim_score = max(class1_sim_scores)
-        for obj in cls1_vs_cls0:
-            txt = obj['text']
-            anti_corr = 1.0 - abs(obj["correlation"])
-            class1_txt_sim_score = class1_txts_score_mp[txt]
-            class1_txt_sim_score_norm = (class1_txt_sim_score - cls1_min_sim_score) / (cls1_max_sim_score - cls1_min_sim_score + 1e-8)
-            obj['sim_score'] = class1_txt_sim_score_norm
-            obj['inv_corr_score'] = anti_corr
-            obj['inv_diff_score'] = alpha*class1_txt_sim_score_norm + ((1-alpha)*anti_corr)
+            cls1_min_sim_score = min(class1_sim_scores)
+            cls1_max_sim_score = max(class1_sim_scores)
+            for obj in cls1_vs_cls0:
+                txt = obj['text']
+                anti_corr = 1.0 - abs(obj["correlation"])
+                class1_txt_sim_score = class1_txts_score_mp[txt]
+                class1_txt_sim_score_norm = (class1_txt_sim_score - cls1_min_sim_score) / (cls1_max_sim_score - cls1_min_sim_score + 1e-8)
+                obj['sim_score'] = class1_txt_sim_score_norm
+                obj['inv_corr_score'] = anti_corr
+                obj['inv_diff_score'] = alpha*class1_txt_sim_score_norm + ((1-alpha)*anti_corr)
 
         # Sort by absolute correlation (lowest first)
         cls0_vs_cls1.sort(key=lambda x: x['inv_diff_score'], reverse=True)

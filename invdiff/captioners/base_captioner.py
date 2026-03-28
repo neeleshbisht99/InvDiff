@@ -6,6 +6,7 @@ from invdiff.serve.utils_vlm import get_vlm_output
 class Captioner:
     def __init__(self, args: Dict):
         self.args = args
+        self.analysis_type = self.args.get("analysis", "full")
 
     def sample(self, dataset: List[Dict], n: int) -> List[Dict]:
         return random.sample(dataset, n)
@@ -27,7 +28,9 @@ class Captioner:
         random.seed(self.args["seed"])
         for _ in range(self.args["num_rounds"]):
             sampled_datasetA = self.sample(datasetA, self.args["num_samples"])
-            sampled_datasetB = self.sample(datasetB, self.args["num_samples"])
             self.captioning(sampled_datasetA)
-            self.captioning(sampled_datasetB)
+            sampled_datasetB = None
+            if self.analysis_type == "full":
+                sampled_datasetB = self.sample(datasetB, self.args["num_samples"])
+                self.captioning(sampled_datasetB)
         return sampled_datasetA, sampled_datasetB
