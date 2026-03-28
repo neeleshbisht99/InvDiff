@@ -1,6 +1,6 @@
 import pandas as pd
 
-root = "/shared/scratch/0/home/v_neelesh_bisht/projects/InvDiff/sweeps/output/runtime/Visdiff-original-30-pairedimagesets/"
+root = "/shared/scratch/0/home/v_neelesh_bisht/projects/InvDiff/sweeps/output/VisDiff-Naive-VLM-gpt-4o-PairedImageSets/"
 
 df = pd.read_csv(root + 'runs.csv')
 

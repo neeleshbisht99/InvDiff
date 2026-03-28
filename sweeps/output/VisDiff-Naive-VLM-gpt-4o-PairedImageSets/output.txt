@@ -1,0 +1,9 @@
+Metrics
+#### VisDiff
+Dataset acc@1 acc@5 
+Easy    0.83   0.98  
+Medium  0.64   0.86  
+Hard    0.46   0.71  
+
+
+#Avg. Runtime 16.67
