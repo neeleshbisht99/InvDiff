@@ -1,6 +1,6 @@
 import pandas as pd
 
-root = "/shared/scratch/0/home/v_neelesh_bisht/projects/InvDiff/sweeps/output/Metashift-v4-run1/"
+root = "/shared/scratch/0/home/v_neelesh_bisht/projects/InvDiff/sweeps/output/CCDiff-MetaShift/"
 
 data = pd.read_csv(root + 'runs.csv')
 
@@ -17,3 +17,6 @@ arr0 = [
 for row in arr0:
     str = "".join(row)
     print(str, file=f)
+
+
+# python3 invdiff/scripts/metashift_metrics.py
