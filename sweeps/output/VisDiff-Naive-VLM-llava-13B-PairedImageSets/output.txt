@@ -1,0 +1,9 @@
+Metrics
+#### VisDiff (LLava 13B Model)
+Dataset acc@1 acc@5 
+Easy    0.44   0.6  
+Medium  0.24   0.44  
+Hard    0.31   0.49  
+
+
+#Avg. Runtime 16.73
