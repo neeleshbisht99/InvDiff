@@ -1,0 +1,22 @@
+Metrics
+#### CCDiff (MIMIC-CXR)
+Dataset acc@1 acc@5 
+Easy    0.5   0.8  
+Medium  0.45   0.7  
+Hard    0.4   0.65  
+
+
+#### CCDiff (MIMIC-CXR)
+Dataset acc@1 acc@5 
+Easy    0.4   0.65  
+Medium  0.35   0.5  
+Hard    0.55   0.7  
+
+Metrics
+#### CCDiff (MIMIC-CXR)
+Dataset acc@1 acc@5 
+Easy    0.3   0.75  
+Medium  0.4   0.55  
+Hard    0.5   0.65  
+
+
