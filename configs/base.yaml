@@ -4,22 +4,22 @@ seed: 0 # random seed
 analysis: &anys partial # full / partial - to find diff for either or both classes
 
 data:
-  root: ./data/datasets/pairedimagesets
+  root: ./data/datasets/mimic_cxr_imagesets
   name: Data # name of dataset
   group1: "A" # name of group 1
   group2: "B" # name of group 2
   purity: 1.0 # how much of each concept is in each group (1.0 means perfect seperation, 0.5 means perfect mix)
   subset: False # if you want to use a subset of the dataset, set this to name of the desired subset value
 
-captioner:
-  method: Captioner
-  model: blip # model used in method
-  num_rounds: 3
-  num_samples: 20
-  prompt: "Describe this image in detail." # prompt to use
-  knowledge_bank_filepath: "data/knowledge_banks/blip/pairedimagesets_captions.json"
-  agg_knowledge_bank_filepath: "data/knowledge_banks/blip/agg_pairedimagesets_captions.json"
-  analysis: *anys
+# captioner:
+#   method: Captioner
+#   model: blip # model used in method
+#   num_rounds: 3
+#   num_samples: 20
+#   prompt: "Describe this image in detail." # prompt to use
+#   knowledge_bank_filepath: "data/knowledge_banks/blip/pairedimagesets_captions.json"
+#   agg_knowledge_bank_filepath: "data/knowledge_banks/blip/agg_pairedimagesets_captions.json"
+#   analysis: *anys
 
 evaluator:
   method: Evaluator # how to evaluate hypotheses
@@ -29,7 +29,8 @@ evaluator:
 inv_diff:
   method: InvDiff
   clip_model: ViT-bigG-14
-  knowledge_bank_filepath: "data/knowledge_banks/blip/agg_pairedimagesets_captions.json"
+  knowledge_bank_filepath: "data/knowledge_banks/mimic/mimic_knowledge_bank.json"
+  knowledge_bank_embedding_filepath: "data/knowledge_banks/mimic/mimic_knowledge_bank_embeddings.npy"
   analysis: *anys
   inverse_cca:
     type: "cca"

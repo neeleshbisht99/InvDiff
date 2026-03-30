@@ -56,8 +56,8 @@ class InverseCCA:
         Ys = torch.tensor(Ys, dtype=torch.float32).to(self.device)
 
         # 2) SVD reduce — keep V_y for back-projection
-        Xs_red, V_x = self._svd_reduction_with_V(Xs, accept_rate=0.999999)  # [N, dx]
-        Ys_red, V_y = self._svd_reduction_with_V(Ys, accept_rate=0.999999)  # [N, dy]
+        Xs_red, V_x = self._svd_reduction_with_V(Xs, accept_rate=0.99)  # [N, dx]
+        Ys_red, V_y = self._svd_reduction_with_V(Ys, accept_rate=0.99)  # [N, dy]
 
         if Xs_red.shape[0] < Xs_red.shape[1] or Ys_red.shape[0] < Ys_red.shape[1]:
             raise ValueError("Reduced matrices still violate N >= D required by anatome CCA")

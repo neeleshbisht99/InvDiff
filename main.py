@@ -75,9 +75,9 @@ def compute_differences(
     inv_diff = eval(inv_diff_args["method"])(inv_diff_args)
 
     differences_A, classname_A, differences_B, classname_B, exec_time_logs = inv_diff.get_differences(dataset1, dataset2, seed)
-    # if args["wandb"]:
-    #     table_A = wandb.Table(dataframe=pd.DataFrame(differences_A))
-    #     wandb.log({f"Scored Differences ({classname_A} > {classname_B})": table_A})
+    if args["wandb"]:
+        table_A = wandb.Table(dataframe=pd.DataFrame(differences_A))
+        wandb.log({f"Scored Differences ({classname_A} > {classname_B})": table_A})
 
     #     table_B = wandb.Table(dataframe=pd.DataFrame(differences_B))
     #     wandb.log({f"Scored Differences ({classname_B} > {classname_A})": table_B})
@@ -134,8 +134,8 @@ def evaluate(args: Dict, differences_A: List[str], classname_A: str, differences
         #         "Group B/acc@5": metrics_B["acc@5"],
         #         "Group B/acc@N": metrics_B["acc@N"],
         #     })
-        # table_A = wandb.Table(dataframe=pd.DataFrame(eval_A))
-        # wandb.log({f"Evaluated Differences ({classname_A} > {classname_B})": table_A})
+        table_A = wandb.Table(dataframe=pd.DataFrame(eval_A))
+        wandb.log({f"Evaluated Differences ({classname_A} > {classname_B})": table_A})
         # if eval_B:
         #     table_B = wandb.Table(dataframe=pd.DataFrame(eval_B))
         #     wandb.log({f"Evaluated Differences ({classname_B} > {classname_A})": table_B})
@@ -143,25 +143,25 @@ def evaluate(args: Dict, differences_A: List[str], classname_A: str, differences
     return metrics_A, metrics_B
 
 
-# def visualize_dataset(dataset1: List[Dict], dataset2: List[Dict], group_names):
-#     images_a = [
-#             wandb.Image(
-#                 Image.open(item["path"]).convert("RGB").resize((224, 224))
-#             )
-#             for item in dataset1
-#         ]
-#     images_b = [
-#             wandb.Image(
-#                 Image.open(item["path"]).convert("RGB").resize((224, 224))
-#             )
-#             for item in dataset2
-#         ]
-#     wandb.log(
-#         {
-#             f"group A images ({group_names[0]})": images_a,
-#             f"group B images ({group_names[1]})": images_b
-#         }
-#     )
+def visualize_dataset(dataset1: List[Dict], dataset2: List[Dict], group_names):
+    images_a = [
+            wandb.Image(
+                Image.open(item["path"]).convert("RGB").resize((224, 224))
+            )
+            for item in dataset1[:13]
+        ]
+    images_b = [
+            wandb.Image(
+                Image.open(item["path"]).convert("RGB").resize((224, 224))
+            )
+            for item in dataset2[:13]
+        ]
+    wandb.log(
+        {
+            f"group A images ({group_names[0]})": images_a,
+            f"group B images ({group_names[1]})": images_b
+        }
+    )
 
 def generate_captions(args: Dict, dataset1: List[Dict], dataset2: List[Dict]) -> List[str]:
     captioner_args = args["captioner"]
@@ -235,13 +235,13 @@ def main(config):
     dataset1, dataset2, group_names = load_data(args)
     load_config_and_data_elapsed = time.time() - load_config_and_data_start_time
 
-    generate_captions_start_time = time.time()
-    captioned_dataset1, captioned_dataset2 = generate_captions(args, dataset1, dataset2)
-    generate_captions_elapsed = time.time() - generate_captions_start_time
+    # generate_captions_start_time = time.time()
+    # captioned_dataset1, captioned_dataset2 = generate_captions(args, dataset1, dataset2)
+    # generate_captions_elapsed = time.time() - generate_captions_start_time
     # logging.info("Creating knowledge bank...")
     # create_knowledge_bank(args, dataset1, dataset2, group_names)
-    # if args["wandb"]:
-    #     visualize_dataset(dataset1, dataset2, group_names)
+    if args["wandb"]:
+        visualize_dataset(dataset1, dataset2, group_names)
     propose_rank_start_time = time.time()
     logging.info("Proposing & Ranking differences...")
     differences_A, classname_A, differences_B, classname_B, exec_time_logs = compute_differences(args, dataset1, dataset2)
@@ -257,8 +257,8 @@ def main(config):
             "time/total_runtime_minutes": total_elapsed / 60.0,
             "time/load_config_and_data_seconds": load_config_and_data_elapsed,
             "time/load_config_and_data_minutes": load_config_and_data_elapsed / 60.0,
-            "time/generate_captions_seconds": generate_captions_elapsed,
-            "time/generate_captions_minutes": generate_captions_elapsed / 60.0,
+            # "time/generate_captions_seconds": generate_captions_elapsed,
+            # "time/generate_captions_minutes": generate_captions_elapsed / 60.0,
             "time/total_propose_rank_seconds": propose_rank_elapsed,
             "time/total_propose_rank_minutes": propose_rank_elapsed / 60.0,
             **exec_time_logs_dict
