@@ -1,0 +1,10 @@
+Metrics
+#### InvDiff (Image & Text(BLIP-2[smaller-variant] + CLIP) Evaluator(GPT-4))
+#Group A / Class 0
+Dataset acc@1 acc@5 
+Easy    0.91   0.97  
+Medium  0.71   0.83  
+Hard    0.64   0.79  
+
+
+#Avg. Runtime 67.63
