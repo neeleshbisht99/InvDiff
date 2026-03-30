@@ -200,3 +200,14 @@ cache-v3-mimic_cxr-run3/
 cache-v3-mimic_cxr-run4/
 cache-v3-mimic_cxr-run5/
 kosmos-venv/
+
+data/examples/
+
+data/datasets/metashift/
+
+configs/sweep_imagenetr-v3-blip-flan-t5-xxl-run1/
+
+configs/sweep_imagenetstar-v3-blip-flan-t5-xxl-run1/
+
+
+cache-imagenet-v3-blip-flan-t5-xxl-run1/
