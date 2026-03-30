@@ -16,7 +16,10 @@ class InvDiff:
     def __init__(self, args: Dict):
         self.args = args
         self.analysis_type = self.args.get("analysis", "full")
-    
+        self.all_image_embeddings = np.load(self.args["image_embedding_filepath"])
+        with open(self.args["image_path_index_filepath"], "r") as f:
+            self.path_to_idx = json.load(f)
+            
     def pre_process(self, dataset):
         imgs = []
         cls_name = dataset[0]['group_name']
@@ -69,12 +72,19 @@ class InvDiff:
 
         start_time = time.time()
         #extract embeddings
-        class0_img_embeds = get_embeddings(
-            class0_imgs, self.args["clip_model"], "image"
-        )
-        class1_img_embeds = get_embeddings(
-            class1_imgs, self.args["clip_model"], "image"
-        )
+        # class0_img_embeds = get_embeddings(
+        #     class0_imgs, self.args["clip_model"], "image"
+        # )
+        # class1_img_embeds = get_embeddings(
+        #     class1_imgs, self.args["clip_model"], "image"
+        # )
+        
+        class0_idx = [self.path_to_idx[p] for p in class0_imgs]
+        class1_idx = [self.path_to_idx[p] for p in class1_imgs]
+
+        class0_img_embeds = self.all_image_embeddings[class0_idx]
+        class1_img_embeds = self.all_image_embeddings[class1_idx]
+
         elapsed_time_extract_clip_img_embeds = time.time() - start_time
         knowledge_bank_filepath = self.args["knowledge_bank_filepath"]
         # Load universal vocabulary

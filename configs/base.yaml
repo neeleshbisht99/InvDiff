@@ -31,6 +31,8 @@ inv_diff:
   clip_model: ViT-bigG-14
   knowledge_bank_filepath: "data/knowledge_banks/mimic/mimic_knowledge_bank.json"
   knowledge_bank_embedding_filepath: "data/knowledge_banks/mimic/mimic_knowledge_bank_embeddings.npy"
+  image_embedding_filepath: "data/knowledge_banks/mimic/mimic_image_embeddings.npy"
+  image_path_index_filepath: "data/knowledge_banks/mimic/mimic_image_path_to_idx.json"
   analysis: *anys
   inverse_cca:
     type: "cca"
