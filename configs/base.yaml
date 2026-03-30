@@ -29,8 +29,8 @@ evaluator:
 inv_diff:
   method: InvDiff
   clip_model: ViT-bigG-14
-  knowledge_bank_filepath: "data/datasets/knowledge_banks/mimic/mimic_knowledge_bank.json"
-  knowledge_bank_embedding_filepath: "data/datasets/knowledge_banks/mimic/mimic_knowledge_bank_embeddings.npy"
+  knowledge_bank_filepath: "data/knowledge_banks/mimic/mimic_knowledge_bank.json"
+  knowledge_bank_embedding_filepath: "data/knowledge_banks/mimic/mimic_knowledge_bank_embeddings.npy"
   analysis: *anys
   inverse_cca:
     type: "cca"

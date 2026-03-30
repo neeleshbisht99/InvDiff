@@ -208,3 +208,5 @@ kosmos-venv/
 data/datasets/metashift1/
 data/datasets/metashift/
 data/examples/
+
+data/knowledge_banks/mimic/mimic_knowledge_bank_embeddings.npy
