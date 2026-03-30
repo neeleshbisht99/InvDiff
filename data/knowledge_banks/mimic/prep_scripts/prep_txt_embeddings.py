@@ -46,4 +46,4 @@ np.save(OUTPUT_NPY, embeddings)
 print(f"Saved embeddings to {OUTPUT_NPY}")
 
 
-# python3 data/knowledge_banks/mimic/prep_scripts/prep_embeddings.py
+# python3 data/knowledge_banks/mimic/prep_scripts/prep_txt_embeddings.py
