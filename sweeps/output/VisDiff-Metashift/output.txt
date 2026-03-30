@@ -1,0 +1,4 @@
+Metashift Metrics
+#### VisDiff (Image & Text(CLIP) Evaluator(GPT-4))
+Dataset acc@1 acc@5 
+Metashift    0.24   0.46  

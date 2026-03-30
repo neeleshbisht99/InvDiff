@@ -7,7 +7,7 @@ data = pd.read_csv(root + 'runs.csv')
 f = open(root+"output.txt", 'w')
 
 print("Metashift Metrics", file=f)
-print("#### CCDiff (Image & Text(CLIP) Evaluator(GPT-4))", file=f)
+print("#### VisDiff (Image & Text(CLIP) Evaluator(GPT-4))", file=f)
 arr0 = [
     ["Dataset ", "acc@1 ", "acc@5 "],
     ["Metashift    ", f"{round(data['acc@1'].mean(), 2)}   ", f"{round(data['acc@5'].mean(), 2)}  "]

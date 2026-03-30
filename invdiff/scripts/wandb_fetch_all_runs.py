@@ -2,7 +2,7 @@ import pandas as pd
 import wandb
 
 api = wandb.Api()
-entity, project = "neeleshbisht99-carnegie-mellon-university", "CCDiff-MetaShift"
+entity, project = "neeleshbisht99-carnegie-mellon-university", "VisDiff-MetaShift"
 runs = api.runs(entity + "/" + project)
 
 rows = []
@@ -18,11 +18,11 @@ for run in runs:
         "config": config.get("config", ""),
         "data.group1": data.get("group1", ""),
         "data.group2": data.get("group2", ""),
-        "Group A/acc@1": summary.get("Group A/acc@1", ""),
-        "Group A/acc@5": summary.get("Group A/acc@5", ""),
-        "Group A/acc@N": summary.get("Group A/acc@N", ""),
-        "time/propose_rank_minutes": summary.get("time/propose_rank_minutes", ""),
-        "time/propose_rank_seconds": summary.get("time/propose_rank_seconds", ""),
+        "acc@1": summary.get("acc@1", ""),
+        "acc@5": summary.get("acc@5", ""),
+        "acc@N": summary.get("acc@N", ""),
+        # "time/propose_rank_minutes": summary.get("time/propose_rank_minutes", ""),
+        # "time/propose_rank_seconds": summary.get("time/propose_rank_seconds", ""),
     })
     print("fetch another set: ", len(rows))
 

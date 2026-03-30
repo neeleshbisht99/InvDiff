@@ -1,0 +1,1380 @@
+Name,Runtime,analysis,config,data.group1,data.group2,acc@1,acc@5,acc@N
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/0.yaml,rice(plate),rice(food),0.0,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/1.yaml,banana(bowl),banana(man),0.5,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/2.yaml,banana(orange),banana(apple),0.0,0.5,0.5
+VisDiff-MetaShift,39,,configs/sweep_metashift_purity1.0_seed0/3.yaml,banana(bowl),banana(apple),0.5,0.5,0.5
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/4.yaml,banana(bowl),banana(table),0.0,0.5,0.5
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/5.yaml,banana(fruit),banana(apple),0.0,1.0,1.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/6.yaml,meat(plate),meat(sandwich),0.5,0.5,0.5
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/7.yaml,meat(plate),meat(cheese),0.5,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/8.yaml,meat(vegetables),meat(lettuce),0.0,0.5,0.5
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/9.yaml,meat(bowl),meat(napkin),0.5,0.5,0.5
+VisDiff-MetaShift,103,,configs/sweep_metashift_purity1.0_seed0/10.yaml,meat(lettuce),meat(broccoli),0.5,0.5,0.5
+VisDiff-MetaShift,131,,configs/sweep_metashift_purity1.0_seed0/11.yaml,spoon(fork),spoon(chair),0.0,0.0,0.0
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/12.yaml,spoon(bowl),spoon(man),0.5,0.5,0.5
+VisDiff-MetaShift,52,,configs/sweep_metashift_purity1.0_seed0/13.yaml,spoon(bowl),spoon(fork),0.5,0.5,0.5
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/14.yaml,spoon(bowl),spoon(bottle),0.5,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/15.yaml,spoon(plate),spoon(man),0.5,0.5,0.5
+VisDiff-MetaShift,141,,configs/sweep_metashift_purity1.0_seed0/16.yaml,tablecloth(plate),tablecloth(chair),0.0,0.5,0.5
+VisDiff-MetaShift,159,,configs/sweep_metashift_purity1.0_seed0/17.yaml,tablecloth(table),tablecloth(man),0.0,0.5,0.5
+VisDiff-MetaShift,57,,configs/sweep_metashift_purity1.0_seed0/18.yaml,tablecloth(plate),tablecloth(table),0.5,0.5,0.5
+VisDiff-MetaShift,39,,configs/sweep_metashift_purity1.0_seed0/19.yaml,tablecloth(plate),tablecloth(man),0.5,0.5,0.5
+VisDiff-MetaShift,36,,configs/sweep_metashift_purity1.0_seed0/20.yaml,tablecloth(table),tablecloth(chair),0.0,0.0,0.0
+VisDiff-MetaShift,169,,configs/sweep_metashift_purity1.0_seed0/21.yaml,bowl(chair),bowl(glasses),0.0,0.0,0.0
+VisDiff-MetaShift,146,,configs/sweep_metashift_purity1.0_seed0/22.yaml,bowl(cup),bowl(table),0.0,0.5,0.5
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/23.yaml,bowl(cheese),bowl(pizza),0.0,0.5,0.5
+VisDiff-MetaShift,144,,configs/sweep_metashift_purity1.0_seed0/24.yaml,bowl(napkin),bowl(knife),0.0,0.0,0.0
+VisDiff-MetaShift,109,,configs/sweep_metashift_purity1.0_seed0/25.yaml,bowl(banana),bowl(napkin),0.5,1.0,1.0
+VisDiff-MetaShift,140,,configs/sweep_metashift_purity1.0_seed0/26.yaml,dish(food),dish(table),0.5,1.0,1.0
+VisDiff-MetaShift,99,,configs/sweep_metashift_purity1.0_seed0/27.yaml,dish(table),dish(fork),0.0,0.0,0.0
+VisDiff-MetaShift,98,,configs/sweep_metashift_purity1.0_seed0/28.yaml,dish(spoon),dish(food),0.5,0.5,0.5
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/29.yaml,dish(plate),dish(fork),0.0,0.5,0.5
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/30.yaml,dish(bowl),dish(food),0.0,0.0,0.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/31.yaml,plate(bread),plate(carrot),0.5,1.0,1.0
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/32.yaml,plate(coffee),plate(girl),1.0,1.0,1.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/33.yaml,plate(saucer),plate(vase),0.5,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/34.yaml,plate(cheese),plate(boy),0.5,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/35.yaml,plate(bread),plate(napkin),0.5,1.0,1.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/36.yaml,ground(snow),ground(dirt),0.5,1.0,1.0
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/37.yaml,ground(snow),ground(helmet),0.5,1.0,1.0
+VisDiff-MetaShift,114,,configs/sweep_metashift_purity1.0_seed0/38.yaml,ground(airplane),ground(rocks),1.0,1.0,1.0
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/39.yaml,ground(snow),ground(bus),1.0,1.0,1.0
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/40.yaml,ground(car),ground(bus),0.0,0.0,0.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/41.yaml,bushes(woman),bushes(house),0.5,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/42.yaml,bushes(trees),bushes(sign),0.0,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/43.yaml,bushes(man),bushes(bench),0.5,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/44.yaml,bushes(tree),bushes(car),0.0,0.5,0.5
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/45.yaml,bushes(giraffe),bushes(wall),1.0,1.0,1.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/46.yaml,road(dog),road(girl),0.5,1.0,1.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/47.yaml,road(car),road(truck),0.0,0.0,0.0
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/48.yaml,road(bike),road(skateboard),0.5,0.5,0.5
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/49.yaml,road(bicycle),road(lamp),1.0,1.0,1.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/50.yaml,road(box),road(taxi),0.0,0.0,0.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/51.yaml,leaves(branch),leaves(table),0.0,0.0,0.0
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/52.yaml,leaves(branch),leaves(bench),0.0,0.0,0.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/53.yaml,leaves(trees),leaves(bear),0.0,0.0,0.0
+VisDiff-MetaShift,74,,configs/sweep_metashift_purity1.0_seed0/54.yaml,leaves(water),leaves(bench),0.5,0.5,0.5
+VisDiff-MetaShift,95,,configs/sweep_metashift_purity1.0_seed0/55.yaml,leaves(tree),leaves(water),0.0,0.0,0.0
+VisDiff-MetaShift,112,,configs/sweep_metashift_purity1.0_seed0/56.yaml,ski(man),ski(people),0.5,1.0,1.0
+VisDiff-MetaShift,87,,configs/sweep_metashift_purity1.0_seed0/57.yaml,ski(snow),ski(man),0.0,1.0,1.0
+VisDiff-MetaShift,73,,configs/sweep_metashift_purity1.0_seed0/58.yaml,ski(snow),ski(person),0.5,0.5,0.5
+VisDiff-MetaShift,70,,configs/sweep_metashift_purity1.0_seed0/59.yaml,ski(man),ski(helmet),0.5,0.5,0.5
+VisDiff-MetaShift,37,,configs/sweep_metashift_purity1.0_seed0/60.yaml,ski(snow),ski(helmet),0.5,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/61.yaml,boy(building),boy(house),0.0,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/62.yaml,boy(watch),boy(door),0.0,0.0,0.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/63.yaml,boy(boy),boy(sweater),0.0,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/64.yaml,boy(socks),boy(bottle),0.0,0.0,0.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/65.yaml,boy(person),boy(window),0.0,0.0,0.0
+VisDiff-MetaShift,112,,configs/sweep_metashift_purity1.0_seed0/66.yaml,snow(leaves),snow(snowboarder),0.0,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/67.yaml,snow(building),snow(roof),0.0,0.0,0.0
+VisDiff-MetaShift,114,,configs/sweep_metashift_purity1.0_seed0/68.yaml,snow(sky),snow(skier),0.0,0.0,0.0
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/69.yaml,snow(car),snow(girl),0.5,0.5,0.5
+VisDiff-MetaShift,73,,configs/sweep_metashift_purity1.0_seed0/70.yaml,snow(man),snow(girl),0.5,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/71.yaml,pole(bird),pole(fire hydrant),0.5,1.0,1.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/72.yaml,pole(truck),pole(camera),0.5,1.0,1.0
+VisDiff-MetaShift,95,,configs/sweep_metashift_purity1.0_seed0/73.yaml,pole(bicycle),pole(truck),0.5,1.0,1.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/74.yaml,pole(building),pole(horse),0.5,0.5,0.5
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/75.yaml,pole(truck),pole(lady),1.0,1.0,1.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/76.yaml,tree(bag),tree(traffic light),0.0,0.0,0.0
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/77.yaml,tree(stop sign),tree(bus),1.0,1.0,1.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/78.yaml,tree(man),tree(person),0.0,0.5,0.5
+VisDiff-MetaShift,114,,configs/sweep_metashift_purity1.0_seed0/79.yaml,tree(window),tree(bench),0.0,0.0,0.0
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/80.yaml,tree(fire hydrant),tree(bus),1.0,1.0,1.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/81.yaml,dirt(home plate),dirt(horse),1.0,1.0,1.0
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/82.yaml,dirt(grass),dirt(giraffe),0.0,0.0,0.0
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/83.yaml,dirt(animal),dirt(giraffe),0.0,0.5,0.5
+VisDiff-MetaShift,35,,configs/sweep_metashift_purity1.0_seed0/84.yaml,dirt(home plate),dirt(giraffe),0.0,0.5,0.5
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/85.yaml,dirt(tree),dirt(giraffe),0.0,0.0,0.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/86.yaml,men(shirt),men(people),0.5,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/87.yaml,men(jacket),men(pants),0.0,0.0,0.0
+VisDiff-MetaShift,96,,configs/sweep_metashift_purity1.0_seed0/88.yaml,men(woman),men(shirt),0.0,0.0,0.0
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/89.yaml,men(helmet),men(pants),0.5,0.5,0.5
+VisDiff-MetaShift,49,,configs/sweep_metashift_purity1.0_seed0/90.yaml,men(shirt),men(jacket),0.0,0.0,0.0
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/91.yaml,bag(phone),bag(umbrella),0.5,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/92.yaml,bag(ground),bag(seat),0.0,0.0,0.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/93.yaml,bag(motorcycle),bag(laptop),0.5,1.0,1.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/94.yaml,bag(desk),bag(clock),0.5,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/95.yaml,bag(wall),bag(bowl),0.0,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/96.yaml,helmet(woman),helmet(snowboard),0.0,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/97.yaml,helmet(people),helmet(ball),1.0,1.0,1.0
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/98.yaml,helmet(bike),helmet(ball),0.5,0.5,0.5
+VisDiff-MetaShift,34,,configs/sweep_metashift_purity1.0_seed0/99.yaml,helmet(woman),helmet(ball),0.5,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/100.yaml,helmet(men),helmet(bench),0.0,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/101.yaml,grass(airplane),grass(zebras),0.5,1.0,1.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/102.yaml,grass(elephant),grass(sign),0.0,1.0,1.0
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/103.yaml,grass(bird),grass(woman),0.5,1.0,1.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/104.yaml,grass(trees),grass(fence),0.0,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/105.yaml,grass(men),grass(people),0.5,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/106.yaml,bike(tree),bike(wall),0.5,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/107.yaml,bike(sign),bike(basket),0.5,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/108.yaml,bike(mirror),bike(woman),0.0,0.5,0.5
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/109.yaml,bike(ground),bike(basket),0.0,0.0,0.0
+VisDiff-MetaShift,92,,configs/sweep_metashift_purity1.0_seed0/110.yaml,bike(basket),bike(fence),0.5,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/111.yaml,water(bowl),water(boat),0.5,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/112.yaml,water(wall),water(house),0.0,0.0,0.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/113.yaml,water(tower),water(birds),0.0,0.5,0.5
+VisDiff-MetaShift,93,,configs/sweep_metashift_purity1.0_seed0/114.yaml,water(birds),water(child),0.5,1.0,1.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/115.yaml,water(person),water(paddle),0.0,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/116.yaml,man(bicycle),man(fruit),1.0,1.0,1.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/117.yaml,man(keyboard),man(paddle),0.0,1.0,1.0
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/118.yaml,man(ground),man(umpire),0.5,0.5,0.5
+VisDiff-MetaShift,74,,configs/sweep_metashift_purity1.0_seed0/119.yaml,man(keyboard),man(glove),0.5,1.0,1.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/120.yaml,man(collar),man(clock),0.0,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/121.yaml,food(dish),food(lettuce),0.0,0.5,0.5
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/122.yaml,food(tray),food(box),0.5,1.0,1.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/123.yaml,food(bottle),food(table),0.0,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/124.yaml,food(pizza),food(cup),1.0,1.0,1.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/125.yaml,food(fork),food(onion),0.0,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/126.yaml,cake(candle),cake(icing),1.0,1.0,1.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/127.yaml,cake(man),cake(plate),1.0,1.0,1.0
+VisDiff-MetaShift,94,,configs/sweep_metashift_purity1.0_seed0/128.yaml,cake(glasses),cake(candle),0.0,0.0,0.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/129.yaml,cake(table),cake(fork),0.5,0.5,0.5
+VisDiff-MetaShift,74,,configs/sweep_metashift_purity1.0_seed0/130.yaml,cake(woman),cake(plate),1.0,1.0,1.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/131.yaml,faucet(cabinets),faucet(stove),0.0,0.0,0.0
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/132.yaml,faucet(cabinets),faucet(curtain),0.5,1.0,1.0
+VisDiff-MetaShift,111,,configs/sweep_metashift_purity1.0_seed0/133.yaml,faucet(bowl),faucet(towel),0.0,0.0,0.0
+VisDiff-MetaShift,112,,configs/sweep_metashift_purity1.0_seed0/134.yaml,faucet(cabinet),faucet(bottle),0.0,0.5,0.5
+VisDiff-MetaShift,39,,configs/sweep_metashift_purity1.0_seed0/135.yaml,faucet(bowl),faucet(bottle),0.0,0.0,0.0
+VisDiff-MetaShift,110,,configs/sweep_metashift_purity1.0_seed0/136.yaml,window(car),window(cabinets),0.5,1.0,1.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/137.yaml,window(woman),window(lamp),0.0,0.0,0.0
+VisDiff-MetaShift,73,,configs/sweep_metashift_purity1.0_seed0/138.yaml,window(car),window(bottle),0.5,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/139.yaml,window(curtain),window(television),0.0,0.0,0.0
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/140.yaml,window(statue),window(blinds),0.5,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/141.yaml,sofa(wall),sofa(chair),0.0,0.0,0.0
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/142.yaml,sofa(lamp),sofa(chair),0.0,0.0,0.0
+VisDiff-MetaShift,95,,configs/sweep_metashift_purity1.0_seed0/143.yaml,sofa(window),sofa(lamp),0.0,0.0,0.0
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/144.yaml,sofa(pillow),sofa(table),0.0,0.5,0.5
+VisDiff-MetaShift,36,,configs/sweep_metashift_purity1.0_seed0/145.yaml,sofa(lamp),sofa(table),0.0,0.0,0.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/146.yaml,counter(tray),counter(coffee maker),0.0,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/147.yaml,counter(vase),counter(stove),1.0,1.0,1.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/148.yaml,counter(plate),counter(knife),0.0,0.5,0.5
+VisDiff-MetaShift,112,,configs/sweep_metashift_purity1.0_seed0/149.yaml,counter(sink),counter(dishwasher),0.0,0.0,0.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/150.yaml,counter(drawer),counter(cabinets),0.0,0.5,0.5
+VisDiff-MetaShift,114,,configs/sweep_metashift_purity1.0_seed0/151.yaml,cabinet(drawer),cabinet(dishwasher),0.5,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/152.yaml,cabinet(woman),cabinet(lamp),0.0,1.0,1.0
+VisDiff-MetaShift,112,,configs/sweep_metashift_purity1.0_seed0/153.yaml,cabinet(bowl),cabinet(pot),1.0,1.0,1.0
+VisDiff-MetaShift,90,,configs/sweep_metashift_purity1.0_seed0/154.yaml,cabinet(mirror),cabinet(drawer),1.0,1.0,1.0
+VisDiff-MetaShift,114,,configs/sweep_metashift_purity1.0_seed0/155.yaml,cabinet(oven),cabinet(curtain),1.0,1.0,1.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/156.yaml,wall(laptop),wall(house),0.0,1.0,1.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/157.yaml,wall(speaker),wall(bike),0.5,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/158.yaml,wall(trees),wall(teddy bear),0.5,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/159.yaml,wall(picture),wall(bird),0.0,0.0,0.0
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/160.yaml,wall(laptop),wall(tree),0.5,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/161.yaml,sky(trees),sky(sheep),0.0,0.0,0.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/162.yaml,sky(tower),sky(umbrella),0.5,0.5,0.5
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/163.yaml,sky(pole),sky(umbrella),0.0,0.0,0.0
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/164.yaml,sky(airplane),sky(mountains),1.0,1.0,1.0
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/165.yaml,sky(car),sky(ground),0.5,0.5,0.5
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/166.yaml,bicycle(sign),bicycle(bus),0.0,0.0,0.0
+VisDiff-MetaShift,94,,configs/sweep_metashift_purity1.0_seed0/167.yaml,bicycle(bus),bicycle(people),0.5,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/168.yaml,bicycle(pole),bicycle(wall),0.0,0.5,0.5
+VisDiff-MetaShift,36,,configs/sweep_metashift_purity1.0_seed0/169.yaml,bicycle(bus),bicycle(wall),0.5,0.5,0.5
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/170.yaml,bicycle(fence),bicycle(person),0.0,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/171.yaml,fence(rope),fence(cone),0.0,0.0,0.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/172.yaml,fence(racket),fence(wall),0.0,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/173.yaml,fence(skateboard),fence(vehicle),0.0,0.5,0.5
+VisDiff-MetaShift,97,,configs/sweep_metashift_purity1.0_seed0/174.yaml,fence(wall),fence(guy),0.0,0.0,0.0
+VisDiff-MetaShift,95,,configs/sweep_metashift_purity1.0_seed0/175.yaml,fence(lady),fence(rope),0.0,0.0,0.0
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/176.yaml,rocks(fence),rocks(giraffe),0.0,0.0,0.0
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/177.yaml,rocks(fence),rocks(elephant),0.0,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/178.yaml,rocks(ground),rocks(zebra),0.0,0.0,0.0
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/179.yaml,rocks(man),rocks(giraffe),0.0,0.0,0.0
+VisDiff-MetaShift,36,,configs/sweep_metashift_purity1.0_seed0/180.yaml,rocks(fence),rocks(zebra),0.0,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/181.yaml,car(parking meter),car(vehicle),1.0,1.0,1.0
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/182.yaml,car(dog),car(vehicle),0.0,1.0,1.0
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/183.yaml,car(parking meter),car(mirror),1.0,1.0,1.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/184.yaml,car(bicycle),car(fence),0.5,0.5,0.5
+VisDiff-MetaShift,114,,configs/sweep_metashift_purity1.0_seed0/185.yaml,car(plate),car(boy),0.0,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/186.yaml,wire(fence),wire(wall),1.0,1.0,1.0
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/187.yaml,wire(pole),wire(wall),0.0,0.5,0.5
+VisDiff-MetaShift,93,,configs/sweep_metashift_purity1.0_seed0/188.yaml,wire(sky),wire(fence),0.5,0.5,0.5
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/189.yaml,wire(pole),wire(table),0.0,0.5,0.5
+VisDiff-MetaShift,33,,configs/sweep_metashift_purity1.0_seed0/190.yaml,wire(sky),wire(wall),0.5,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/191.yaml,sign(chair),sign(motorcycle),0.5,0.5,0.5
+VisDiff-MetaShift,114,,configs/sweep_metashift_purity1.0_seed0/192.yaml,sign(building),sign(bike),0.0,0.0,0.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/193.yaml,sign(window),sign(truck),0.0,0.0,0.0
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/194.yaml,sign(building),sign(bus),0.5,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/195.yaml,sign(picture),sign(dog),0.0,0.0,0.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/196.yaml,guy(skateboard),guy(glasses),1.0,1.0,1.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/197.yaml,guy(shirt),guy(table),0.0,0.0,0.0
+VisDiff-MetaShift,35,,configs/sweep_metashift_purity1.0_seed0/198.yaml,guy(shirt),guy(glasses),0.0,0.0,0.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/199.yaml,guy(ground),guy(fence),0.0,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/200.yaml,guy(person),guy(hat),0.0,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/201.yaml,camera(table),camera(pole),0.5,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/202.yaml,camera(mirror),camera(person),0.0,1.0,1.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/203.yaml,camera(people),camera(glasses),0.0,0.5,0.5
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/204.yaml,camera(helmet),camera(person),0.5,0.5,0.5
+VisDiff-MetaShift,93,,configs/sweep_metashift_purity1.0_seed0/205.yaml,camera(fence),camera(table),0.0,0.0,0.0
+VisDiff-MetaShift,111,,configs/sweep_metashift_purity1.0_seed0/206.yaml,mirror(toilet),mirror(glasses),0.5,0.5,0.5
+VisDiff-MetaShift,74,,configs/sweep_metashift_purity1.0_seed0/207.yaml,mirror(toilet),mirror(towel),0.5,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/208.yaml,mirror(pillow),mirror(chair),0.0,0.0,0.0
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/209.yaml,mirror(cup),mirror(picture),0.0,0.0,0.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/210.yaml,mirror(counter),mirror(bowl),0.0,0.0,0.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/211.yaml,logo(surfboard),logo(shoe),0.5,1.0,1.0
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/212.yaml,logo(laptop),logo(shoe),0.5,0.5,0.5
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/213.yaml,logo(sign),logo(plate),0.0,0.0,0.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/214.yaml,logo(motorcycle),logo(door),0.5,0.5,0.5
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/215.yaml,logo(shirt),logo(shoe),0.0,0.0,0.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/216.yaml,tower(building),tower(clock),0.0,0.0,0.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/217.yaml,tower(car),tower(man),0.0,0.0,0.0
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/218.yaml,tower(person),tower(man),0.0,0.0,0.0
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/219.yaml,tower(building),tower(sky),0.0,0.0,0.0
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/220.yaml,tower(fence),tower(sky),0.0,0.0,0.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/221.yaml,truck(man),truck(cone),0.0,0.0,0.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/222.yaml,truck(bag),truck(airplane),0.0,0.0,0.0
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/223.yaml,truck(woman),truck(van),0.0,0.0,0.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/224.yaml,truck(grass),truck(tree),0.0,1.0,1.0
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/225.yaml,truck(woman),truck(vehicle),0.0,0.0,0.0
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/226.yaml,people(purse),people(goggles),0.0,0.0,0.0
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/227.yaml,people(cup),people(box),0.0,0.0,0.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/228.yaml,people(jacket),people(umbrellas),0.0,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/229.yaml,people(fence),people(ball),0.0,0.0,0.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/230.yaml,people(suit),people(bicycle),1.0,1.0,1.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/231.yaml,building(truck),building(crowd),0.5,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/232.yaml,building(snow),building(bike),0.5,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/233.yaml,building(house),building(boat),0.0,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/234.yaml,building(tower),building(woman),1.0,1.0,1.0
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/235.yaml,building(trees),building(traffic light),0.0,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/236.yaml,trees(man),trees(mountains),0.0,0.0,0.0
+VisDiff-MetaShift,114,,configs/sweep_metashift_purity1.0_seed0/237.yaml,trees(snow),trees(house),0.0,0.5,0.5
+VisDiff-MetaShift,92,,configs/sweep_metashift_purity1.0_seed0/238.yaml,trees(truck),trees(snow),0.0,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/239.yaml,trees(pole),trees(giraffe),0.0,0.0,0.0
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/240.yaml,trees(truck),trees(boy),0.5,1.0,1.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/241.yaml,street(lamp),street(trash can),0.5,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/242.yaml,street(truck),street(traffic light),0.5,0.5,0.5
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/243.yaml,street(suv),street(skateboard),0.5,1.0,1.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/244.yaml,street(box),street(bike),0.0,0.0,0.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/245.yaml,street(fence),street(man),0.0,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/246.yaml,bench(person),bench(trunk),0.0,0.5,0.5
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/247.yaml,bench(window),bench(bottle),0.0,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/248.yaml,bench(man),bench(tree),0.5,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/249.yaml,bench(bushes),bench(trunk),0.0,0.0,0.0
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/250.yaml,bench(water),bench(trash can),0.5,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/251.yaml,platform(people),platform(woman),0.0,0.0,0.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/252.yaml,platform(fence),platform(person),0.0,0.5,0.5
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/253.yaml,platform(train),platform(woman),1.0,1.0,1.0
+VisDiff-MetaShift,37,,configs/sweep_metashift_purity1.0_seed0/254.yaml,platform(train),platform(person),0.5,1.0,1.0
+VisDiff-MetaShift,96,,configs/sweep_metashift_purity1.0_seed0/255.yaml,platform(person),platform(man),0.0,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/256.yaml,surfer(surfboard),surfer(wetsuit),0.5,0.5,0.5
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/257.yaml,surfer(surfboard),surfer(water),0.0,1.0,1.0
+VisDiff-MetaShift,54,,configs/sweep_metashift_purity1.0_seed0/258.yaml,surfer(water),surfer(wetsuit),1.0,1.0,1.0
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/259.yaml,surfboard(woman),surfboard(people),1.0,1.0,1.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/260.yaml,surfboard(sand),surfboard(man),0.0,1.0,1.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/261.yaml,surfboard(surfer),surfboard(boy),0.5,1.0,1.0
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/262.yaml,surfboard(surfer),surfboard(water),0.5,0.5,0.5
+VisDiff-MetaShift,55,,configs/sweep_metashift_purity1.0_seed0/263.yaml,surfboard(man),surfboard(boy),1.0,1.0,1.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/264.yaml,ocean(woman),ocean(kite),0.0,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/265.yaml,ocean(sky),ocean(person),0.0,0.5,0.5
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/266.yaml,ocean(woman),ocean(man),1.0,1.0,1.0
+VisDiff-MetaShift,91,,configs/sweep_metashift_purity1.0_seed0/267.yaml,ocean(person),ocean(boat),1.0,1.0,1.0
+VisDiff-MetaShift,56,,configs/sweep_metashift_purity1.0_seed0/268.yaml,ocean(man),ocean(person),0.5,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/269.yaml,person(surfboard),person(shorts),1.0,1.0,1.0
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/270.yaml,person(can),person(bench),0.0,0.0,0.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/271.yaml,person(bracelet),person(umbrellas),0.0,0.0,0.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/272.yaml,person(bowl),person(woman),0.0,0.5,0.5
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/273.yaml,person(surfboard),person(tray),1.0,1.0,1.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/274.yaml,skis(person),skis(backpack),0.5,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/275.yaml,skis(snow),skis(skier),0.0,0.5,0.5
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/276.yaml,skis(person),skis(man),0.5,0.5,0.5
+VisDiff-MetaShift,55,,configs/sweep_metashift_purity1.0_seed0/277.yaml,skis(man),skis(skier),0.0,0.0,0.0
+VisDiff-MetaShift,53,,configs/sweep_metashift_purity1.0_seed0/278.yaml,skis(skier),skis(backpack),0.5,1.0,1.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/279.yaml,kitchen(man),kitchen(faucet),1.0,1.0,1.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/280.yaml,kitchen(stove),kitchen(woman),1.0,1.0,1.0
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/281.yaml,kitchen(stove),kitchen(refrigerator),0.5,1.0,1.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/282.yaml,kitchen(chair),kitchen(drawer),0.0,0.0,0.0
+VisDiff-MetaShift,112,,configs/sweep_metashift_purity1.0_seed0/283.yaml,kitchen(cabinets),kitchen(cabinet),0.0,0.0,0.0
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/284.yaml,fork(container),fork(table),0.0,0.5,0.5
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/285.yaml,fork(cup),fork(chair),0.0,0.0,0.0
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/286.yaml,fork(knife),fork(food),0.0,0.5,0.5
+VisDiff-MetaShift,97,,configs/sweep_metashift_purity1.0_seed0/287.yaml,fork(table),fork(cheese),0.0,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/288.yaml,fork(bread),fork(person),0.0,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/289.yaml,stove(counter),stove(bowl),0.0,0.0,0.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/290.yaml,stove(pan),stove(bottle),0.0,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/291.yaml,stove(drawer),stove(table),0.0,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/292.yaml,stove(cabinets),stove(shelf),0.5,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/293.yaml,stove(oven),stove(refrigerator),1.0,1.0,1.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/294.yaml,shirt(man),shirt(coat),0.0,0.0,0.0
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/295.yaml,shirt(man),shirt(jacket),0.5,0.5,0.5
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/296.yaml,shirt(bear),shirt(sweater),0.0,0.5,0.5
+VisDiff-MetaShift,97,,configs/sweep_metashift_purity1.0_seed0/297.yaml,shirt(jacket),shirt(bed),0.0,0.0,0.0
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/298.yaml,shirt(tie),shirt(bed),0.5,1.0,1.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/299.yaml,hat(man),hat(hair),0.0,0.5,0.5
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/300.yaml,hat(man),hat(dog),0.0,0.0,0.0
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/301.yaml,hat(man),hat(table),0.0,0.5,0.5
+VisDiff-MetaShift,54,,configs/sweep_metashift_purity1.0_seed0/302.yaml,hat(dog),hat(table),0.0,0.5,0.5
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/303.yaml,hat(dog),hat(wall),0.0,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/304.yaml,pan(table),pan(pizza),0.0,0.5,0.5
+VisDiff-MetaShift,92,,configs/sweep_metashift_purity1.0_seed0/305.yaml,pan(pizza),pan(counter),0.5,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/306.yaml,pan(stove),pan(counter),1.0,1.0,1.0
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/307.yaml,pan(wall),pan(counter),0.0,0.0,0.0
+VisDiff-MetaShift,37,,configs/sweep_metashift_purity1.0_seed0/308.yaml,pan(table),pan(counter),0.5,0.5,0.5
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/309.yaml,basket(man),basket(table),0.5,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/310.yaml,basket(floor),basket(food),0.5,0.5,0.5
+VisDiff-MetaShift,96,,configs/sweep_metashift_purity1.0_seed0/311.yaml,basket(food),basket(bag),0.5,0.5,0.5
+VisDiff-MetaShift,51,,configs/sweep_metashift_purity1.0_seed0/312.yaml,basket(man),basket(floor),0.0,0.0,0.0
+VisDiff-MetaShift,37,,configs/sweep_metashift_purity1.0_seed0/313.yaml,basket(floor),basket(bag),0.0,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/314.yaml,straw(glass),straw(cup),0.0,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/315.yaml,glass(table),glass(bottle),0.0,0.0,0.0
+VisDiff-MetaShift,90,,configs/sweep_metashift_purity1.0_seed0/316.yaml,glass(bottle),glass(sink),0.0,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/317.yaml,glass(pizza),glass(drink),0.5,0.5,0.5
+VisDiff-MetaShift,95,,configs/sweep_metashift_purity1.0_seed0/318.yaml,glass(wine),glass(pizza),0.5,1.0,1.0
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/319.yaml,glass(man),glass(bowl),0.0,0.5,0.5
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/320.yaml,wine(plate),wine(table),0.0,0.0,0.0
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/321.yaml,wine(glass),wine(wine glass),0.0,0.0,0.0
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/322.yaml,wine(glass),wine(man),0.0,0.0,0.0
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/323.yaml,wine(woman),wine(table),0.0,1.0,1.0
+VisDiff-MetaShift,98,,configs/sweep_metashift_purity1.0_seed0/324.yaml,wine(table),wine(bottle),0.0,0.0,0.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/325.yaml,roof(house),roof(snow),0.0,0.0,0.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/326.yaml,roof(building),roof(man),0.0,1.0,1.0
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/327.yaml,roof(train),roof(snow),0.5,0.5,0.5
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/328.yaml,roof(clock),roof(snow),1.0,1.0,1.0
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/329.yaml,roof(chimney),roof(snow),0.0,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/330.yaml,clouds(sun),clouds(kite),0.5,0.5,0.5
+VisDiff-MetaShift,92,,configs/sweep_metashift_purity1.0_seed0/331.yaml,clouds(airplane),clouds(sun),0.0,0.5,0.5
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/332.yaml,clouds(sky),clouds(sun),0.0,0.0,0.0
+VisDiff-MetaShift,70,,configs/sweep_metashift_purity1.0_seed0/333.yaml,clouds(sky),clouds(trees),0.0,0.0,0.0
+VisDiff-MetaShift,64,,configs/sweep_metashift_purity1.0_seed0/334.yaml,clouds(trees),clouds(airplane),0.0,0.0,0.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/335.yaml,cow(grass),cow(ground),0.5,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/336.yaml,cow(fence),cow(tree),0.5,1.0,1.0
+VisDiff-MetaShift,51,,configs/sweep_metashift_purity1.0_seed0/337.yaml,cow(grass),cow(fence),0.0,0.5,0.5
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/338.yaml,cow(man),cow(tree),0.0,0.5,0.5
+VisDiff-MetaShift,53,,configs/sweep_metashift_purity1.0_seed0/339.yaml,cow(ground),cow(fence),0.0,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/340.yaml,field(grass),field(woman),0.5,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/341.yaml,field(boy),field(zebra),0.5,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/342.yaml,field(player),field(batter),0.5,1.0,1.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/343.yaml,field(trees),field(bench),0.0,0.0,0.0
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/344.yaml,field(house),field(batter),0.5,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/345.yaml,container(bottle),container(bread),0.0,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/346.yaml,container(shelf),container(counter),0.0,1.0,1.0
+VisDiff-MetaShift,90,,configs/sweep_metashift_purity1.0_seed0/347.yaml,container(counter),container(cabinet),0.5,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/348.yaml,container(fork),container(bowl),0.0,0.5,0.5
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/349.yaml,container(bag),container(food),0.0,0.0,0.0
+VisDiff-MetaShift,114,,configs/sweep_metashift_purity1.0_seed0/350.yaml,knife(spoon),knife(cake),0.0,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/351.yaml,knife(glasses),knife(counter),0.0,0.0,0.0
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/352.yaml,knife(bottle),knife(cake),0.0,0.0,0.0
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/353.yaml,knife(bread),knife(counter),0.0,0.0,0.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/354.yaml,knife(napkin),knife(person),0.0,0.0,0.0
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/355.yaml,cat(book),cat(shelf),0.5,1.0,1.0
+VisDiff-MetaShift,112,,configs/sweep_metashift_purity1.0_seed0/356.yaml,cat(keyboard),cat(screen),1.0,1.0,1.0
+VisDiff-MetaShift,73,,configs/sweep_metashift_purity1.0_seed0/357.yaml,cat(book),cat(bed),1.0,1.0,1.0
+VisDiff-MetaShift,113,,configs/sweep_metashift_purity1.0_seed0/358.yaml,cat(floor),cat(collar),0.0,0.5,0.5
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/359.yaml,cat(carpet),cat(screen),0.0,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/360.yaml,beach(girl),beach(boat),0.5,1.0,1.0
+VisDiff-MetaShift,110,,configs/sweep_metashift_purity1.0_seed0/361.yaml,beach(sky),beach(sand),0.0,0.5,0.5
+VisDiff-MetaShift,74,,configs/sweep_metashift_purity1.0_seed0/362.yaml,beach(girl),beach(woman),1.0,1.0,1.0
+VisDiff-MetaShift,111,,configs/sweep_metashift_purity1.0_seed0/363.yaml,beach(kite),beach(boy),1.0,1.0,1.0
+VisDiff-MetaShift,73,,configs/sweep_metashift_purity1.0_seed0/364.yaml,beach(surfboard),beach(boy),0.5,1.0,1.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/365.yaml,keyboard(box),keyboard(picture),1.0,1.0,1.0
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/366.yaml,keyboard(box),keyboard(speaker),0.0,0.0,0.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/367.yaml,keyboard(laptop),keyboard(book),0.5,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/368.yaml,keyboard(man),keyboard(computer mouse),0.0,0.5,0.5
+VisDiff-MetaShift,74,,configs/sweep_metashift_purity1.0_seed0/369.yaml,keyboard(laptop),keyboard(shelf),0.0,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/370.yaml,laptop(cell phone),laptop(picture),0.5,1.0,1.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/371.yaml,laptop(keyboard),laptop(wall),0.0,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/372.yaml,laptop(phone),laptop(shelf),0.0,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/373.yaml,laptop(pillow),laptop(person),0.5,0.5,0.5
+VisDiff-MetaShift,92,,configs/sweep_metashift_purity1.0_seed0/374.yaml,laptop(glasses),laptop(pillow),0.0,0.0,0.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/375.yaml,can(man),can(bag),1.0,1.0,1.0
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/376.yaml,can(man),can(box),0.5,0.5,0.5
+VisDiff-MetaShift,90,,configs/sweep_metashift_purity1.0_seed0/377.yaml,can(box),can(bottle),0.0,0.0,0.0
+VisDiff-MetaShift,112,,configs/sweep_metashift_purity1.0_seed0/378.yaml,can(table),can(woman),0.0,0.5,0.5
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/379.yaml,can(box),can(person),0.0,0.0,0.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/380.yaml,cell phone(desk),cell phone(bottle),0.0,0.0,0.0
+VisDiff-MetaShift,114,,configs/sweep_metashift_purity1.0_seed0/381.yaml,cell phone(girl),cell phone(chair),0.5,1.0,1.0
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/382.yaml,cell phone(laptop),cell phone(bottle),1.0,1.0,1.0
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/383.yaml,cell phone(keyboard),cell phone(bottle),0.5,0.5,0.5
+VisDiff-MetaShift,73,,configs/sweep_metashift_purity1.0_seed0/384.yaml,cell phone(desk),cell phone(people),0.5,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/385.yaml,desk(wall),desk(speaker),0.0,0.0,0.0
+VisDiff-MetaShift,114,,configs/sweep_metashift_purity1.0_seed0/386.yaml,desk(chair),desk(mouse pad),0.0,0.0,0.0
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/387.yaml,desk(cell phone),desk(cat),0.5,1.0,1.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/388.yaml,desk(computer mouse),desk(books),1.0,1.0,1.0
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/389.yaml,desk(book),desk(mouse pad),0.0,0.5,0.5
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/390.yaml,computer(chair),computer(table),0.5,0.5,0.5
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/391.yaml,computer(shelf),computer(phone),0.0,0.0,0.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/392.yaml,computer(keyboard),computer(laptop),0.0,0.0,0.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/393.yaml,computer(monitor),computer(speaker),0.0,0.5,0.5
+VisDiff-MetaShift,93,,configs/sweep_metashift_purity1.0_seed0/394.yaml,computer(desk),computer(chair),0.0,1.0,1.0
+VisDiff-MetaShift,111,,configs/sweep_metashift_purity1.0_seed0/395.yaml,ceiling(man),ceiling(train),0.0,0.0,0.0
+VisDiff-MetaShift,70,,configs/sweep_metashift_purity1.0_seed0/396.yaml,ceiling(man),ceiling(lamp),0.0,0.0,0.0
+VisDiff-MetaShift,50,,configs/sweep_metashift_purity1.0_seed0/397.yaml,ceiling(train),ceiling(lamp),0.0,0.0,0.0
+VisDiff-MetaShift,112,,configs/sweep_metashift_purity1.0_seed0/398.yaml,girl(man),girl(helmet),0.0,0.0,0.0
+VisDiff-MetaShift,114,,configs/sweep_metashift_purity1.0_seed0/399.yaml,girl(hat),girl(box),0.0,0.0,0.0
+VisDiff-MetaShift,113,,configs/sweep_metashift_purity1.0_seed0/400.yaml,girl(pants),girl(jacket),0.0,0.0,0.0
+VisDiff-MetaShift,73,,configs/sweep_metashift_purity1.0_seed0/401.yaml,girl(pants),girl(ball),0.0,0.0,0.0
+VisDiff-MetaShift,112,,configs/sweep_metashift_purity1.0_seed0/402.yaml,girl(picture),girl(snow),0.0,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/403.yaml,chair(lady),chair(computer mouse),0.0,0.0,0.0
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/404.yaml,chair(picture),chair(pillow),0.0,0.0,0.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/405.yaml,chair(bag),chair(bottle),0.0,0.5,0.5
+VisDiff-MetaShift,114,,configs/sweep_metashift_purity1.0_seed0/406.yaml,chair(pot),chair(bed),0.0,0.0,0.0
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/407.yaml,chair(dog),chair(car),0.5,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/408.yaml,papers(wall),papers(table),0.0,0.5,0.5
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/409.yaml,papers(keyboard),papers(table),0.0,1.0,1.0
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/410.yaml,papers(desk),papers(table),0.0,1.0,1.0
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/411.yaml,papers(desk),papers(man),1.0,1.0,1.0
+VisDiff-MetaShift,51,,configs/sweep_metashift_purity1.0_seed0/412.yaml,papers(man),papers(table),0.5,0.5,0.5
+VisDiff-MetaShift,113,,configs/sweep_metashift_purity1.0_seed0/413.yaml,collar(shirt),collar(cat),0.0,0.0,0.0
+VisDiff-MetaShift,90,,configs/sweep_metashift_purity1.0_seed0/414.yaml,collar(cat),collar(dog),0.0,0.0,0.0
+VisDiff-MetaShift,35,,configs/sweep_metashift_purity1.0_seed0/415.yaml,collar(shirt),collar(dog),0.5,0.5,0.5
+VisDiff-MetaShift,113,,configs/sweep_metashift_purity1.0_seed0/416.yaml,graffiti(pole),graffiti(wall),0.0,0.5,0.5
+VisDiff-MetaShift,74,,configs/sweep_metashift_purity1.0_seed0/417.yaml,graffiti(pole),graffiti(sign),0.0,0.0,0.0
+VisDiff-MetaShift,52,,configs/sweep_metashift_purity1.0_seed0/418.yaml,graffiti(sign),graffiti(wall),0.0,1.0,1.0
+VisDiff-MetaShift,107,,configs/sweep_metashift_purity1.0_seed0/419.yaml,train tracks(train),train tracks(gravel),0.0,0.5,0.5
+VisDiff-MetaShift,71,,configs/sweep_metashift_purity1.0_seed0/420.yaml,train tracks(train),train tracks(fence),0.5,0.5,0.5
+VisDiff-MetaShift,50,,configs/sweep_metashift_purity1.0_seed0/421.yaml,train tracks(fence),train tracks(gravel),0.0,0.0,0.0
+VisDiff-MetaShift,107,,configs/sweep_metashift_purity1.0_seed0/422.yaml,power lines(train),power lines(trees),0.0,0.5,0.5
+VisDiff-MetaShift,73,,configs/sweep_metashift_purity1.0_seed0/423.yaml,power lines(sky),power lines(trees),0.0,0.0,0.0
+VisDiff-MetaShift,112,,configs/sweep_metashift_purity1.0_seed0/424.yaml,power lines(pole),power lines(building),0.0,0.0,0.0
+VisDiff-MetaShift,49,,configs/sweep_metashift_purity1.0_seed0/425.yaml,power lines(pole),power lines(sky),0.0,0.0,0.0
+VisDiff-MetaShift,48,,configs/sweep_metashift_purity1.0_seed0/426.yaml,power lines(train),power lines(pole),0.0,0.5,0.5
+VisDiff-MetaShift,113,,configs/sweep_metashift_purity1.0_seed0/427.yaml,train(train tracks),train(bench),0.0,1.0,1.0
+VisDiff-MetaShift,70,,configs/sweep_metashift_purity1.0_seed0/428.yaml,train(train tracks),train(ceiling),1.0,1.0,1.0
+VisDiff-MetaShift,109,,configs/sweep_metashift_purity1.0_seed0/429.yaml,train(people),train(wires),0.0,1.0,1.0
+VisDiff-MetaShift,110,,configs/sweep_metashift_purity1.0_seed0/430.yaml,train(street light),train(bag),0.0,0.0,0.0
+VisDiff-MetaShift,51,,configs/sweep_metashift_purity1.0_seed0/431.yaml,train(wires),train(bench),0.5,0.5,0.5
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/432.yaml,door(toilet),door(sign),0.0,0.5,0.5
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/433.yaml,door(boy),door(curtain),0.5,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/434.yaml,door(window),door(stairs),0.0,0.0,0.0
+VisDiff-MetaShift,112,,configs/sweep_metashift_purity1.0_seed0/435.yaml,door(clock),door(plate),1.0,1.0,1.0
+VisDiff-MetaShift,70,,configs/sweep_metashift_purity1.0_seed0/436.yaml,door(towel),door(stairs),0.0,0.5,0.5
+VisDiff-MetaShift,111,,configs/sweep_metashift_purity1.0_seed0/437.yaml,cone(helmet),cone(fence),0.0,0.0,0.0
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/438.yaml,cone(car),cone(person),0.5,0.5,0.5
+VisDiff-MetaShift,73,,configs/sweep_metashift_purity1.0_seed0/439.yaml,cone(helmet),cone(truck),0.0,0.0,0.0
+VisDiff-MetaShift,48,,configs/sweep_metashift_purity1.0_seed0/440.yaml,cone(car),cone(helmet),0.0,0.0,0.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/441.yaml,cone(airplane),cone(man),0.5,0.5,0.5
+VisDiff-MetaShift,110,,configs/sweep_metashift_purity1.0_seed0/442.yaml,airplane(clouds),airplane(person),1.0,1.0,1.0
+VisDiff-MetaShift,111,,configs/sweep_metashift_purity1.0_seed0/443.yaml,airplane(sky),airplane(truck),1.0,1.0,1.0
+VisDiff-MetaShift,114,,configs/sweep_metashift_purity1.0_seed0/444.yaml,airplane(sign),airplane(water),0.5,0.5,0.5
+VisDiff-MetaShift,88,,configs/sweep_metashift_purity1.0_seed0/445.yaml,airplane(trees),airplane(clouds),1.0,1.0,1.0
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/446.yaml,airplane(trees),airplane(fence),0.0,0.0,0.0
+VisDiff-MetaShift,108,,configs/sweep_metashift_purity1.0_seed0/447.yaml,runway(airplane),runway(grass),0.0,1.0,1.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/448.yaml,words(sign),words(wall),0.0,1.0,1.0
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/449.yaml,elephant(woman),elephant(leaves),0.0,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/450.yaml,elephant(rocks),elephant(bushes),0.0,1.0,1.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/451.yaml,elephant(bush),elephant(fence),0.5,1.0,1.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/452.yaml,elephant(building),elephant(trees),0.0,1.0,1.0
+VisDiff-MetaShift,91,,configs/sweep_metashift_purity1.0_seed0/453.yaml,elephant(tree),elephant(bush),0.0,0.0,0.0
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/454.yaml,picture(desk),picture(television),1.0,1.0,1.0
+VisDiff-MetaShift,73,,configs/sweep_metashift_purity1.0_seed0/455.yaml,picture(desk),picture(fence),0.5,1.0,1.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/456.yaml,picture(table),picture(cabinet),0.0,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/457.yaml,picture(man),picture(vase),0.0,0.0,0.0
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/458.yaml,picture(desk),picture(cat),1.0,1.0,1.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/459.yaml,toilet(bottle),toilet(pipe),0.0,0.5,0.5
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/460.yaml,toilet(window),toilet(toilet paper),0.5,0.5,0.5
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/461.yaml,toilet(lid),toilet(bathtub),0.5,0.5,0.5
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/462.yaml,toilet(lid),toilet(box),0.0,0.0,0.0
+VisDiff-MetaShift,114,,configs/sweep_metashift_purity1.0_seed0/463.yaml,toilet(faucet),toilet(towel),0.5,0.5,0.5
+VisDiff-MetaShift,112,,configs/sweep_metashift_purity1.0_seed0/464.yaml,soap(mirror),soap(sink),0.0,0.5,0.5
+VisDiff-MetaShift,113,,configs/sweep_metashift_purity1.0_seed0/465.yaml,soap(faucet),soap(towel),0.0,0.5,0.5
+VisDiff-MetaShift,50,,configs/sweep_metashift_purity1.0_seed0/466.yaml,soap(mirror),soap(faucet),0.0,0.0,0.0
+VisDiff-MetaShift,51,,configs/sweep_metashift_purity1.0_seed0/467.yaml,soap(sink),soap(towel),0.0,0.0,0.0
+VisDiff-MetaShift,35,,configs/sweep_metashift_purity1.0_seed0/468.yaml,soap(mirror),soap(towel),0.5,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/469.yaml,outlet(mirror),outlet(wall),0.5,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/470.yaml,paper(toilet),paper(desk),0.5,1.0,1.0
+VisDiff-MetaShift,95,,configs/sweep_metashift_purity1.0_seed0/471.yaml,paper(desk),paper(pole),0.5,1.0,1.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/472.yaml,paper(table),paper(bread),0.0,0.5,0.5
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/473.yaml,paper(table),paper(plate),0.0,0.0,0.0
+VisDiff-MetaShift,33,,configs/sweep_metashift_purity1.0_seed0/474.yaml,paper(toilet),paper(bread),0.0,1.0,1.0
+VisDiff-MetaShift,113,,configs/sweep_metashift_purity1.0_seed0/475.yaml,sink(mirror),sink(pipe),0.5,0.5,0.5
+VisDiff-MetaShift,113,,configs/sweep_metashift_purity1.0_seed0/476.yaml,sink(toilet),sink(cup),1.0,1.0,1.0
+VisDiff-MetaShift,114,,configs/sweep_metashift_purity1.0_seed0/477.yaml,sink(towel),sink(bowl),0.0,0.5,0.5
+VisDiff-MetaShift,51,,configs/sweep_metashift_purity1.0_seed0/478.yaml,sink(mirror),sink(towel),1.0,1.0,1.0
+VisDiff-MetaShift,112,,configs/sweep_metashift_purity1.0_seed0/479.yaml,sink(wall),sink(counter),0.5,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/480.yaml,floor(pot),floor(desk),0.5,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/481.yaml,floor(refrigerator),floor(couch),0.0,0.5,0.5
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/482.yaml,floor(cat),floor(book),1.0,1.0,1.0
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/483.yaml,floor(container),floor(can),0.0,0.0,0.0
+VisDiff-MetaShift,73,,configs/sweep_metashift_purity1.0_seed0/484.yaml,floor(refrigerator),floor(blanket),0.0,0.5,0.5
+VisDiff-MetaShift,110,,configs/sweep_metashift_purity1.0_seed0/485.yaml,bathroom(towel),bathroom(cabinet),0.0,0.0,0.0
+VisDiff-MetaShift,86,,configs/sweep_metashift_purity1.0_seed0/486.yaml,bathroom(cabinet),bathroom(toilet paper),1.0,1.0,1.0
+VisDiff-MetaShift,36,,configs/sweep_metashift_purity1.0_seed0/487.yaml,bathroom(towel),bathroom(toilet paper),0.0,0.0,0.0
+VisDiff-MetaShift,72,,configs/sweep_metashift_purity1.0_seed0/488.yaml,bathroom(curtain),bathroom(toilet paper),1.0,1.0,1.0
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/489.yaml,bathroom(towel),bathroom(trash can),0.0,0.5,0.5
+VisDiff-MetaShift,112,,configs/sweep_metashift_purity1.0_seed0/490.yaml,drawer(sink),drawer(counter),0.0,0.0,0.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/491.yaml,drawer(desk),drawer(bottle),0.0,0.5,0.5
+VisDiff-MetaShift,95,,configs/sweep_metashift_purity1.0_seed0/492.yaml,drawer(bottle),drawer(chair),0.0,0.5,0.5
+VisDiff-MetaShift,72,,configs/sweep_metashift_purity1.0_seed0/493.yaml,drawer(desk),drawer(oven),0.5,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/494.yaml,drawer(towel),drawer(refrigerator),0.5,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/495.yaml,pavement(fence),pavement(skateboard),0.0,0.0,0.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/496.yaml,pavement(car),pavement(person),0.5,1.0,1.0
+VisDiff-MetaShift,35,,configs/sweep_metashift_purity1.0_seed0/497.yaml,pavement(car),pavement(skateboard),0.5,1.0,1.0
+VisDiff-MetaShift,92,,configs/sweep_metashift_purity1.0_seed0/498.yaml,pavement(person),pavement(people),0.0,0.5,0.5
+VisDiff-MetaShift,74,,configs/sweep_metashift_purity1.0_seed0/499.yaml,pavement(person),pavement(man),0.5,0.5,0.5
+VisDiff-MetaShift,112,,configs/sweep_metashift_purity1.0_seed0/500.yaml,house(woman),house(bushes),0.5,0.5,0.5
+VisDiff-MetaShift,113,,configs/sweep_metashift_purity1.0_seed0/501.yaml,house(tree),house(people),0.5,0.5,0.5
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/502.yaml,house(boat),house(bushes),0.5,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/503.yaml,house(person),house(water),0.0,0.0,0.0
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/504.yaml,house(truck),house(people),0.5,0.5,0.5
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/505.yaml,arrow(sign),arrow(street sign),0.0,0.0,0.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/506.yaml,box(counter),box(television),0.0,0.0,0.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/507.yaml,box(plate),box(food),0.0,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/508.yaml,box(bag),box(lamp),0.0,0.0,0.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/509.yaml,box(screen),box(table),0.0,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/510.yaml,box(fence),box(keyboard),0.5,0.5,0.5
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/511.yaml,salad(table),salad(bowl),0.0,0.5,0.5
+VisDiff-MetaShift,94,,configs/sweep_metashift_purity1.0_seed0/512.yaml,salad(fork),salad(table),0.0,0.5,0.5
+VisDiff-MetaShift,35,,configs/sweep_metashift_purity1.0_seed0/513.yaml,salad(fork),salad(bowl),0.0,0.0,0.0
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/514.yaml,salad(fork),salad(plate),0.0,0.0,0.0
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/515.yaml,salad(food),salad(plate),0.5,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/516.yaml,table(apple),table(building),1.0,1.0,1.0
+VisDiff-MetaShift,114,,configs/sweep_metashift_purity1.0_seed0/517.yaml,table(pillow),table(carpet),0.5,0.5,0.5
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/518.yaml,table(backpack),table(carpet),0.5,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/519.yaml,table(clock),table(girl),1.0,1.0,1.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/520.yaml,table(person),table(books),0.5,1.0,1.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/521.yaml,lettuce(meat),lettuce(sandwich),0.5,0.5,0.5
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/522.yaml,lettuce(fork),lettuce(sandwich),0.5,0.5,0.5
+VisDiff-MetaShift,112,,configs/sweep_metashift_purity1.0_seed0/523.yaml,lettuce(tomato),lettuce(bread),0.0,0.0,0.0
+VisDiff-MetaShift,96,,configs/sweep_metashift_purity1.0_seed0/524.yaml,lettuce(cheese),lettuce(meat),0.0,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/525.yaml,lettuce(food),lettuce(plate),0.0,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/526.yaml,apple(orange),apple(fruit),0.5,0.5,0.5
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/527.yaml,apple(orange),apple(bowl),0.0,0.5,0.5
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/528.yaml,apple(orange),apple(banana),0.5,0.5,0.5
+VisDiff-MetaShift,55,,configs/sweep_metashift_purity1.0_seed0/529.yaml,apple(banana),apple(fruit),0.0,0.5,0.5
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/530.yaml,apple(table),apple(banana),0.0,0.5,0.5
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/531.yaml,giraffe(ground),giraffe(bushes),0.0,0.5,0.5
+VisDiff-MetaShift,99,,configs/sweep_metashift_purity1.0_seed0/532.yaml,giraffe(bushes),giraffe(branches),0.5,0.5,0.5
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/533.yaml,giraffe(tree),giraffe(dirt),1.0,1.0,1.0
+VisDiff-MetaShift,88,,configs/sweep_metashift_purity1.0_seed0/534.yaml,giraffe(zebra),giraffe(branches),0.5,0.5,0.5
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/535.yaml,giraffe(fence),giraffe(rocks),0.5,1.0,1.0
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/536.yaml,boat(water),boat(bird),0.5,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/537.yaml,boat(people),boat(person),0.0,0.5,0.5
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/538.yaml,boat(building),boat(umbrella),0.5,0.5,0.5
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/539.yaml,boat(building),boat(trees),0.5,0.5,0.5
+VisDiff-MetaShift,83,,configs/sweep_metashift_purity1.0_seed0/540.yaml,boat(man),boat(bird),0.5,1.0,1.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/541.yaml,purse(man),purse(woman),0.0,0.0,0.0
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/542.yaml,purse(girl),purse(umbrella),0.0,0.0,0.0
+VisDiff-MetaShift,103,,configs/sweep_metashift_purity1.0_seed0/543.yaml,purse(woman),purse(bag),0.0,0.0,0.0
+VisDiff-MetaShift,55,,configs/sweep_metashift_purity1.0_seed0/544.yaml,purse(woman),purse(girl),0.0,0.0,0.0
+VisDiff-MetaShift,38,,configs/sweep_metashift_purity1.0_seed0/545.yaml,purse(woman),purse(umbrella),0.0,0.0,0.0
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/546.yaml,lady(shorts),lady(girl),0.0,0.5,0.5
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/547.yaml,lady(woman),lady(glasses),0.0,0.0,0.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/548.yaml,lady(shoes),lady(plate),0.0,0.0,0.0
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/549.yaml,lady(ground),lady(plate),0.0,0.0,0.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/550.yaml,lady(umbrella),lady(coat),1.0,1.0,1.0
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/551.yaml,rope(man),rope(fence),0.0,0.0,0.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/552.yaml,rope(boat),rope(woman),0.5,1.0,1.0
+VisDiff-MetaShift,52,,configs/sweep_metashift_purity1.0_seed0/553.yaml,rope(boat),rope(man),0.5,1.0,1.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/554.yaml,rope(people),rope(pole),0.5,0.5,0.5
+VisDiff-MetaShift,36,,configs/sweep_metashift_purity1.0_seed0/555.yaml,rope(man),rope(pole),0.5,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/556.yaml,buildings(train),buildings(fence),0.5,1.0,1.0
+VisDiff-MetaShift,95,,configs/sweep_metashift_purity1.0_seed0/557.yaml,buildings(fence),buildings(bus),0.5,0.5,0.5
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/558.yaml,buildings(train),buildings(trees),1.0,1.0,1.0
+VisDiff-MetaShift,93,,configs/sweep_metashift_purity1.0_seed0/559.yaml,buildings(sky),buildings(train),0.0,0.0,0.0
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/560.yaml,buildings(car),buildings(train),0.0,1.0,1.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/561.yaml,sidewalk(dog),sidewalk(cars),0.5,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/562.yaml,sidewalk(people),sidewalk(child),0.5,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/563.yaml,sidewalk(dog),sidewalk(suv),0.0,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/564.yaml,sidewalk(truck),sidewalk(bus),0.0,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/565.yaml,sidewalk(woman),sidewalk(boy),0.0,0.5,0.5
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/566.yaml,bird(grass),bird(branch),0.0,0.5,0.5
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/567.yaml,bird(grass),bird(building),0.5,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/568.yaml,bird(boat),bird(rock),0.5,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/569.yaml,bird(wall),bird(building),0.0,0.5,0.5
+VisDiff-MetaShift,97,,configs/sweep_metashift_purity1.0_seed0/570.yaml,bird(water),bird(boat),0.5,1.0,1.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/571.yaml,palm tree(person),palm tree(man),0.0,0.0,0.0
+VisDiff-MetaShift,97,,configs/sweep_metashift_purity1.0_seed0/572.yaml,palm tree(man),palm tree(building),0.0,0.5,0.5
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/573.yaml,palm tree(sky),palm tree(man),0.5,0.5,0.5
+VisDiff-MetaShift,36,,configs/sweep_metashift_purity1.0_seed0/574.yaml,palm tree(sky),palm tree(building),0.0,0.5,0.5
+VisDiff-MetaShift,35,,configs/sweep_metashift_purity1.0_seed0/575.yaml,palm tree(person),palm tree(building),0.0,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/576.yaml,kite(water),kite(sand),0.0,0.5,0.5
+VisDiff-MetaShift,99,,configs/sweep_metashift_purity1.0_seed0/577.yaml,kite(girl),kite(water),0.5,0.5,0.5
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/578.yaml,kite(person),kite(ground),0.0,1.0,1.0
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/579.yaml,kite(people),kite(sand),1.0,1.0,1.0
+VisDiff-MetaShift,95,,configs/sweep_metashift_purity1.0_seed0/580.yaml,kite(sky),kite(people),0.5,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/581.yaml,motorcycle(people),motorcycle(person),0.0,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/582.yaml,motorcycle(fence),motorcycle(bike),0.5,1.0,1.0
+VisDiff-MetaShift,97,,configs/sweep_metashift_purity1.0_seed0/583.yaml,motorcycle(person),motorcycle(mirror),0.0,0.0,0.0
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/584.yaml,motorcycle(people),motorcycle(wall),0.5,1.0,1.0
+VisDiff-MetaShift,53,,configs/sweep_metashift_purity1.0_seed0/585.yaml,motorcycle(wall),motorcycle(bike),0.0,0.5,0.5
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/586.yaml,jacket(chair),jacket(bench),0.0,0.0,0.0
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/587.yaml,jacket(shirt),jacket(bench),0.0,0.5,0.5
+VisDiff-MetaShift,58,,configs/sweep_metashift_purity1.0_seed0/588.yaml,jacket(shirt),jacket(chair),0.0,0.0,0.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/589.yaml,street light(train),street light(bus),0.0,0.5,0.5
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/590.yaml,street light(wall),street light(car),0.0,0.5,0.5
+VisDiff-MetaShift,85,,configs/sweep_metashift_purity1.0_seed0/591.yaml,street light(tree),street light(bus),0.0,0.5,0.5
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/592.yaml,street light(building),street light(bus),0.0,0.0,0.0
+VisDiff-MetaShift,98,,configs/sweep_metashift_purity1.0_seed0/593.yaml,street light(man),street light(wall),0.0,0.0,0.0
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/594.yaml,woman(stroller),woman(traffic light),0.0,0.5,0.5
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/595.yaml,woman(socks),woman(bed),0.0,0.0,0.0
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/596.yaml,woman(wristband),woman(tray),0.5,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/597.yaml,woman(pot),woman(television),0.5,0.5,0.5
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/598.yaml,woman(tree),woman(platform),0.0,0.5,0.5
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/599.yaml,net(player),net(people),0.5,1.0,1.0
+VisDiff-MetaShift,85,,configs/sweep_metashift_purity1.0_seed0/600.yaml,net(man),net(people),1.0,1.0,1.0
+VisDiff-MetaShift,53,,configs/sweep_metashift_purity1.0_seed0/601.yaml,net(man),net(player),0.0,0.5,0.5
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/602.yaml,racket(spectators),racket(girl),0.5,1.0,1.0
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/603.yaml,racket(ball),racket(people),0.5,1.0,1.0
+VisDiff-MetaShift,97,,configs/sweep_metashift_purity1.0_seed0/604.yaml,racket(tennis ball),racket(spectators),0.5,0.5,0.5
+VisDiff-MetaShift,84,,configs/sweep_metashift_purity1.0_seed0/605.yaml,racket(chair),racket(girl),0.0,0.0,0.0
+VisDiff-MetaShift,87,,configs/sweep_metashift_purity1.0_seed0/606.yaml,racket(person),racket(spectators),0.0,1.0,1.0
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/607.yaml,couple(man),couple(shirt),0.0,0.0,0.0
+VisDiff-MetaShift,113,,configs/sweep_metashift_purity1.0_seed0/608.yaml,gravel(train),gravel(train tracks),0.0,0.0,0.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/609.yaml,horse(carriage),horse(grass),0.5,1.0,1.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/610.yaml,horse(person),horse(woman),0.0,0.5,0.5
+VisDiff-MetaShift,92,,configs/sweep_metashift_purity1.0_seed0/611.yaml,horse(woman),horse(wall),0.5,0.5,0.5
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/612.yaml,horse(person),horse(dirt),0.5,0.5,0.5
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/613.yaml,horse(water),horse(dirt),1.0,1.0,1.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/614.yaml,cart(man),cart(person),0.5,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/615.yaml,seat(chair),seat(bag),0.5,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/616.yaml,seat(man),seat(motorcycle),0.0,0.5,0.5
+VisDiff-MetaShift,50,,configs/sweep_metashift_purity1.0_seed0/617.yaml,seat(man),seat(chair),0.5,0.5,0.5
+VisDiff-MetaShift,95,,configs/sweep_metashift_purity1.0_seed0/618.yaml,seat(motorcycle),seat(bike),0.0,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/619.yaml,seat(bench),seat(chair),1.0,1.0,1.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/620.yaml,pipe(sink),pipe(toilet),0.0,0.5,0.5
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/621.yaml,pipe(wall),pipe(toilet),0.0,0.0,0.0
+VisDiff-MetaShift,54,,configs/sweep_metashift_purity1.0_seed0/622.yaml,pipe(wall),pipe(sink),0.0,0.0,0.0
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/623.yaml,pipe(building),pipe(sink),0.0,0.0,0.0
+VisDiff-MetaShift,36,,configs/sweep_metashift_purity1.0_seed0/624.yaml,pipe(building),pipe(toilet),0.0,0.0,0.0
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/625.yaml,clock(people),clock(picture),0.0,0.5,0.5
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/626.yaml,clock(ceiling),clock(pillow),0.0,0.5,0.5
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/627.yaml,clock(chair),clock(shelf),0.0,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/628.yaml,clock(sign),clock(clock tower),0.0,0.0,0.0
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/629.yaml,clock(sign),clock(bench),0.0,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/630.yaml,pizza(cup),pizza(pan),0.0,0.0,0.0
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/631.yaml,pizza(pepperoni),pizza(olive),1.0,1.0,1.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/632.yaml,pizza(man),pizza(knife),1.0,1.0,1.0
+VisDiff-MetaShift,52,,configs/sweep_metashift_purity1.0_seed0/633.yaml,pizza(cup),pizza(pepperoni),0.0,0.0,0.0
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/634.yaml,pizza(chair),pizza(food),0.0,0.0,0.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/635.yaml,number(window),number(sign),0.0,0.0,0.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/636.yaml,number(bike),number(clock),0.5,0.5,0.5
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/637.yaml,number(window),number(wall),0.0,0.0,0.0
+VisDiff-MetaShift,37,,configs/sweep_metashift_purity1.0_seed0/638.yaml,number(window),number(clock),0.0,0.0,0.0
+VisDiff-MetaShift,50,,configs/sweep_metashift_purity1.0_seed0/639.yaml,number(window),number(bike),0.0,0.0,0.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/640.yaml,vegetables(broccoli),vegetables(plate),0.5,1.0,1.0
+VisDiff-MetaShift,94,,configs/sweep_metashift_purity1.0_seed0/641.yaml,vegetables(food),vegetables(broccoli),0.0,0.5,0.5
+VisDiff-MetaShift,85,,configs/sweep_metashift_purity1.0_seed0/642.yaml,vegetables(food),vegetables(bowl),0.0,0.5,0.5
+VisDiff-MetaShift,97,,configs/sweep_metashift_purity1.0_seed0/643.yaml,vegetables(bowl),vegetables(carrots),0.0,0.0,0.0
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/644.yaml,vegetables(meat),vegetables(carrots),1.0,1.0,1.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/645.yaml,glasses(umbrella),glasses(bench),1.0,1.0,1.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/646.yaml,glasses(pizza),glasses(wine),0.5,0.5,0.5
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/647.yaml,glasses(counter),glasses(child),0.0,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/648.yaml,glasses(food),glasses(knife),0.0,0.0,0.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/649.yaml,glasses(lady),glasses(guy),0.0,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/650.yaml,bottle(person),bottle(liquid),0.0,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/651.yaml,bottle(cabinet),bottle(girl),0.0,0.5,0.5
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/652.yaml,bottle(spoon),bottle(cell phone),0.0,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/653.yaml,bottle(food),bottle(towel),0.0,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/654.yaml,bottle(counter),bottle(sink),0.0,0.5,0.5
+VisDiff-MetaShift,133,,configs/sweep_metashift_purity1.0_seed0/655.yaml,spectator(man),spectator(shirt),0.0,0.5,0.5
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/656.yaml,crowd(building),crowd(people),0.0,0.5,0.5
+VisDiff-MetaShift,84,,configs/sweep_metashift_purity1.0_seed0/657.yaml,crowd(woman),crowd(people),0.5,0.5,0.5
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/658.yaml,crowd(person),crowd(people),0.0,0.5,0.5
+VisDiff-MetaShift,98,,configs/sweep_metashift_purity1.0_seed0/659.yaml,crowd(man),crowd(woman),0.0,0.0,0.0
+VisDiff-MetaShift,52,,configs/sweep_metashift_purity1.0_seed0/660.yaml,crowd(person),crowd(man),0.0,0.0,0.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/661.yaml,mountains(snow),mountains(trees),0.5,1.0,1.0
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/662.yaml,mountains(snow),mountains(water),1.0,1.0,1.0
+VisDiff-MetaShift,98,,configs/sweep_metashift_purity1.0_seed0/663.yaml,mountains(trees),mountains(man),0.0,0.0,0.0
+VisDiff-MetaShift,96,,configs/sweep_metashift_purity1.0_seed0/664.yaml,mountains(sky),mountains(snow),0.0,0.0,0.0
+VisDiff-MetaShift,38,,configs/sweep_metashift_purity1.0_seed0/665.yaml,mountains(sky),mountains(water),0.0,0.0,0.0
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/666.yaml,sheep(tree),sheep(fence),0.0,0.0,0.0
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/667.yaml,sheep(tree),sheep(man),0.5,0.5,0.5
+VisDiff-MetaShift,83,,configs/sweep_metashift_purity1.0_seed0/668.yaml,sheep(grass),sheep(fence),0.5,0.5,0.5
+VisDiff-MetaShift,83,,configs/sweep_metashift_purity1.0_seed0/669.yaml,sheep(ground),sheep(man),0.5,0.5,0.5
+VisDiff-MetaShift,37,,configs/sweep_metashift_purity1.0_seed0/670.yaml,sheep(grass),sheep(man),0.5,1.0,1.0
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/671.yaml,frosting(plate),frosting(cake),0.0,0.5,0.5
+VisDiff-MetaShift,92,,configs/sweep_metashift_purity1.0_seed0/672.yaml,frosting(cake),frosting(donut),0.0,1.0,1.0
+VisDiff-MetaShift,35,,configs/sweep_metashift_purity1.0_seed0/673.yaml,frosting(plate),frosting(donut),0.5,0.5,0.5
+VisDiff-MetaShift,136,,configs/sweep_metashift_purity1.0_seed0/674.yaml,saucer(plate),saucer(cup),0.0,0.5,0.5
+VisDiff-MetaShift,105,,configs/sweep_metashift_purity1.0_seed0/675.yaml,saucer(table),saucer(plate),0.0,0.5,0.5
+VisDiff-MetaShift,36,,configs/sweep_metashift_purity1.0_seed0/676.yaml,saucer(table),saucer(cup),0.0,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/677.yaml,sauce(pizza),sauce(meat),0.0,0.5,0.5
+VisDiff-MetaShift,95,,configs/sweep_metashift_purity1.0_seed0/678.yaml,sauce(cheese),sauce(pizza),0.0,0.5,0.5
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/679.yaml,sauce(plate),sauce(bowl),0.0,0.5,0.5
+VisDiff-MetaShift,99,,configs/sweep_metashift_purity1.0_seed0/680.yaml,sauce(meat),sauce(broccoli),0.0,0.5,0.5
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/681.yaml,sauce(cheese),sauce(food),0.0,0.5,0.5
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/682.yaml,plant(woman),plant(vase),0.0,0.0,0.0
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/683.yaml,plant(chair),plant(wall),0.0,0.0,0.0
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/684.yaml,plant(bowl),plant(wall),0.0,0.5,0.5
+VisDiff-MetaShift,83,,configs/sweep_metashift_purity1.0_seed0/685.yaml,plant(pot),plant(vase),0.0,0.0,0.0
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/686.yaml,plant(bowl),plant(bench),0.0,0.0,0.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/687.yaml,suitcase(woman),suitcase(bag),0.0,0.5,0.5
+VisDiff-MetaShift,95,,configs/sweep_metashift_purity1.0_seed0/688.yaml,suitcase(bag),suitcase(person),0.5,0.5,0.5
+VisDiff-MetaShift,39,,configs/sweep_metashift_purity1.0_seed0/689.yaml,suitcase(woman),suitcase(person),0.5,1.0,1.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/690.yaml,suitcase(man),suitcase(ground),0.5,0.5,0.5
+VisDiff-MetaShift,53,,configs/sweep_metashift_purity1.0_seed0/691.yaml,suitcase(bag),suitcase(man),0.0,0.5,0.5
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/692.yaml,carrots(food),carrots(vegetables),0.0,0.5,0.5
+VisDiff-MetaShift,131,,configs/sweep_metashift_purity1.0_seed0/693.yaml,carrots(table),carrots(plate),0.0,0.5,0.5
+VisDiff-MetaShift,55,,configs/sweep_metashift_purity1.0_seed0/694.yaml,carrots(plate),carrots(vegetables),0.0,1.0,1.0
+VisDiff-MetaShift,54,,configs/sweep_metashift_purity1.0_seed0/695.yaml,carrots(food),carrots(table),0.5,0.5,0.5
+VisDiff-MetaShift,38,,configs/sweep_metashift_purity1.0_seed0/696.yaml,carrots(food),carrots(plate),0.5,0.5,0.5
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/697.yaml,wine glass(table),wine glass(plate),0.0,0.0,0.0
+VisDiff-MetaShift,101,,configs/sweep_metashift_purity1.0_seed0/698.yaml,wine glass(plate),wine glass(wine),0.0,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/699.yaml,wine glass(man),wine glass(wine),0.0,0.0,0.0
+VisDiff-MetaShift,55,,configs/sweep_metashift_purity1.0_seed0/700.yaml,wine glass(table),wine glass(man),0.0,0.5,0.5
+VisDiff-MetaShift,40,,configs/sweep_metashift_purity1.0_seed0/701.yaml,wine glass(plate),wine glass(man),0.0,0.0,0.0
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/702.yaml,cheese(bottle),cheese(pepper),0.0,0.5,0.5
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/703.yaml,cheese(food),cheese(napkin),0.5,0.5,0.5
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/704.yaml,cheese(food),cheese(lettuce),0.0,0.5,0.5
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/705.yaml,cheese(food),cheese(bread),0.0,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/706.yaml,cheese(plate),cheese(fork),0.0,0.5,0.5
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/707.yaml,zebra(fence),zebra(trees),0.5,1.0,1.0
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/708.yaml,zebra(dirt),zebra(tree),0.0,1.0,1.0
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/709.yaml,zebra(ground),zebra(rocks),0.5,1.0,1.0
+VisDiff-MetaShift,38,,configs/sweep_metashift_purity1.0_seed0/710.yaml,zebra(fence),zebra(tree),0.5,0.5,0.5
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/711.yaml,zebra(fence),zebra(bush),1.0,1.0,1.0
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/712.yaml,traffic light(truck),traffic light(cars),0.0,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/713.yaml,traffic light(car),traffic light(bus),0.0,0.0,0.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/714.yaml,traffic light(people),traffic light(man),0.0,0.0,0.0
+VisDiff-MetaShift,36,,configs/sweep_metashift_purity1.0_seed0/715.yaml,traffic light(truck),traffic light(man),0.5,0.5,0.5
+VisDiff-MetaShift,86,,configs/sweep_metashift_purity1.0_seed0/716.yaml,traffic light(sign),traffic light(bus),0.0,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/717.yaml,wires(pole),wires(table),0.0,0.0,0.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/718.yaml,wires(wall),wires(train),0.0,0.5,0.5
+VisDiff-MetaShift,90,,configs/sweep_metashift_purity1.0_seed0/719.yaml,wires(sky),wires(wall),0.0,0.5,0.5
+VisDiff-MetaShift,35,,configs/sweep_metashift_purity1.0_seed0/720.yaml,wires(sky),wires(table),0.5,0.5,0.5
+VisDiff-MetaShift,33,,configs/sweep_metashift_purity1.0_seed0/721.yaml,wires(pole),wires(train),0.0,0.5,0.5
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/722.yaml,cup(plate),cup(pizza),0.5,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/723.yaml,cup(man),cup(box),0.0,0.0,0.0
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/724.yaml,cup(man),cup(cake),0.0,0.5,0.5
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/725.yaml,cup(chair),cup(box),0.0,1.0,1.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/726.yaml,cup(knife),cup(person),0.0,0.0,0.0
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/727.yaml,hot dog(table),hot dog(plate),0.0,0.5,0.5
+VisDiff-MetaShift,100,,configs/sweep_metashift_purity1.0_seed0/728.yaml,hot dog(plate),hot dog(bun),0.5,1.0,1.0
+VisDiff-MetaShift,36,,configs/sweep_metashift_purity1.0_seed0/729.yaml,hot dog(table),hot dog(bun),0.5,0.5,0.5
+VisDiff-MetaShift,132,,configs/sweep_metashift_purity1.0_seed0/730.yaml,coffee(cup),coffee(table),0.0,0.0,0.0
+VisDiff-MetaShift,101,,configs/sweep_metashift_purity1.0_seed0/731.yaml,coffee(table),coffee(plate),0.0,0.5,0.5
+VisDiff-MetaShift,37,,configs/sweep_metashift_purity1.0_seed0/732.yaml,coffee(cup),coffee(plate),0.0,0.0,0.0
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/733.yaml,computer mouse(monitor),computer mouse(chair),0.0,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/734.yaml,computer mouse(computer),computer mouse(laptop),0.0,0.5,0.5
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/735.yaml,computer mouse(phone),computer mouse(cup),0.0,0.0,0.0
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/736.yaml,computer mouse(speaker),computer mouse(laptop),0.0,0.0,0.0
+VisDiff-MetaShift,54,,configs/sweep_metashift_purity1.0_seed0/737.yaml,computer mouse(speaker),computer mouse(phone),0.0,0.0,0.0
+VisDiff-MetaShift,38,,configs/sweep_metashift_purity1.0_seed0/738.yaml,bear(tree),bear(wall),0.5,1.0,1.0
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/739.yaml,bear(shirt),bear(wall),0.0,0.0,0.0
+VisDiff-MetaShift,22,,configs/sweep_metashift_purity1.0_seed0/740.yaml,bear(wall),bear(grass),0.5,0.5,0.5
+VisDiff-MetaShift,95,,configs/sweep_metashift_purity1.0_seed0/741.yaml,bear(grass),bear(leaves),1.0,1.0,1.0
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/742.yaml,bear(fur),bear(grass),0.5,0.5,0.5
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/743.yaml,parking meter(car),parking meter(pole),0.5,0.5,0.5
+VisDiff-MetaShift,132,,configs/sweep_metashift_purity1.0_seed0/744.yaml,frisbee(boy),frisbee(fence),0.5,1.0,1.0
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/745.yaml,frisbee(people),frisbee(girl),0.5,1.0,1.0
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/746.yaml,frisbee(person),frisbee(woman),0.5,1.0,1.0
+VisDiff-MetaShift,59,,configs/sweep_metashift_purity1.0_seed0/747.yaml,frisbee(fence),frisbee(girl),0.5,0.5,0.5
+VisDiff-MetaShift,59,,configs/sweep_metashift_purity1.0_seed0/748.yaml,frisbee(woman),frisbee(girl),0.5,0.5,0.5
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/749.yaml,player(wall),player(fence),0.0,0.0,0.0
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/750.yaml,player(bat),player(home plate),0.5,1.0,1.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/751.yaml,player(player),player(racket),0.5,1.0,1.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/752.yaml,player(spectators),player(pants),1.0,1.0,1.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/753.yaml,player(ground),player(wristband),0.0,0.5,0.5
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/754.yaml,ball(helmet),ball(girl),0.5,0.5,0.5
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/755.yaml,ball(air),ball(girl),0.0,0.5,0.5
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/756.yaml,ball(helmet),ball(fence),0.0,0.0,0.0
+VisDiff-MetaShift,93,,configs/sweep_metashift_purity1.0_seed0/757.yaml,ball(player),ball(air),0.5,1.0,1.0
+VisDiff-MetaShift,97,,configs/sweep_metashift_purity1.0_seed0/758.yaml,ball(fence),ball(chair),0.0,0.0,0.0
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/759.yaml,skateboard(woman),skateboard(bench),0.5,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/760.yaml,skateboard(fence),skateboard(bench),0.5,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/761.yaml,skateboard(ground),skateboard(man),0.5,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/762.yaml,skateboard(boy),skateboard(people),0.5,1.0,1.0
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/763.yaml,skateboard(guy),skateboard(skateboarder),0.0,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/764.yaml,flags(building),flags(people),0.0,0.5,0.5
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/765.yaml,flags(building),flags(man),0.0,0.0,0.0
+VisDiff-MetaShift,53,,configs/sweep_metashift_purity1.0_seed0/766.yaml,flags(people),flags(man),0.0,0.0,0.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/767.yaml,cars(truck),cars(trees),0.0,1.0,1.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/768.yaml,cars(fence),cars(woman),0.0,0.5,0.5
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/769.yaml,cars(bus),cars(trees),1.0,1.0,1.0
+VisDiff-MetaShift,93,,configs/sweep_metashift_purity1.0_seed0/770.yaml,cars(trees),cars(people),0.5,0.5,0.5
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/771.yaml,cars(person),cars(woman),0.0,0.0,0.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/772.yaml,frame(picture),frame(clock),0.0,0.5,0.5
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/773.yaml,frame(window),frame(mirror),0.5,0.5,0.5
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/774.yaml,frame(picture),frame(wall),0.0,0.0,0.0
+VisDiff-MetaShift,53,,configs/sweep_metashift_purity1.0_seed0/775.yaml,frame(wall),frame(mirror),0.0,0.0,0.0
+VisDiff-MetaShift,52,,configs/sweep_metashift_purity1.0_seed0/776.yaml,frame(mirror),frame(clock),0.0,1.0,1.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/777.yaml,napkin(pizza),napkin(tray),1.0,1.0,1.0
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/778.yaml,napkin(food),napkin(glass),0.0,0.5,0.5
+VisDiff-MetaShift,83,,configs/sweep_metashift_purity1.0_seed0/779.yaml,napkin(food),napkin(fork),0.0,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/780.yaml,napkin(cup),napkin(plate),0.0,0.5,0.5
+VisDiff-MetaShift,53,,configs/sweep_metashift_purity1.0_seed0/781.yaml,napkin(plate),napkin(tray),0.0,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/782.yaml,backpack(people),backpack(bench),0.0,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/783.yaml,backpack(man),backpack(bike),0.0,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/784.yaml,backpack(helmet),backpack(girl),0.0,0.5,0.5
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/785.yaml,backpack(glasses),backpack(ground),0.0,0.0,0.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/786.yaml,backpack(table),backpack(car),0.5,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/787.yaml,vehicle(car),vehicle(people),0.5,0.5,0.5
+VisDiff-MetaShift,94,,configs/sweep_metashift_purity1.0_seed0/788.yaml,vehicle(people),vehicle(woman),0.0,0.5,0.5
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/789.yaml,vehicle(truck),vehicle(woman),0.5,1.0,1.0
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/790.yaml,vehicle(people),vehicle(person),0.0,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/791.yaml,vehicle(fence),vehicle(bus),0.0,0.0,0.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/792.yaml,chimney(house),chimney(man),0.0,0.5,0.5
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/793.yaml,chimney(house),chimney(roof),0.0,0.0,0.0
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/794.yaml,chimney(building),chimney(man),0.0,1.0,1.0
+VisDiff-MetaShift,52,,configs/sweep_metashift_purity1.0_seed0/795.yaml,chimney(building),chimney(house),0.0,0.5,0.5
+VisDiff-MetaShift,34,,configs/sweep_metashift_purity1.0_seed0/796.yaml,chimney(building),chimney(roof),0.0,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/797.yaml,sun(sky),sun(window),0.5,0.5,0.5
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/798.yaml,sun(sky),sun(clouds),0.0,0.0,0.0
+VisDiff-MetaShift,52,,configs/sweep_metashift_purity1.0_seed0/799.yaml,sun(clouds),sun(window),0.5,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/800.yaml,mountain(snow),mountain(person),0.0,1.0,1.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/801.yaml,mountain(water),mountain(man),0.0,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/802.yaml,mountain(trees),mountain(clouds),0.0,0.5,0.5
+VisDiff-MetaShift,36,,configs/sweep_metashift_purity1.0_seed0/803.yaml,mountain(water),mountain(clouds),0.0,0.5,0.5
+VisDiff-MetaShift,40,,configs/sweep_metashift_purity1.0_seed0/804.yaml,mountain(trees),mountain(man),0.0,0.0,0.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/805.yaml,vegetable(plate),vegetable(table),0.0,0.5,0.5
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/806.yaml,vegetable(food),vegetable(table),0.0,0.5,0.5
+VisDiff-MetaShift,50,,configs/sweep_metashift_purity1.0_seed0/807.yaml,vegetable(food),vegetable(plate),0.5,0.5,0.5
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/808.yaml,vegetable(broccoli),vegetable(table),0.5,1.0,1.0
+VisDiff-MetaShift,50,,configs/sweep_metashift_purity1.0_seed0/809.yaml,vegetable(plate),vegetable(broccoli),0.0,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/810.yaml,lid(toilet),lid(container),0.5,1.0,1.0
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/811.yaml,lid(bottle),lid(container),0.0,0.0,0.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/812.yaml,lid(table),lid(cup),0.0,0.0,0.0
+VisDiff-MetaShift,96,,configs/sweep_metashift_purity1.0_seed0/813.yaml,lid(container),lid(bowl),0.0,0.0,0.0
+VisDiff-MetaShift,93,,configs/sweep_metashift_purity1.0_seed0/814.yaml,lid(bowl),lid(trash can),0.5,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/815.yaml,flower(plate),flower(table),0.0,0.0,0.0
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/816.yaml,flower(plate),flower(vase),0.0,0.0,0.0
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/817.yaml,flower(window),flower(vase),0.0,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/818.yaml,flower(wall),flower(bed),0.0,0.5,0.5
+VisDiff-MetaShift,37,,configs/sweep_metashift_purity1.0_seed0/819.yaml,flower(wall),flower(table),0.0,0.0,0.0
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/820.yaml,shelf(desk),shelf(container),0.5,0.5,0.5
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/821.yaml,shelf(pot),shelf(container),0.0,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/822.yaml,shelf(chair),shelf(computer mouse),0.0,0.0,0.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/823.yaml,shelf(mirror),shelf(faucet),0.0,0.5,0.5
+VisDiff-MetaShift,96,,configs/sweep_metashift_purity1.0_seed0/824.yaml,shelf(cabinet),shelf(desk),0.0,1.0,1.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/825.yaml,tiles(floor),tiles(toilet),0.0,0.0,0.0
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/826.yaml,tiles(wall),tiles(toilet),0.0,0.0,0.0
+VisDiff-MetaShift,51,,configs/sweep_metashift_purity1.0_seed0/827.yaml,tiles(floor),tiles(wall),0.0,0.0,0.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/828.yaml,park(people),park(boy),0.5,1.0,1.0
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/829.yaml,park(people),park(woman),0.0,0.5,0.5
+VisDiff-MetaShift,96,,configs/sweep_metashift_purity1.0_seed0/830.yaml,park(person),park(people),0.5,0.5,0.5
+VisDiff-MetaShift,35,,configs/sweep_metashift_purity1.0_seed0/831.yaml,park(person),park(woman),0.0,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/832.yaml,park(man),park(boy),0.0,1.0,1.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/833.yaml,parking lot(fence),parking lot(cars),0.0,0.0,0.0
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/834.yaml,parking lot(car),parking lot(cars),0.0,0.0,0.0
+VisDiff-MetaShift,53,,configs/sweep_metashift_purity1.0_seed0/835.yaml,parking lot(fence),parking lot(car),0.0,0.0,0.0
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/836.yaml,parking lot(truck),parking lot(cars),0.0,1.0,1.0
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/837.yaml,parking lot(fence),parking lot(bus),0.5,0.5,0.5
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/838.yaml,tray(table),tray(man),0.5,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/839.yaml,tray(food),tray(counter),0.5,1.0,1.0
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/840.yaml,tray(table),tray(plate),0.0,0.0,0.0
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/841.yaml,tray(bowl),tray(napkin),0.0,0.5,0.5
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/842.yaml,tray(person),tray(man),0.0,0.0,0.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/843.yaml,tomato(fork),tomato(pizza),0.5,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/844.yaml,tomato(fork),tomato(food),0.0,0.5,0.5
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/845.yaml,tomato(fork),tomato(meat),0.5,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/846.yaml,tomato(lettuce),tomato(sandwich),0.0,0.0,0.0
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/847.yaml,tomato(plate),tomato(meat),0.5,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/848.yaml,broccoli(plate),broccoli(food),0.5,0.5,0.5
+VisDiff-MetaShift,95,,configs/sweep_metashift_purity1.0_seed0/849.yaml,broccoli(table),broccoli(plate),0.5,0.5,0.5
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/850.yaml,broccoli(plate),broccoli(bowl),0.0,0.5,0.5
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/851.yaml,broccoli(vegetables),broccoli(food),0.5,1.0,1.0
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/852.yaml,broccoli(table),broccoli(meat),0.5,0.5,0.5
+VisDiff-MetaShift,115,,configs/sweep_metashift_purity1.0_seed0/853.yaml,onion(table),onion(plate),0.0,0.5,0.5
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/854.yaml,onion(tomato),onion(plate),0.0,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/855.yaml,onion(tomato),onion(cheese),0.0,0.5,0.5
+VisDiff-MetaShift,75,,configs/sweep_metashift_purity1.0_seed0/856.yaml,onion(tomato),onion(food),0.0,0.5,0.5
+VisDiff-MetaShift,54,,configs/sweep_metashift_purity1.0_seed0/857.yaml,onion(plate),onion(cheese),0.0,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/858.yaml,carrot(broccoli),carrot(plate),0.5,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/859.yaml,carrot(broccoli),carrot(table),0.5,1.0,1.0
+VisDiff-MetaShift,54,,configs/sweep_metashift_purity1.0_seed0/860.yaml,carrot(table),carrot(plate),0.0,0.5,0.5
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/861.yaml,carrot(broccoli),carrot(food),0.5,1.0,1.0
+VisDiff-MetaShift,57,,configs/sweep_metashift_purity1.0_seed0/862.yaml,carrot(food),carrot(table),0.0,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/863.yaml,pepper(tomato),pepper(cheese),0.0,0.5,0.5
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/864.yaml,pepper(tomato),pepper(food),0.0,0.5,0.5
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/865.yaml,pepper(plate),pepper(cheese),0.5,0.5,0.5
+VisDiff-MetaShift,52,,configs/sweep_metashift_purity1.0_seed0/866.yaml,pepper(food),pepper(cheese),0.5,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/867.yaml,pepper(pizza),pepper(cheese),0.0,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/868.yaml,stop sign(pole),stop sign(car),0.0,0.0,0.0
+VisDiff-MetaShift,97,,configs/sweep_metashift_purity1.0_seed0/869.yaml,stop sign(sign),stop sign(pole),0.0,0.5,0.5
+VisDiff-MetaShift,84,,configs/sweep_metashift_purity1.0_seed0/870.yaml,stop sign(tree),stop sign(pole),0.0,0.0,0.0
+VisDiff-MetaShift,58,,configs/sweep_metashift_purity1.0_seed0/871.yaml,stop sign(sign),stop sign(tree),0.0,0.0,0.0
+VisDiff-MetaShift,36,,configs/sweep_metashift_purity1.0_seed0/872.yaml,stop sign(sign),stop sign(car),0.0,0.5,0.5
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/873.yaml,letters(wall),letters(clock),0.0,0.0,0.0
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/874.yaml,letters(sign),letters(clock),0.0,0.5,0.5
+VisDiff-MetaShift,49,,configs/sweep_metashift_purity1.0_seed0/875.yaml,letters(sign),letters(wall),0.0,0.5,0.5
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/876.yaml,pen(table),pen(fence),1.0,1.0,1.0
+VisDiff-MetaShift,98,,configs/sweep_metashift_purity1.0_seed0/877.yaml,pen(fence),pen(keyboard),0.5,1.0,1.0
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/878.yaml,pen(paper),pen(fence),0.5,0.5,0.5
+VisDiff-MetaShift,101,,configs/sweep_metashift_purity1.0_seed0/879.yaml,pen(desk),pen(table),0.0,0.5,0.5
+VisDiff-MetaShift,55,,configs/sweep_metashift_purity1.0_seed0/880.yaml,pen(desk),pen(paper),0.0,0.0,0.0
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/881.yaml,screen(book),screen(picture),0.5,0.5,0.5
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/882.yaml,screen(television),screen(cell phone),0.0,1.0,1.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/883.yaml,screen(person),screen(woman),0.0,1.0,1.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/884.yaml,screen(keyboard),screen(monitor),0.0,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/885.yaml,screen(desk),screen(lamp),0.5,1.0,1.0
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/886.yaml,book(laptop),book(keyboard),0.5,0.5,0.5
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/887.yaml,book(box),book(woman),0.5,0.5,0.5
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/888.yaml,book(blanket),book(lamp),0.0,0.5,0.5
+VisDiff-MetaShift,51,,configs/sweep_metashift_purity1.0_seed0/889.yaml,book(laptop),book(blanket),1.0,1.0,1.0
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/890.yaml,book(laptop),book(cat),0.5,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/891.yaml,phone(laptop),phone(computer mouse),0.5,1.0,1.0
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/892.yaml,phone(laptop),phone(keyboard),0.5,1.0,1.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/893.yaml,phone(screen),phone(cell phone),0.5,0.5,0.5
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/894.yaml,phone(wall),phone(computer),0.0,0.0,0.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/895.yaml,phone(book),phone(bag),0.0,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/896.yaml,coat(shirt),coat(chair),0.0,0.0,0.0
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/897.yaml,dog(jacket),dog(people),0.0,0.0,0.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/898.yaml,dog(fence),dog(chair),0.5,0.5,0.5
+VisDiff-MetaShift,84,,configs/sweep_metashift_purity1.0_seed0/899.yaml,dog(frisbee),dog(people),1.0,1.0,1.0
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/900.yaml,dog(frisbee),dog(person),1.0,1.0,1.0
+VisDiff-MetaShift,55,,configs/sweep_metashift_purity1.0_seed0/901.yaml,dog(chair),dog(person),0.5,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/902.yaml,taxi(truck),taxi(car),0.5,1.0,1.0
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/903.yaml,taxi(truck),taxi(man),0.0,0.5,0.5
+VisDiff-MetaShift,51,,configs/sweep_metashift_purity1.0_seed0/904.yaml,taxi(car),taxi(man),0.5,1.0,1.0
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/905.yaml,rock(zebra),rock(bird),0.5,1.0,1.0
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/906.yaml,rock(fence),rock(giraffe),0.0,0.0,0.0
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/907.yaml,rock(grass),rock(bench),0.0,0.0,0.0
+VisDiff-MetaShift,51,,configs/sweep_metashift_purity1.0_seed0/908.yaml,rock(fence),rock(grass),0.0,0.0,0.0
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/909.yaml,rock(ground),rock(bird),0.0,0.0,0.0
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/910.yaml,sticker(wall),sticker(pole),0.5,0.5,0.5
+VisDiff-MetaShift,92,,configs/sweep_metashift_purity1.0_seed0/911.yaml,sticker(sign),sticker(wall),0.5,0.5,0.5
+VisDiff-MetaShift,37,,configs/sweep_metashift_purity1.0_seed0/912.yaml,sticker(sign),sticker(pole),0.0,0.0,0.0
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/913.yaml,bus(people),bus(bike),0.0,1.0,1.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/914.yaml,bus(ground),bus(pole),0.0,0.0,0.0
+VisDiff-MetaShift,96,,configs/sweep_metashift_purity1.0_seed0/915.yaml,bus(woman),bus(people),1.0,1.0,1.0
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/916.yaml,bus(person),bus(bag),0.0,0.5,0.5
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/917.yaml,bus(trees),bus(people),1.0,1.0,1.0
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/918.yaml,post(fence),post(traffic light),0.0,0.0,0.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/919.yaml,post(lamp),post(sign),0.0,0.0,0.0
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/920.yaml,post(fence),post(clock),1.0,1.0,1.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/921.yaml,post(flag),post(train),0.5,0.5,0.5
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/922.yaml,post(giraffe),post(clock),0.5,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/923.yaml,fire hydrant(grass),fire hydrant(trees),0.0,1.0,1.0
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/924.yaml,fire hydrant(grass),fire hydrant(fence),1.0,1.0,1.0
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/925.yaml,fire hydrant(building),fire hydrant(car),0.0,1.0,1.0
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/926.yaml,fire hydrant(building),fire hydrant(wall),0.0,0.0,0.0
+VisDiff-MetaShift,100,,configs/sweep_metashift_purity1.0_seed0/927.yaml,fire hydrant(wall),fire hydrant(man),0.0,1.0,1.0
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/928.yaml,dock(water),dock(man),0.5,1.0,1.0
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/929.yaml,dock(boat),dock(man),1.0,1.0,1.0
+VisDiff-MetaShift,55,,configs/sweep_metashift_purity1.0_seed0/930.yaml,dock(boat),dock(water),0.5,1.0,1.0
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/931.yaml,buoy(boat),buoy(water),0.0,0.5,0.5
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/932.yaml,shore(boat),shore(man),1.0,1.0,1.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/933.yaml,van(building),van(cars),1.0,1.0,1.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/934.yaml,van(people),van(bus),0.0,0.0,0.0
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/935.yaml,van(truck),van(cars),0.5,1.0,1.0
+VisDiff-MetaShift,95,,configs/sweep_metashift_purity1.0_seed0/936.yaml,van(person),van(people),0.0,0.0,0.0
+VisDiff-MetaShift,92,,configs/sweep_metashift_purity1.0_seed0/937.yaml,van(car),van(truck),0.0,0.0,0.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/938.yaml,umbrella(car),umbrella(purse),0.5,0.5,0.5
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/939.yaml,umbrella(person),umbrella(purse),0.0,0.0,0.0
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/940.yaml,umbrella(fence),umbrella(man),0.0,0.0,0.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/941.yaml,umbrella(boy),umbrella(lady),0.5,0.5,0.5
+VisDiff-MetaShift,39,,configs/sweep_metashift_purity1.0_seed0/942.yaml,umbrella(boy),umbrella(purse),0.0,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/943.yaml,word(sign),word(wall),0.0,0.5,0.5
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/944.yaml,rug(couch),rug(shelf),0.5,1.0,1.0
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/945.yaml,rug(chair),rug(vase),0.0,0.0,0.0
+VisDiff-MetaShift,96,,configs/sweep_metashift_purity1.0_seed0/946.yaml,rug(shelf),rug(pillow),0.0,0.0,0.0
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/947.yaml,rug(table),rug(door),0.0,0.0,0.0
+VisDiff-MetaShift,95,,configs/sweep_metashift_purity1.0_seed0/948.yaml,rug(pillow),rug(cabinet),0.0,0.0,0.0
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/949.yaml,spectators(woman),spectators(people),0.0,0.0,0.0
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/950.yaml,spectators(woman),spectators(racket),0.0,0.0,0.0
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/951.yaml,spectators(person),spectators(racket),0.0,0.0,0.0
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/952.yaml,spectators(woman),spectators(player),0.0,0.0,0.0
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/953.yaml,spectators(woman),spectators(man),0.0,0.5,0.5
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/954.yaml,child(pants),child(grass),0.0,0.0,0.0
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/955.yaml,child(fence),child(cap),0.5,0.5,0.5
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/956.yaml,child(girl),child(glasses),0.0,0.0,0.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/957.yaml,child(bag),child(car),0.0,0.0,0.0
+VisDiff-MetaShift,96,,configs/sweep_metashift_purity1.0_seed0/958.yaml,child(hat),child(girl),0.0,0.0,0.0
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/959.yaml,statue(clock),statue(building),0.5,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/960.yaml,statue(person),statue(man),0.0,0.0,0.0
+VisDiff-MetaShift,50,,configs/sweep_metashift_purity1.0_seed0/961.yaml,statue(building),statue(man),0.5,0.5,0.5
+VisDiff-MetaShift,36,,configs/sweep_metashift_purity1.0_seed0/962.yaml,statue(person),statue(building),0.0,0.0,0.0
+VisDiff-MetaShift,37,,configs/sweep_metashift_purity1.0_seed0/963.yaml,statue(clock),statue(man),0.5,1.0,1.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/964.yaml,numbers(sign),numbers(clock),0.0,0.0,0.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/965.yaml,towel(sink),towel(curtain),0.0,0.0,0.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/966.yaml,towel(soap),towel(shelf),0.0,0.0,0.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/967.yaml,towel(woman),towel(stove),0.0,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/968.yaml,towel(box),towel(person),0.0,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/969.yaml,towel(bottle),towel(wall),0.0,0.0,0.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/970.yaml,lamp(picture),lamp(clock),0.0,0.5,0.5
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/971.yaml,lamp(ceiling),lamp(chair),0.0,0.0,0.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/972.yaml,lamp(person),lamp(screen),0.0,0.0,0.0
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/973.yaml,lamp(cup),lamp(book),0.0,0.0,0.0
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/974.yaml,lamp(books),lamp(bed),0.5,0.5,0.5
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/975.yaml,refrigerator(cabinets),refrigerator(picture),0.0,0.5,0.5
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/976.yaml,refrigerator(bowl),refrigerator(table),0.0,0.5,0.5
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/977.yaml,refrigerator(chair),refrigerator(picture),0.0,0.0,0.0
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/978.yaml,refrigerator(chair),refrigerator(drawer),0.0,0.0,0.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/979.yaml,refrigerator(shelf),refrigerator(bottle),0.0,0.0,0.0
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/980.yaml,cord(laptop),cord(table),0.0,0.5,0.5
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/981.yaml,cord(laptop),cord(desk),0.0,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/982.yaml,cord(floor),cord(computer),0.0,0.5,0.5
+VisDiff-MetaShift,83,,configs/sweep_metashift_purity1.0_seed0/983.yaml,cord(wall),cord(table),0.0,0.0,0.0
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/984.yaml,cord(outlet),cord(computer),0.0,0.0,0.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/985.yaml,pot(man),pot(table),0.0,1.0,1.0
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/986.yaml,pot(stove),pot(table),0.0,1.0,1.0
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/987.yaml,pot(counter),pot(shelf),0.5,0.5,0.5
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/988.yaml,pot(stove),pot(plate),0.0,0.0,0.0
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/989.yaml,pot(woman),pot(table),0.5,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/990.yaml,sand(umbrella),sand(boy),1.0,1.0,1.0
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/991.yaml,sand(umbrella),sand(man),0.5,1.0,1.0
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/992.yaml,sand(boat),sand(girl),0.5,1.0,1.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/993.yaml,sand(horse),sand(kite),0.0,1.0,1.0
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/994.yaml,sand(sky),sand(boy),0.0,0.0,0.0
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/995.yaml,bread(table),bread(bottle),0.5,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/996.yaml,bread(cheese),bread(lettuce),0.5,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/997.yaml,bread(meat),bread(lettuce),0.0,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/998.yaml,bread(napkin),bread(knife),0.0,0.0,0.0
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/999.yaml,bread(spoon),bread(paper),0.0,0.0,0.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/1000.yaml,bush(sign),bush(zebra),0.0,1.0,1.0
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/1001.yaml,bush(man),bush(giraffe),0.0,0.5,0.5
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/1002.yaml,bush(elephant),bush(boy),1.0,1.0,1.0
+VisDiff-MetaShift,92,,configs/sweep_metashift_purity1.0_seed0/1003.yaml,bush(horse),bush(elephant),0.5,1.0,1.0
+VisDiff-MetaShift,73,,configs/sweep_metashift_purity1.0_seed0/1004.yaml,bush(giraffe),bush(sign),0.5,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1005.yaml,books(desk),books(man),0.5,1.0,1.0
+VisDiff-MetaShift,98,,configs/sweep_metashift_purity1.0_seed0/1006.yaml,books(man),books(picture),0.0,0.0,0.0
+VisDiff-MetaShift,35,,configs/sweep_metashift_purity1.0_seed0/1007.yaml,books(desk),books(picture),0.5,0.5,0.5
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/1008.yaml,books(shelf),books(lamp),0.0,0.0,0.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/1009.yaml,books(chair),books(pillow),0.0,0.0,0.0
+VisDiff-MetaShift,116,,configs/sweep_metashift_purity1.0_seed0/1010.yaml,station(train),station(man),1.0,1.0,1.0
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/1011.yaml,bridge(building),bridge(car),0.5,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/1012.yaml,bridge(trees),bridge(car),0.0,0.0,0.0
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/1013.yaml,bridge(boat),bridge(fence),0.5,0.5,0.5
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/1014.yaml,bridge(train),bridge(fence),0.5,0.5,0.5
+VisDiff-MetaShift,55,,configs/sweep_metashift_purity1.0_seed0/1015.yaml,bridge(car),bridge(fence),0.5,0.5,0.5
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/1016.yaml,ladder(man),ladder(wall),0.0,0.0,0.0
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/1017.yaml,flag(woman),flag(clock),0.0,0.0,0.0
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/1018.yaml,flag(person),flag(clock),0.0,0.0,0.0
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/1019.yaml,flag(building),flag(clock),0.0,0.0,0.0
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/1020.yaml,flag(people),flag(fence),0.0,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/1021.yaml,flag(umbrella),flag(post),1.0,1.0,1.0
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1022.yaml,trunk(giraffe),trunk(man),0.0,0.5,0.5
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/1023.yaml,trunk(fence),trunk(bench),0.5,0.5,0.5
+VisDiff-MetaShift,70,,configs/sweep_metashift_purity1.0_seed0/1024.yaml,trunk(man),trunk(fence),0.5,0.5,0.5
+VisDiff-MetaShift,37,,configs/sweep_metashift_purity1.0_seed0/1025.yaml,trunk(giraffe),trunk(bench),0.5,0.5,0.5
+VisDiff-MetaShift,98,,configs/sweep_metashift_purity1.0_seed0/1026.yaml,trunk(elephant),trunk(giraffe),0.5,0.5,0.5
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/1027.yaml,crust(cheese),crust(pizza),0.0,0.5,0.5
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/1028.yaml,liquid(cup),liquid(bowl),0.0,0.0,0.0
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/1029.yaml,liquid(glass),liquid(bowl),1.0,1.0,1.0
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/1030.yaml,liquid(cup),liquid(bottle),0.0,0.5,0.5
+VisDiff-MetaShift,37,,configs/sweep_metashift_purity1.0_seed0/1031.yaml,liquid(glass),liquid(bottle),0.0,0.0,0.0
+VisDiff-MetaShift,54,,configs/sweep_metashift_purity1.0_seed0/1032.yaml,liquid(bottle),liquid(bowl),0.0,0.5,0.5
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1033.yaml,baby(woman),baby(man),0.0,1.0,1.0
+VisDiff-MetaShift,97,,configs/sweep_metashift_purity1.0_seed0/1034.yaml,baby(shirt),baby(woman),0.0,0.5,0.5
+VisDiff-MetaShift,96,,configs/sweep_metashift_purity1.0_seed0/1035.yaml,baby(baby),baby(shirt),0.0,0.0,0.0
+VisDiff-MetaShift,37,,configs/sweep_metashift_purity1.0_seed0/1036.yaml,baby(shirt),baby(man),0.5,0.5,0.5
+VisDiff-MetaShift,35,,configs/sweep_metashift_purity1.0_seed0/1037.yaml,baby(baby),baby(man),1.0,1.0,1.0
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1038.yaml,doorway(man),doorway(person),0.5,0.5,0.5
+VisDiff-MetaShift,97,,configs/sweep_metashift_purity1.0_seed0/1039.yaml,doorway(sign),doorway(man),0.0,0.5,0.5
+VisDiff-MetaShift,36,,configs/sweep_metashift_purity1.0_seed0/1040.yaml,doorway(sign),doorway(person),0.5,0.5,0.5
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/1041.yaml,mat(floor),mat(table),0.0,0.0,0.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/1042.yaml,shoe(ground),shoe(skateboard),0.0,0.0,0.0
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1043.yaml,catcher(glove),catcher(baseball),0.0,0.0,0.0
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/1044.yaml,catcher(uniform),catcher(player),0.0,0.5,0.5
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/1045.yaml,catcher(glove),catcher(pants),0.0,0.5,0.5
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1046.yaml,catcher(man),catcher(umpire),0.0,0.5,0.5
+VisDiff-MetaShift,84,,configs/sweep_metashift_purity1.0_seed0/1047.yaml,catcher(glove),catcher(batter),0.0,0.5,0.5
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/1048.yaml,light fixture(wall),light fixture(ceiling),0.0,0.0,0.0
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/1049.yaml,bed(pillow),bed(woman),0.5,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/1050.yaml,bed(television),bed(bedspread),1.0,1.0,1.0
+VisDiff-MetaShift,85,,configs/sweep_metashift_purity1.0_seed0/1051.yaml,bed(desk),bed(woman),0.5,1.0,1.0
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/1052.yaml,bed(drawer),bed(carpet),0.5,0.5,0.5
+VisDiff-MetaShift,85,,configs/sweep_metashift_purity1.0_seed0/1053.yaml,bed(pillow),bed(curtain),0.0,0.5,0.5
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/1054.yaml,nightstand(lamp),nightstand(pillow),0.5,0.5,0.5
+VisDiff-MetaShift,84,,configs/sweep_metashift_purity1.0_seed0/1055.yaml,nightstand(bed),nightstand(pillow),0.0,0.0,0.0
+VisDiff-MetaShift,55,,configs/sweep_metashift_purity1.0_seed0/1056.yaml,nightstand(bed),nightstand(lamp),0.0,0.0,0.0
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/1057.yaml,tag(bag),tag(suitcase),0.0,0.0,0.0
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/1058.yaml,tag(dog),tag(suitcase),1.0,1.0,1.0
+VisDiff-MetaShift,51,,configs/sweep_metashift_purity1.0_seed0/1059.yaml,tag(bag),tag(dog),1.0,1.0,1.0
+VisDiff-MetaShift,139,,configs/sweep_metashift_purity1.0_seed0/1060.yaml,zoo(fence),zoo(giraffe),0.0,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1061.yaml,flowers(man),flowers(bush),0.0,0.0,0.0
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/1062.yaml,flowers(table),flowers(bench),0.5,0.5,0.5
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/1063.yaml,flowers(tree),flowers(vase),0.0,0.5,0.5
+VisDiff-MetaShift,98,,configs/sweep_metashift_purity1.0_seed0/1064.yaml,flowers(bench),flowers(umbrella),1.0,1.0,1.0
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/1065.yaml,flowers(man),flowers(plate),0.0,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1066.yaml,path(person),path(man),0.0,0.5,0.5
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1067.yaml,suv(car),suv(man),0.0,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/1068.yaml,bananas(fruit),bananas(man),0.5,0.5,0.5
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/1069.yaml,bananas(table),bananas(woman),0.5,0.5,0.5
+VisDiff-MetaShift,40,,configs/sweep_metashift_purity1.0_seed0/1070.yaml,bananas(fruit),bananas(woman),0.5,1.0,1.0
+VisDiff-MetaShift,56,,configs/sweep_metashift_purity1.0_seed0/1071.yaml,bananas(table),bananas(fruit),1.0,1.0,1.0
+VisDiff-MetaShift,37,,configs/sweep_metashift_purity1.0_seed0/1072.yaml,bananas(table),bananas(man),0.5,1.0,1.0
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/1073.yaml,fruit(man),fruit(plate),0.0,0.5,0.5
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/1074.yaml,fruit(table),fruit(bananas),0.0,0.5,0.5
+VisDiff-MetaShift,99,,configs/sweep_metashift_purity1.0_seed0/1075.yaml,fruit(plate),fruit(basket),0.5,0.5,0.5
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/1076.yaml,fruit(orange),fruit(plate),0.5,1.0,1.0
+VisDiff-MetaShift,88,,configs/sweep_metashift_purity1.0_seed0/1077.yaml,fruit(bowl),fruit(plate),0.0,0.0,0.0
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/1078.yaml,orange(table),orange(man),0.0,0.5,0.5
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/1079.yaml,orange(apple),orange(bowl),0.0,0.5,0.5
+VisDiff-MetaShift,98,,configs/sweep_metashift_purity1.0_seed0/1080.yaml,orange(banana),orange(apple),1.0,1.0,1.0
+VisDiff-MetaShift,58,,configs/sweep_metashift_purity1.0_seed0/1081.yaml,orange(man),orange(bowl),0.0,0.5,0.5
+VisDiff-MetaShift,39,,configs/sweep_metashift_purity1.0_seed0/1082.yaml,orange(table),orange(bowl),0.0,0.0,0.0
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1083.yaml,poster(man),poster(wall),0.5,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/1084.yaml,letter(sign),letter(wall),0.0,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1085.yaml,coffee table(pillow),coffee table(lamp),0.0,0.0,0.0
+VisDiff-MetaShift,84,,configs/sweep_metashift_purity1.0_seed0/1086.yaml,coffee table(pillow),coffee table(television),0.0,0.0,0.0
+VisDiff-MetaShift,131,,configs/sweep_metashift_purity1.0_seed0/1087.yaml,coffee table(table),coffee table(chair),0.0,0.5,0.5
+VisDiff-MetaShift,38,,configs/sweep_metashift_purity1.0_seed0/1088.yaml,coffee table(table),coffee table(television),0.5,0.5,0.5
+VisDiff-MetaShift,55,,configs/sweep_metashift_purity1.0_seed0/1089.yaml,coffee table(pillow),coffee table(table),0.0,0.0,0.0
+VisDiff-MetaShift,133,,configs/sweep_metashift_purity1.0_seed0/1090.yaml,couch(television),couch(books),0.0,1.0,1.0
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/1091.yaml,couch(coffee table),couch(books),0.0,0.0,0.0
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/1092.yaml,couch(rug),couch(man),0.5,0.5,0.5
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1093.yaml,couch(pillow),couch(pillows),0.0,0.0,0.0
+VisDiff-MetaShift,132,,configs/sweep_metashift_purity1.0_seed0/1094.yaml,couch(table),couch(book),0.0,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/1095.yaml,blinds(window),blinds(man),0.0,0.5,0.5
+VisDiff-MetaShift,85,,configs/sweep_metashift_purity1.0_seed0/1096.yaml,blinds(door),blinds(man),0.0,0.5,0.5
+VisDiff-MetaShift,53,,configs/sweep_metashift_purity1.0_seed0/1097.yaml,blinds(window),blinds(door),0.0,0.0,0.0
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/1098.yaml,blinds(window),blinds(table),0.0,0.0,0.0
+VisDiff-MetaShift,40,,configs/sweep_metashift_purity1.0_seed0/1099.yaml,blinds(door),blinds(table),0.0,0.0,0.0
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/1100.yaml,blanket(person),blanket(lamp),0.0,0.0,0.0
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1101.yaml,blanket(sheet),blanket(dog),0.0,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1102.yaml,blanket(book),blanket(curtain),0.5,0.5,0.5
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/1103.yaml,blanket(bed),blanket(dog),0.5,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/1104.yaml,blanket(man),blanket(chair),0.0,0.5,0.5
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1105.yaml,pillow(mirror),pillow(vase),0.5,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1106.yaml,pillow(shelf),pillow(dog),0.0,0.5,0.5
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/1107.yaml,pillow(bedspread),pillow(book),0.5,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/1108.yaml,pillow(clock),pillow(cat),0.0,0.0,0.0
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/1109.yaml,pillow(remote control),pillow(curtain),1.0,1.0,1.0
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1110.yaml,remote control(picture),remote control(woman),0.5,0.5,0.5
+VisDiff-MetaShift,131,,configs/sweep_metashift_purity1.0_seed0/1111.yaml,remote control(chair),remote control(television),0.0,0.0,0.0
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/1112.yaml,remote control(couch),remote control(man),0.0,0.0,0.0
+VisDiff-MetaShift,58,,configs/sweep_metashift_purity1.0_seed0/1113.yaml,remote control(television),remote control(man),0.5,0.5,0.5
+VisDiff-MetaShift,89,,configs/sweep_metashift_purity1.0_seed0/1114.yaml,remote control(lamp),remote control(man),0.0,0.0,0.0
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1115.yaml,bottles(man),bottles(counter),0.0,0.5,0.5
+VisDiff-MetaShift,98,,configs/sweep_metashift_purity1.0_seed0/1116.yaml,bottles(table),bottles(man),0.0,0.5,0.5
+VisDiff-MetaShift,34,,configs/sweep_metashift_purity1.0_seed0/1117.yaml,bottles(table),bottles(counter),0.0,0.0,0.0
+VisDiff-MetaShift,96,,configs/sweep_metashift_purity1.0_seed0/1118.yaml,bottles(counter),bottles(shelf),0.0,0.5,0.5
+VisDiff-MetaShift,39,,configs/sweep_metashift_purity1.0_seed0/1119.yaml,bottles(man),bottles(shelf),0.0,0.0,0.0
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/1120.yaml,controller(man),controller(table),1.0,1.0,1.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/1121.yaml,sheet(pillow),sheet(blanket),0.0,0.5,0.5
+VisDiff-MetaShift,85,,configs/sweep_metashift_purity1.0_seed0/1122.yaml,sheet(bed),sheet(blanket),0.5,0.5,0.5
+VisDiff-MetaShift,55,,configs/sweep_metashift_purity1.0_seed0/1123.yaml,sheet(pillow),sheet(bed),0.0,0.0,0.0
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/1124.yaml,carpet(chair),carpet(table),0.5,0.5,0.5
+VisDiff-MetaShift,83,,configs/sweep_metashift_purity1.0_seed0/1125.yaml,carpet(chair),carpet(couch),0.0,0.0,0.0
+VisDiff-MetaShift,85,,configs/sweep_metashift_purity1.0_seed0/1126.yaml,carpet(bed),carpet(table),0.5,0.5,0.5
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/1127.yaml,carpet(chair),carpet(floor),0.5,0.5,0.5
+VisDiff-MetaShift,99,,configs/sweep_metashift_purity1.0_seed0/1128.yaml,carpet(cat),carpet(chair),0.0,0.5,0.5
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/1129.yaml,curtain(pillow),curtain(towel),0.0,0.5,0.5
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1130.yaml,curtain(cabinet),curtain(blanket),0.0,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/1131.yaml,curtain(door),curtain(faucet),0.5,0.5,0.5
+VisDiff-MetaShift,84,,configs/sweep_metashift_purity1.0_seed0/1132.yaml,curtain(picture),curtain(faucet),0.0,0.5,0.5
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/1133.yaml,curtain(pillow),curtain(toilet),0.0,0.5,0.5
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/1134.yaml,mouse pad(desk),mouse pad(computer mouse),0.0,0.5,0.5
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/1135.yaml,mouse pad(keyboard),mouse pad(computer mouse),0.5,0.5,0.5
+VisDiff-MetaShift,58,,configs/sweep_metashift_purity1.0_seed0/1136.yaml,mouse pad(keyboard),mouse pad(desk),0.5,0.5,0.5
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/1137.yaml,speaker(man),speaker(television),0.5,0.5,0.5
+VisDiff-MetaShift,133,,configs/sweep_metashift_purity1.0_seed0/1138.yaml,speaker(keyboard),speaker(laptop),0.0,0.0,0.0
+VisDiff-MetaShift,100,,configs/sweep_metashift_purity1.0_seed0/1139.yaml,speaker(desk),speaker(table),0.0,0.5,0.5
+VisDiff-MetaShift,37,,configs/sweep_metashift_purity1.0_seed0/1140.yaml,speaker(man),speaker(table),0.5,1.0,1.0
+VisDiff-MetaShift,104,,configs/sweep_metashift_purity1.0_seed0/1141.yaml,speaker(television),speaker(chair),0.5,1.0,1.0
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/1142.yaml,monitor(computer mouse),monitor(computer),0.0,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1143.yaml,monitor(desk),monitor(man),0.5,1.0,1.0
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1144.yaml,monitor(keyboard),monitor(table),0.5,0.5,0.5
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/1145.yaml,monitor(screen),monitor(man),0.5,0.5,0.5
+VisDiff-MetaShift,42,,configs/sweep_metashift_purity1.0_seed0/1146.yaml,monitor(keyboard),monitor(man),0.5,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/1147.yaml,silverware(plate),silverware(table),0.0,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1148.yaml,utensil(plate),utensil(table),0.0,0.0,0.0
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/1149.yaml,windows(train),windows(clock),0.0,1.0,1.0
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/1150.yaml,skier(jacket),skier(pants),0.0,0.5,0.5
+VisDiff-MetaShift,92,,configs/sweep_metashift_purity1.0_seed0/1151.yaml,skier(goggles),skier(jacket),0.0,0.5,0.5
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/1152.yaml,skier(goggles),skier(skis),0.0,0.0,0.0
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/1153.yaml,skier(jacket),skier(pole),0.5,0.5,0.5
+VisDiff-MetaShift,40,,configs/sweep_metashift_purity1.0_seed0/1154.yaml,skier(goggles),skier(pole),0.0,0.0,0.0
+VisDiff-MetaShift,133,,configs/sweep_metashift_purity1.0_seed0/1155.yaml,sandwich(bread),sandwich(food),0.5,0.5,0.5
+VisDiff-MetaShift,86,,configs/sweep_metashift_purity1.0_seed0/1156.yaml,sandwich(bread),sandwich(tomato),0.5,0.5,0.5
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/1157.yaml,sandwich(bread),sandwich(lettuce),0.0,0.0,0.0
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/1158.yaml,sandwich(plate),sandwich(napkin),1.0,1.0,1.0
+VisDiff-MetaShift,98,,configs/sweep_metashift_purity1.0_seed0/1159.yaml,sandwich(table),sandwich(bread),0.5,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/1160.yaml,children(boy),children(people),0.5,0.5,0.5
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/1161.yaml,children(man),children(shirt),0.0,0.0,0.0
+VisDiff-MetaShift,36,,configs/sweep_metashift_purity1.0_seed0/1162.yaml,children(man),children(people),0.5,0.5,0.5
+VisDiff-MetaShift,40,,configs/sweep_metashift_purity1.0_seed0/1163.yaml,children(boy),children(shirt),0.5,0.5,0.5
+VisDiff-MetaShift,53,,configs/sweep_metashift_purity1.0_seed0/1164.yaml,children(boy),children(man),1.0,1.0,1.0
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/1165.yaml,chairs(person),chairs(man),0.0,0.0,0.0
+VisDiff-MetaShift,97,,configs/sweep_metashift_purity1.0_seed0/1166.yaml,chairs(man),chairs(woman),0.0,0.5,0.5
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/1167.yaml,chairs(person),chairs(people),0.0,0.0,0.0
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/1168.yaml,chairs(table),chairs(people),0.5,0.5,0.5
+VisDiff-MetaShift,38,,configs/sweep_metashift_purity1.0_seed0/1169.yaml,chairs(person),chairs(woman),0.0,0.0,0.0
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1170.yaml,air(skateboard),air(boy),1.0,1.0,1.0
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1171.yaml,air(frisbee),air(ball),1.0,1.0,1.0
+VisDiff-MetaShift,70,,configs/sweep_metashift_purity1.0_seed0/1172.yaml,air(ball),air(skateboard),0.0,1.0,1.0
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/1173.yaml,air(person),air(kite),0.0,0.5,0.5
+VisDiff-MetaShift,55,,configs/sweep_metashift_purity1.0_seed0/1174.yaml,air(kite),air(boy),1.0,1.0,1.0
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/1175.yaml,bookshelf(books),bookshelf(book),0.0,0.0,0.0
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/1176.yaml,bookshelf(wall),bookshelf(chair),0.0,0.0,0.0
+VisDiff-MetaShift,54,,configs/sweep_metashift_purity1.0_seed0/1177.yaml,bookshelf(book),bookshelf(chair),0.5,0.5,0.5
+VisDiff-MetaShift,41,,configs/sweep_metashift_purity1.0_seed0/1178.yaml,bookshelf(wall),bookshelf(book),0.0,0.5,0.5
+VisDiff-MetaShift,61,,configs/sweep_metashift_purity1.0_seed0/1179.yaml,bookshelf(wall),bookshelf(books),0.0,0.0,0.0
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/1180.yaml,shelves(shelf),shelves(wall),0.5,0.5,0.5
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/1181.yaml,microwave(cabinet),microwave(table),0.0,0.5,0.5
+VisDiff-MetaShift,121,,configs/sweep_metashift_purity1.0_seed0/1182.yaml,microwave(oven),microwave(cabinets),0.0,0.5,0.5
+VisDiff-MetaShift,84,,configs/sweep_metashift_purity1.0_seed0/1183.yaml,microwave(counter),microwave(cabinets),0.5,0.5,0.5
+VisDiff-MetaShift,53,,configs/sweep_metashift_purity1.0_seed0/1184.yaml,microwave(counter),microwave(oven),0.0,0.5,0.5
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/1185.yaml,microwave(refrigerator),microwave(cabinets),0.0,0.0,0.0
+VisDiff-MetaShift,133,,configs/sweep_metashift_purity1.0_seed0/1186.yaml,animal(dirt),animal(fence),0.0,0.5,0.5
+VisDiff-MetaShift,106,,configs/sweep_metashift_purity1.0_seed0/1187.yaml,animal(fence),animal(ground),0.5,0.5,0.5
+VisDiff-MetaShift,133,,configs/sweep_metashift_purity1.0_seed0/1188.yaml,animal(grass),animal(man),0.5,1.0,1.0
+VisDiff-MetaShift,87,,configs/sweep_metashift_purity1.0_seed0/1189.yaml,animal(fence),animal(tree),0.5,1.0,1.0
+VisDiff-MetaShift,38,,configs/sweep_metashift_purity1.0_seed0/1190.yaml,animal(dirt),animal(ground),0.0,0.5,0.5
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/1191.yaml,stairs(woman),stairs(man),0.0,0.5,0.5
+VisDiff-MetaShift,103,,configs/sweep_metashift_purity1.0_seed0/1192.yaml,stairs(man),stairs(building),0.0,0.0,0.0
+VisDiff-MetaShift,103,,configs/sweep_metashift_purity1.0_seed0/1193.yaml,stairs(building),stairs(person),0.5,0.5,0.5
+VisDiff-MetaShift,84,,configs/sweep_metashift_purity1.0_seed0/1194.yaml,stairs(people),stairs(man),0.0,0.0,0.0
+VisDiff-MetaShift,39,,configs/sweep_metashift_purity1.0_seed0/1195.yaml,stairs(people),stairs(person),0.0,0.0,0.0
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/1196.yaml,baseball(man),baseball(player),0.5,0.5,0.5
+VisDiff-MetaShift,101,,configs/sweep_metashift_purity1.0_seed0/1197.yaml,baseball(catcher),baseball(man),0.0,0.5,0.5
+VisDiff-MetaShift,83,,configs/sweep_metashift_purity1.0_seed0/1198.yaml,baseball(catcher),baseball(fence),0.0,0.5,0.5
+VisDiff-MetaShift,58,,configs/sweep_metashift_purity1.0_seed0/1199.yaml,baseball(player),baseball(fence),1.0,1.0,1.0
+VisDiff-MetaShift,85,,configs/sweep_metashift_purity1.0_seed0/1200.yaml,baseball(helmet),baseball(man),0.0,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/1201.yaml,home plate(man),home plate(umpire),0.0,0.0,0.0
+VisDiff-MetaShift,103,,configs/sweep_metashift_purity1.0_seed0/1202.yaml,home plate(umpire),home plate(dirt),0.0,0.0,0.0
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/1203.yaml,home plate(catcher),home plate(batter),0.5,0.5,0.5
+VisDiff-MetaShift,39,,configs/sweep_metashift_purity1.0_seed0/1204.yaml,home plate(umpire),home plate(batter),0.5,0.5,0.5
+VisDiff-MetaShift,101,,configs/sweep_metashift_purity1.0_seed0/1205.yaml,home plate(dirt),home plate(player),0.0,0.0,0.0
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/1206.yaml,hill(sky),hill(man),0.0,0.0,0.0
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1207.yaml,hill(fence),hill(cow),0.0,0.0,0.0
+VisDiff-MetaShift,99,,configs/sweep_metashift_purity1.0_seed0/1208.yaml,hill(woman),hill(fence),0.5,0.5,0.5
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/1209.yaml,hill(trees),hill(cow),0.0,0.0,0.0
+VisDiff-MetaShift,53,,configs/sweep_metashift_purity1.0_seed0/1210.yaml,hill(sky),hill(trees),0.0,0.0,0.0
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/1211.yaml,players(man),players(shirt),0.0,0.5,0.5
+VisDiff-MetaShift,135,,configs/sweep_metashift_purity1.0_seed0/1212.yaml,living room(couch),living room(table),0.0,0.5,0.5
+VisDiff-MetaShift,87,,configs/sweep_metashift_purity1.0_seed0/1213.yaml,living room(couch),living room(lamp),0.0,0.5,0.5
+VisDiff-MetaShift,88,,configs/sweep_metashift_purity1.0_seed0/1214.yaml,living room(chair),living room(table),0.0,1.0,1.0
+VisDiff-MetaShift,53,,configs/sweep_metashift_purity1.0_seed0/1215.yaml,living room(chair),living room(couch),1.0,1.0,1.0
+VisDiff-MetaShift,38,,configs/sweep_metashift_purity1.0_seed0/1216.yaml,living room(chair),living room(lamp),0.0,0.0,0.0
+VisDiff-MetaShift,133,,configs/sweep_metashift_purity1.0_seed0/1217.yaml,television(chair),television(bed),0.5,0.5,0.5
+VisDiff-MetaShift,88,,configs/sweep_metashift_purity1.0_seed0/1218.yaml,television(chair),television(books),0.0,0.0,0.0
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/1219.yaml,television(book),television(bag),1.0,1.0,1.0
+VisDiff-MetaShift,132,,configs/sweep_metashift_purity1.0_seed0/1220.yaml,television(pillow),television(lamp),0.0,0.0,0.0
+VisDiff-MetaShift,90,,configs/sweep_metashift_purity1.0_seed0/1221.yaml,television(couch),television(bag),0.5,1.0,1.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/1222.yaml,bathtub(faucet),bathtub(curtain),0.5,0.5,0.5
+VisDiff-MetaShift,117,,configs/sweep_metashift_purity1.0_seed0/1223.yaml,bathtub(mirror),bathtub(toilet),0.0,1.0,1.0
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/1224.yaml,bathtub(mirror),bathtub(towel),0.0,1.0,1.0
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/1225.yaml,bathtub(wall),bathtub(toilet),0.5,0.5,0.5
+VisDiff-MetaShift,78,,configs/sweep_metashift_purity1.0_seed0/1226.yaml,bathtub(window),bathtub(curtain),0.5,1.0,1.0
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/1227.yaml,candle(chair),candle(plate),0.0,0.5,0.5
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/1228.yaml,candle(table),candle(cake),0.0,0.5,0.5
+VisDiff-MetaShift,53,,configs/sweep_metashift_purity1.0_seed0/1229.yaml,candle(cake),candle(plate),0.5,1.0,1.0
+VisDiff-MetaShift,97,,configs/sweep_metashift_purity1.0_seed0/1230.yaml,candle(plate),candle(man),0.5,0.5,0.5
+VisDiff-MetaShift,55,,configs/sweep_metashift_purity1.0_seed0/1231.yaml,candle(table),candle(chair),0.0,0.0,0.0
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1232.yaml,pillows(bed),pillows(lamp),0.5,0.5,0.5
+VisDiff-MetaShift,85,,configs/sweep_metashift_purity1.0_seed0/1233.yaml,pillows(blanket),pillows(lamp),0.0,0.5,0.5
+VisDiff-MetaShift,85,,configs/sweep_metashift_purity1.0_seed0/1234.yaml,pillows(blanket),pillows(chair),0.5,0.5,0.5
+VisDiff-MetaShift,58,,configs/sweep_metashift_purity1.0_seed0/1235.yaml,pillows(lamp),pillows(chair),0.0,0.0,0.0
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/1236.yaml,pillows(bed),pillows(couch),0.0,0.5,0.5
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/1237.yaml,bat(baseball),bat(fence),1.0,1.0,1.0
+VisDiff-MetaShift,99,,configs/sweep_metashift_purity1.0_seed0/1238.yaml,bat(fence),bat(ball),0.0,0.5,0.5
+VisDiff-MetaShift,38,,configs/sweep_metashift_purity1.0_seed0/1239.yaml,bat(baseball),bat(ball),0.5,0.5,0.5
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/1240.yaml,pepperoni(pizza),pepperoni(plate),0.5,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/1241.yaml,pepperoni(cheese),pepperoni(plate),0.5,0.5,0.5
+VisDiff-MetaShift,51,,configs/sweep_metashift_purity1.0_seed0/1242.yaml,pepperoni(cheese),pepperoni(pizza),0.0,0.5,0.5
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/1243.yaml,snowboard(snow),snowboard(person),0.0,0.5,0.5
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/1244.yaml,snowboard(people),snowboard(helmet),0.5,0.5,0.5
+VisDiff-MetaShift,53,,configs/sweep_metashift_purity1.0_seed0/1245.yaml,snowboard(helmet),snowboard(person),0.0,0.5,0.5
+VisDiff-MetaShift,76,,configs/sweep_metashift_purity1.0_seed0/1246.yaml,snowboard(people),snowboard(man),0.0,0.5,0.5
+VisDiff-MetaShift,53,,configs/sweep_metashift_purity1.0_seed0/1247.yaml,snowboard(person),snowboard(man),0.0,0.5,0.5
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/1248.yaml,oven(cabinets),oven(towel),0.5,0.5,0.5
+VisDiff-MetaShift,118,,configs/sweep_metashift_purity1.0_seed0/1249.yaml,oven(wall),oven(drawer),0.0,0.0,0.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/1250.yaml,oven(cabinet),oven(table),0.0,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/1251.yaml,oven(wall),oven(counter),0.0,0.0,0.0
+VisDiff-MetaShift,94,,configs/sweep_metashift_purity1.0_seed0/1252.yaml,oven(refrigerator),oven(cabinets),0.5,0.5,0.5
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/1253.yaml,tent(person),tent(woman),0.0,0.0,0.0
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/1254.yaml,tent(man),tent(woman),0.5,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/1255.yaml,tent(person),tent(people),0.0,0.0,0.0
+VisDiff-MetaShift,55,,configs/sweep_metashift_purity1.0_seed0/1256.yaml,tent(person),tent(man),0.0,0.5,0.5
+VisDiff-MetaShift,57,,configs/sweep_metashift_purity1.0_seed0/1257.yaml,tent(woman),tent(people),0.0,0.0,0.0
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/1258.yaml,umpire(catcher),umpire(player),0.0,0.0,0.0
+VisDiff-MetaShift,103,,configs/sweep_metashift_purity1.0_seed0/1259.yaml,umpire(player),umpire(fence),0.0,0.5,0.5
+VisDiff-MetaShift,131,,configs/sweep_metashift_purity1.0_seed0/1260.yaml,umpire(uniform),umpire(man),0.0,0.0,0.0
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1261.yaml,umpire(dirt),umpire(helmet),0.5,0.5,0.5
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/1262.yaml,umpire(mask),umpire(shoe),0.0,0.0,0.0
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1263.yaml,vase(cabinet),vase(lamp),0.0,0.0,0.0
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1264.yaml,vase(table),vase(bowl),0.0,1.0,1.0
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/1265.yaml,vase(picture),vase(shelf),0.0,0.5,0.5
+VisDiff-MetaShift,99,,configs/sweep_metashift_purity1.0_seed0/1266.yaml,vase(counter),vase(picture),0.0,0.5,0.5
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1267.yaml,vase(couch),vase(woman),0.5,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/1268.yaml,cabinets(sink),cabinets(microwave),0.5,0.5,0.5
+VisDiff-MetaShift,83,,configs/sweep_metashift_purity1.0_seed0/1269.yaml,cabinets(table),cabinets(microwave),0.0,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1270.yaml,cabinets(faucet),cabinets(counter),0.5,0.5,0.5
+VisDiff-MetaShift,40,,configs/sweep_metashift_purity1.0_seed0/1271.yaml,cabinets(sink),cabinets(counter),0.5,0.5,0.5
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/1272.yaml,cabinets(refrigerator),cabinets(stove),1.0,1.0,1.0
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/1273.yaml,burner(oven),burner(stove),0.0,0.0,0.0
+VisDiff-MetaShift,134,,configs/sweep_metashift_purity1.0_seed0/1274.yaml,painting(wall),painting(lamp),0.0,0.0,0.0
+VisDiff-MetaShift,104,,configs/sweep_metashift_purity1.0_seed0/1275.yaml,painting(chair),painting(wall),0.5,0.5,0.5
+VisDiff-MetaShift,84,,configs/sweep_metashift_purity1.0_seed0/1276.yaml,painting(chair),painting(man),0.5,0.5,0.5
+VisDiff-MetaShift,56,,configs/sweep_metashift_purity1.0_seed0/1277.yaml,painting(lamp),painting(man),0.5,0.5,0.5
+VisDiff-MetaShift,37,,configs/sweep_metashift_purity1.0_seed0/1278.yaml,painting(wall),painting(man),0.0,0.5,0.5
+VisDiff-MetaShift,132,,configs/sweep_metashift_purity1.0_seed0/1279.yaml,curtains(lamp),curtains(chair),0.0,0.0,0.0
+VisDiff-MetaShift,101,,configs/sweep_metashift_purity1.0_seed0/1280.yaml,curtains(window),curtains(lamp),0.0,0.0,0.0
+VisDiff-MetaShift,98,,configs/sweep_metashift_purity1.0_seed0/1281.yaml,curtains(chair),curtains(pillow),0.0,0.0,0.0
+VisDiff-MetaShift,92,,configs/sweep_metashift_purity1.0_seed0/1282.yaml,curtains(table),curtains(chair),0.0,0.0,0.0
+VisDiff-MetaShift,36,,configs/sweep_metashift_purity1.0_seed0/1283.yaml,curtains(window),curtains(pillow),0.0,0.0,0.0
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/1284.yaml,moss(rock),moss(tree),0.0,0.0,0.0
+VisDiff-MetaShift,123,,configs/sweep_metashift_purity1.0_seed0/1285.yaml,countertop(cabinet),countertop(bottle),0.0,0.5,0.5
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/1286.yaml,steps(building),steps(person),0.0,0.0,0.0
+VisDiff-MetaShift,86,,configs/sweep_metashift_purity1.0_seed0/1287.yaml,steps(building),steps(door),0.0,0.0,0.0
+VisDiff-MetaShift,97,,configs/sweep_metashift_purity1.0_seed0/1288.yaml,steps(door),steps(man),0.0,0.5,0.5
+VisDiff-MetaShift,56,,configs/sweep_metashift_purity1.0_seed0/1289.yaml,steps(person),steps(man),0.0,0.0,0.0
+VisDiff-MetaShift,41,,configs/sweep_metashift_purity1.0_seed0/1290.yaml,steps(building),steps(man),0.0,0.0,0.0
+VisDiff-MetaShift,134,,configs/sweep_metashift_purity1.0_seed0/1291.yaml,paddle(water),paddle(man),0.5,0.5,0.5
+VisDiff-MetaShift,105,,configs/sweep_metashift_purity1.0_seed0/1292.yaml,paddle(man),paddle(boat),0.5,1.0,1.0
+VisDiff-MetaShift,40,,configs/sweep_metashift_purity1.0_seed0/1293.yaml,paddle(water),paddle(boat),0.0,0.5,0.5
+VisDiff-MetaShift,131,,configs/sweep_metashift_purity1.0_seed0/1294.yaml,forest(trees),forest(man),0.0,0.5,0.5
+VisDiff-MetaShift,134,,configs/sweep_metashift_purity1.0_seed0/1295.yaml,computer monitor(keyboard),computer monitor(desk),0.0,0.5,0.5
+VisDiff-MetaShift,89,,configs/sweep_metashift_purity1.0_seed0/1296.yaml,computer monitor(computer mouse),computer monitor(desk),0.5,0.5,0.5
+VisDiff-MetaShift,57,,configs/sweep_metashift_purity1.0_seed0/1297.yaml,computer monitor(keyboard),computer monitor(computer mouse),0.0,0.0,0.0
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/1298.yaml,river(boat),river(man),1.0,1.0,1.0
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1299.yaml,batter(glove),batter(fence),0.0,1.0,1.0
+VisDiff-MetaShift,133,,configs/sweep_metashift_purity1.0_seed0/1300.yaml,batter(helmet),batter(uniform),0.0,0.5,0.5
+VisDiff-MetaShift,85,,configs/sweep_metashift_purity1.0_seed0/1301.yaml,batter(home plate),batter(uniform),0.0,0.5,0.5
+VisDiff-MetaShift,88,,configs/sweep_metashift_purity1.0_seed0/1302.yaml,batter(helmet),batter(pants),0.0,0.5,0.5
+VisDiff-MetaShift,132,,configs/sweep_metashift_purity1.0_seed0/1303.yaml,batter(catcher),batter(player),1.0,1.0,1.0
+VisDiff-MetaShift,135,,configs/sweep_metashift_purity1.0_seed0/1304.yaml,beer(glass),beer(plate),0.5,0.5,0.5
+VisDiff-MetaShift,85,,configs/sweep_metashift_purity1.0_seed0/1305.yaml,beer(glass),beer(man),0.0,0.5,0.5
+VisDiff-MetaShift,87,,configs/sweep_metashift_purity1.0_seed0/1306.yaml,beer(table),beer(plate),0.0,0.0,0.0
+VisDiff-MetaShift,54,,configs/sweep_metashift_purity1.0_seed0/1307.yaml,beer(table),beer(glass),0.0,0.0,0.0
+VisDiff-MetaShift,39,,configs/sweep_metashift_purity1.0_seed0/1308.yaml,beer(table),beer(man),0.0,1.0,1.0
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/1309.yaml,donut(man),donut(table),1.0,1.0,1.0
+VisDiff-MetaShift,79,,configs/sweep_metashift_purity1.0_seed0/1310.yaml,donut(man),donut(sprinkles),0.5,1.0,1.0
+VisDiff-MetaShift,59,,configs/sweep_metashift_purity1.0_seed0/1311.yaml,donut(table),donut(sprinkles),0.5,0.5,0.5
+VisDiff-MetaShift,132,,configs/sweep_metashift_purity1.0_seed0/1312.yaml,tennis ball(fence),tennis ball(woman),0.0,0.0,0.0
+VisDiff-MetaShift,84,,configs/sweep_metashift_purity1.0_seed0/1313.yaml,tennis ball(fence),tennis ball(man),0.0,0.0,0.0
+VisDiff-MetaShift,85,,configs/sweep_metashift_purity1.0_seed0/1314.yaml,tennis ball(fence),tennis ball(racket),0.0,0.5,0.5
+VisDiff-MetaShift,59,,configs/sweep_metashift_purity1.0_seed0/1315.yaml,tennis ball(racket),tennis ball(man),0.0,0.5,0.5
+VisDiff-MetaShift,59,,configs/sweep_metashift_purity1.0_seed0/1316.yaml,tennis ball(woman),tennis ball(man),1.0,1.0,1.0
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/1317.yaml,trash can(man),trash can(bench),0.0,0.5,0.5
+VisDiff-MetaShift,99,,configs/sweep_metashift_purity1.0_seed0/1318.yaml,trash can(bench),trash can(counter),0.0,0.5,0.5
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1319.yaml,trash can(people),trash can(person),0.0,0.0,0.0
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1320.yaml,trash can(floor),trash can(sink),0.0,0.0,0.0
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1321.yaml,trash can(woman),trash can(chair),0.0,0.0,0.0
+VisDiff-MetaShift,135,,configs/sweep_metashift_purity1.0_seed0/1322.yaml,chain(fire hydrant),chain(pole),1.0,1.0,1.0
+VisDiff-MetaShift,133,,configs/sweep_metashift_purity1.0_seed0/1323.yaml,branch(giraffe),branch(bird),0.5,1.0,1.0
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1324.yaml,umbrellas(people),umbrellas(man),0.0,0.0,0.0
+VisDiff-MetaShift,82,,configs/sweep_metashift_purity1.0_seed0/1325.yaml,umbrellas(people),umbrellas(person),0.0,0.0,0.0
+VisDiff-MetaShift,56,,configs/sweep_metashift_purity1.0_seed0/1326.yaml,umbrellas(man),umbrellas(person),0.0,0.0,0.0
+VisDiff-MetaShift,131,,configs/sweep_metashift_purity1.0_seed0/1327.yaml,bun(food),bun(plate),0.5,0.5,0.5
+VisDiff-MetaShift,101,,configs/sweep_metashift_purity1.0_seed0/1328.yaml,bun(hot dog),bun(food),1.0,1.0,1.0
+VisDiff-MetaShift,46,,configs/sweep_metashift_purity1.0_seed0/1329.yaml,bun(hot dog),bun(plate),1.0,1.0,1.0
+VisDiff-MetaShift,131,,configs/sweep_metashift_purity1.0_seed0/1330.yaml,hills(water),hills(trees),0.5,1.0,1.0
+VisDiff-MetaShift,120,,configs/sweep_metashift_purity1.0_seed0/1331.yaml,pine trees(snow),pine trees(man),0.0,0.5,0.5
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/1332.yaml,clock tower(building),clock tower(clock),0.0,0.0,0.0
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1333.yaml,street sign(pole),street sign(post),0.0,0.0,0.0
+VisDiff-MetaShift,119,,configs/sweep_metashift_purity1.0_seed0/1334.yaml,shower(faucet),shower(towel),0.0,0.5,0.5
+VisDiff-MetaShift,122,,configs/sweep_metashift_purity1.0_seed0/1335.yaml,shower(mirror),shower(toilet),0.0,1.0,1.0
+VisDiff-MetaShift,55,,configs/sweep_metashift_purity1.0_seed0/1336.yaml,shower(mirror),shower(faucet),0.0,0.5,0.5
+VisDiff-MetaShift,41,,configs/sweep_metashift_purity1.0_seed0/1337.yaml,shower(mirror),shower(towel),0.0,0.0,0.0
+VisDiff-MetaShift,39,,configs/sweep_metashift_purity1.0_seed0/1338.yaml,shower(faucet),shower(toilet),0.5,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1339.yaml,store(woman),store(man),0.5,1.0,1.0
+VisDiff-MetaShift,125,,configs/sweep_metashift_purity1.0_seed0/1340.yaml,walkway(man),walkway(person),0.5,0.5,0.5
+VisDiff-MetaShift,83,,configs/sweep_metashift_purity1.0_seed0/1341.yaml,walkway(man),walkway(people),0.5,0.5,0.5
+VisDiff-MetaShift,64,,configs/sweep_metashift_purity1.0_seed0/1342.yaml,walkway(person),walkway(people),0.0,0.5,0.5
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/1343.yaml,american flag(man),american flag(pole),0.0,0.0,0.0
+VisDiff-MetaShift,101,,configs/sweep_metashift_purity1.0_seed0/1344.yaml,american flag(building),american flag(man),0.0,0.5,0.5
+VisDiff-MetaShift,40,,configs/sweep_metashift_purity1.0_seed0/1345.yaml,american flag(building),american flag(pole),0.0,0.5,0.5
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1346.yaml,mug(table),mug(plate),0.0,0.0,0.0
+VisDiff-MetaShift,132,,configs/sweep_metashift_purity1.0_seed0/1347.yaml,drink(table),drink(glass),0.0,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/1348.yaml,drink(table),drink(man),0.0,0.5,0.5
+VisDiff-MetaShift,58,,configs/sweep_metashift_purity1.0_seed0/1349.yaml,drink(glass),drink(man),0.5,0.5,0.5
+VisDiff-MetaShift,143,,configs/sweep_metashift_purity1.0_seed0/1350.yaml,jar(table),jar(counter),0.0,0.0,0.0
+VisDiff-MetaShift,103,,configs/sweep_metashift_purity1.0_seed0/1351.yaml,jar(counter),jar(bottle),0.0,0.5,0.5
+VisDiff-MetaShift,43,,configs/sweep_metashift_purity1.0_seed0/1352.yaml,jar(table),jar(bottle),0.0,0.0,0.0
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1353.yaml,sheets(bed),sheets(pillow),0.0,0.0,0.0
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/1354.yaml,fries(table),fries(plate),0.0,0.5,0.5
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/1355.yaml,bedroom(lamp),bedroom(bed),0.0,0.0,0.0
+VisDiff-MetaShift,127,,configs/sweep_metashift_purity1.0_seed0/1356.yaml,luggage(ground),luggage(woman),0.0,0.0,0.0
+VisDiff-MetaShift,86,,configs/sweep_metashift_purity1.0_seed0/1357.yaml,luggage(bag),luggage(woman),0.5,0.5,0.5
+VisDiff-MetaShift,60,,configs/sweep_metashift_purity1.0_seed0/1358.yaml,luggage(bag),luggage(ground),0.5,0.5,0.5
+VisDiff-MetaShift,81,,configs/sweep_metashift_purity1.0_seed0/1359.yaml,luggage(ground),luggage(man),0.0,0.0,0.0
+VisDiff-MetaShift,41,,configs/sweep_metashift_purity1.0_seed0/1360.yaml,luggage(bag),luggage(man),0.5,0.5,0.5
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1361.yaml,toilet paper(wall),toilet paper(toilet),0.0,0.5,0.5
+VisDiff-MetaShift,77,,configs/sweep_metashift_purity1.0_seed0/1362.yaml,toilet paper(wall),toilet paper(mirror),0.0,0.5,0.5
+VisDiff-MetaShift,58,,configs/sweep_metashift_purity1.0_seed0/1363.yaml,toilet paper(toilet),toilet paper(mirror),0.5,0.5,0.5
+VisDiff-MetaShift,80,,configs/sweep_metashift_purity1.0_seed0/1364.yaml,toilet paper(wall),toilet paper(faucet),0.5,0.5,0.5
+VisDiff-MetaShift,56,,configs/sweep_metashift_purity1.0_seed0/1365.yaml,toilet paper(mirror),toilet paper(faucet),0.0,0.5,0.5
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/1366.yaml,dishwasher(counter),dishwasher(cabinet),0.0,0.0,0.0
+VisDiff-MetaShift,126,,configs/sweep_metashift_purity1.0_seed0/1367.yaml,stroller(woman),stroller(man),0.0,0.0,0.0
+VisDiff-MetaShift,132,,configs/sweep_metashift_purity1.0_seed0/1368.yaml,crumbs(table),crumbs(plate),0.0,0.0,0.0
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/1369.yaml,birds(water),birds(sky),0.5,0.5,0.5
+VisDiff-MetaShift,129,,configs/sweep_metashift_purity1.0_seed0/1370.yaml,bedspread(bed),bedspread(pillow),0.0,0.0,0.0
+VisDiff-MetaShift,124,,configs/sweep_metashift_purity1.0_seed0/1371.yaml,pine tree(man),pine tree(snow),0.0,0.0,0.0
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/1372.yaml,comforter(bed),comforter(lamp),0.0,0.5,0.5
+VisDiff-MetaShift,101,,configs/sweep_metashift_purity1.0_seed0/1373.yaml,comforter(pillow),comforter(bed),0.0,0.5,0.5
+VisDiff-MetaShift,38,,configs/sweep_metashift_purity1.0_seed0/1374.yaml,comforter(pillow),comforter(lamp),0.5,0.5,0.5
+VisDiff-MetaShift,131,,configs/sweep_metashift_purity1.0_seed0/1375.yaml,fireplace(chair),fireplace(television),0.0,0.5,0.5
+VisDiff-MetaShift,138,,configs/sweep_metashift_purity1.0_seed0/1376.yaml,skateboarder(skateboard),skateboarder(shirt),0.5,0.5,0.5
+VisDiff-MetaShift,128,,configs/sweep_metashift_purity1.0_seed0/1377.yaml,restaurant(table),restaurant(man),1.0,1.0,1.0
+VisDiff-MetaShift,130,,configs/sweep_metashift_purity1.0_seed0/1378.yaml,placemat(table),placemat(plate),0.0,0.5,0.5
