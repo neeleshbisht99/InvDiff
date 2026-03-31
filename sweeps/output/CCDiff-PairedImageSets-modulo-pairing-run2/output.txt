@@ -1,0 +1,10 @@
+Metrics
+#### CCDiff (Image & Text(BLIP-2[smaller-variant] + CLIP) Evaluator(GPT-4))
+#Group A / Class 0
+Dataset acc@1 acc@5 
+Easy    0.94   1.0  
+Medium  0.77   0.84  
+Hard    0.71   0.77  
+
+
+#Avg. Runtime 50.31
